@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "hollowwoods:hollow_oak_log"
+    "hollowwoods:hollow_oak_log",
+    "hollowwoods:hollow_spruce_log",
+    "hollowwoods:hollow_birch_log",
+    "hollowwoods:hollow_jungle_log",
+    "hollowwoods:hollow_acacia_log",
+    "hollowwoods:hollow_dark_oak_log"
   ]
 }

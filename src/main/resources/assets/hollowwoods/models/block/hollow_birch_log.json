@@ -1,0 +1,8 @@
+{
+  "parent": "hollowwoods:block/hollow_oak_log",
+  "textures": {
+    "outside": "minecraft:block/birch_log",
+	"top": "minecraft:block/birch_log_top",
+	"inside": "minecraft:block/stripped_birch_log"
+  }
+}
