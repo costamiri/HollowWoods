@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hollowwoods",
+  "version": "${version}",
+
+  "name": "HollowWoods",
+  "description": "Carve your logs and hollow them out!",
+  "authors": [
+    "Costamiri"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/hollowwoods/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.costamiri.hollowwoods.HollowWoods"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
