@@ -6,6 +6,12 @@
     "hollowwoods:hollow_birch_log",
     "hollowwoods:hollow_jungle_log",
     "hollowwoods:hollow_acacia_log",
-    "hollowwoods:hollow_dark_oak_log"
+    "hollowwoods:hollow_dark_oak_log",
+    "hollowwoods:stripped_hollow_oak_log",
+    "hollowwoods:stripped_hollow_spruce_log",
+    "hollowwoods:stripped_hollow_birch_log",
+    "hollowwoods:stripped_hollow_jungle_log",
+    "hollowwoods:stripped_hollow_acacia_log",
+    "hollowwoods:stripped_hollow_dark_oak_log"
   ]
 }
