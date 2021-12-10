@@ -14,18 +14,6 @@ import xyz.costamiri.hollowwoods.blocks.HollowLog;
 public class HollowWoods implements ModInitializer {
 	public static final String modid = "hollowwoods";
 	// public static final Logger LOGGER = LogManager.getLogger("hollowwoods");
-	public static final HollowLog HOLLOW_OAK_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
-	public static final HollowLog HOLLOW_SPRUCE_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
-	public static final HollowLog HOLLOW_BIRCH_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
-	public static final HollowLog HOLLOW_JUNGLE_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
-	public static final HollowLog HOLLOW_ACACIA_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
-	public static final HollowLog HOLLOW_DARK_OAK_LOG
-			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
 	public static final HollowLog STRIPPED_HOLLOW_OAK_LOG
 			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
 	public static final HollowLog STRIPPED_HOLLOW_SPRUCE_LOG
@@ -38,6 +26,18 @@ public class HollowWoods implements ModInitializer {
 			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
 	public static final HollowLog STRIPPED_HOLLOW_DARK_OAK_LOG
 			= new HollowLog(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_OAK_LOG
+			= new HollowLog(STRIPPED_HOLLOW_OAK_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_SPRUCE_LOG
+			= new HollowLog(STRIPPED_HOLLOW_SPRUCE_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_BIRCH_LOG
+			= new HollowLog(STRIPPED_HOLLOW_BIRCH_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_JUNGLE_LOG
+			= new HollowLog(STRIPPED_HOLLOW_JUNGLE_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_ACACIA_LOG
+			= new HollowLog(STRIPPED_HOLLOW_ACACIA_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+	public static final HollowLog HOLLOW_DARK_OAK_LOG
+			= new HollowLog(STRIPPED_HOLLOW_DARK_OAK_LOG, FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
 
 	@Override
 	public void onInitialize() {
