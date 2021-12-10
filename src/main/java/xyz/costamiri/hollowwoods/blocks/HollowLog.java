@@ -1,14 +1,13 @@
 package xyz.costamiri.hollowwoods.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.ShapeContext;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -25,12 +24,12 @@ public class HollowLog extends PillarBlock {
 
     private Block strippedBlock = null;
 
-    public HollowLog(Settings settings) {
-        super(settings);
+    public HollowLog() {
+        super(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
     }
 
-    public HollowLog(Block strippedBlock, Settings settings) {
-        super(settings);
+    public HollowLog(Block strippedBlock) {
+        super(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
         this.strippedBlock = strippedBlock;
     }
 
