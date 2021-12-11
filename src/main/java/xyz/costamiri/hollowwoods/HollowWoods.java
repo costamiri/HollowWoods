@@ -1,17 +1,18 @@
 package xyz.costamiri.hollowwoods;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class HollowWoods implements ModInitializer {
 	public static final String MODID = "hollowwoods";
-	// public static final Logger LOGGER = LogManager.getLogger("hollowwoods");
 	public static final HollowLog STRIPPED_HOLLOW_OAK_LOG = new HollowLog();
 	public static final HollowLog STRIPPED_HOLLOW_SPRUCE_LOG = new HollowLog();
 	public static final HollowLog STRIPPED_HOLLOW_BIRCH_LOG = new HollowLog();
@@ -24,6 +25,9 @@ public class HollowWoods implements ModInitializer {
 	public static final HollowLog HOLLOW_JUNGLE_LOG = new HollowLog(STRIPPED_HOLLOW_JUNGLE_LOG);
 	public static final HollowLog HOLLOW_ACACIA_LOG = new HollowLog(STRIPPED_HOLLOW_ACACIA_LOG);
 	public static final HollowLog HOLLOW_DARK_OAK_LOG = new HollowLog(STRIPPED_HOLLOW_DARK_OAK_LOG);
+	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
+			new Identifier(MODID, "main"),
+			() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG));
 
 	@Override
 	public void onInitialize() {
@@ -47,6 +51,6 @@ public class HollowWoods implements ModInitializer {
 				block);
 		Registry.register(Registry.ITEM,
 				new Identifier(MODID, path),
-				new BlockItem(block, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+				new BlockItem(block, new FabricItemSettings().group(ITEM_GROUP)));
 	}
 }

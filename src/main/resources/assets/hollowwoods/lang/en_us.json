@@ -10,5 +10,7 @@
   "block.hollowwoods.stripped_hollow_birch_log": "Stripped Hollow Birch Log",
   "block.hollowwoods.stripped_hollow_jungle_log": "Stripped Hollow Jungle Log",
   "block.hollowwoods.stripped_hollow_acacia_log": "Stripped Hollow Acacia Log",
-  "block.hollowwoods.stripped_hollow_dark_oak_log": "Stripped Hollow Dark Oak Log"
+  "block.hollowwoods.stripped_hollow_dark_oak_log": "Stripped Hollow Dark Oak Log",
+
+  "itemGroup.hollowwoods.main": "Hollow Woods"
 }
