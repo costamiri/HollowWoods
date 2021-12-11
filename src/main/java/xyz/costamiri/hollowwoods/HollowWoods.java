@@ -19,12 +19,16 @@ public class HollowWoods implements ModInitializer {
 	public static final HollowLog STRIPPED_HOLLOW_JUNGLE_LOG = new HollowLog();
 	public static final HollowLog STRIPPED_HOLLOW_ACACIA_LOG = new HollowLog();
 	public static final HollowLog STRIPPED_HOLLOW_DARK_OAK_LOG = new HollowLog();
+	public static final HollowLog STRIPPED_HOLLOW_CRIMSON_STEM = new HollowLog();
+	public static final HollowLog STRIPPED_HOLLOW_WARPED_STEM = new HollowLog();
 	public static final HollowLog HOLLOW_OAK_LOG = new HollowLog(STRIPPED_HOLLOW_OAK_LOG);
 	public static final HollowLog HOLLOW_SPRUCE_LOG = new HollowLog(STRIPPED_HOLLOW_SPRUCE_LOG);
 	public static final HollowLog HOLLOW_BIRCH_LOG = new HollowLog(STRIPPED_HOLLOW_BIRCH_LOG);
 	public static final HollowLog HOLLOW_JUNGLE_LOG = new HollowLog(STRIPPED_HOLLOW_JUNGLE_LOG);
 	public static final HollowLog HOLLOW_ACACIA_LOG = new HollowLog(STRIPPED_HOLLOW_ACACIA_LOG);
 	public static final HollowLog HOLLOW_DARK_OAK_LOG = new HollowLog(STRIPPED_HOLLOW_DARK_OAK_LOG);
+	public static final HollowLog HOLLOW_CRIMSON_STEM = new HollowLog(STRIPPED_HOLLOW_CRIMSON_STEM);
+	public static final HollowLog HOLLOW_WARPED_STEM = new HollowLog(STRIPPED_HOLLOW_WARPED_STEM);
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "main"),
 			() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG));
@@ -37,12 +41,16 @@ public class HollowWoods implements ModInitializer {
 		registerBlock(HOLLOW_JUNGLE_LOG, "hollow_jungle_log");
 		registerBlock(HOLLOW_ACACIA_LOG, "hollow_acacia_log");
 		registerBlock(HOLLOW_DARK_OAK_LOG, "hollow_dark_oak_log");
+		registerBlock(HOLLOW_CRIMSON_STEM, "hollow_crimson_stem");
+		registerBlock(HOLLOW_WARPED_STEM, "hollow_warped_stem");
 		registerBlock(STRIPPED_HOLLOW_OAK_LOG, "stripped_hollow_oak_log");
 		registerBlock(STRIPPED_HOLLOW_SPRUCE_LOG, "stripped_hollow_spruce_log");
 		registerBlock(STRIPPED_HOLLOW_BIRCH_LOG, "stripped_hollow_birch_log");
 		registerBlock(STRIPPED_HOLLOW_JUNGLE_LOG, "stripped_hollow_jungle_log");
 		registerBlock(STRIPPED_HOLLOW_ACACIA_LOG, "stripped_hollow_acacia_log");
 		registerBlock(STRIPPED_HOLLOW_DARK_OAK_LOG, "stripped_hollow_dark_oak_log");
+		registerBlock(STRIPPED_HOLLOW_CRIMSON_STEM, "stripped_hollow_crimson_stem");
+		registerBlock(STRIPPED_HOLLOW_WARPED_STEM, "stripped_hollow_warped_stem");
 	}
 
 	private void registerBlock(Block block, String path) {
