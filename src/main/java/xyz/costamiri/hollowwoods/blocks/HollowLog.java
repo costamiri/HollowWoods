@@ -122,7 +122,7 @@ public class HollowLog extends PillarBlock implements Waterloggable {
 
         if (!world.isClient) {
             world.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0f, 1.0f);
-            world.setBlockState(pos, strippedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
+            world.setBlockState(pos, strippedBlock.getDefaultState().with(AXIS, state.get(AXIS)).with(WATERLOGGED, state.get(WATERLOGGED)));
             itemStack.damage(1, player, e -> e.sendToolBreakStatus(hand));
         }
 
