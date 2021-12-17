@@ -1,0 +1,20 @@
+{
+  "block.hollowwoods.hollow_oak_log": "Hohler Eichenstamm",
+  "block.hollowwoods.hollow_spruce_log": "Hohler Fichtenstamm",
+  "block.hollowwoods.hollow_birch_log": "Hohler Birkenstamm",
+  "block.hollowwoods.hollow_jungle_log": "Hohler Tropenbaumstamm",
+  "block.hollowwoods.hollow_acacia_log": "Hohler Akazienstamm",
+  "block.hollowwoods.hollow_dark_oak_log": "Hohler Schwarzeichenstamm",
+  "block.hollowwoods.hollow_crimson_stem": "Hohler Karmesinstiel",
+  "block.hollowwoods.hollow_warped_stem": "Hohler Wirrstiel",
+  "block.hollowwoods.stripped_hollow_oak_log": "Entrindeter Hohler Eichenstamm",
+  "block.hollowwoods.stripped_hollow_spruce_log": "Entrindeter Hohler Fichtenstamm",
+  "block.hollowwoods.stripped_hollow_birch_log": "Entrindeter Hohler Birkenstamm",
+  "block.hollowwoods.stripped_hollow_jungle_log": "Entrindeter Hohler Tropenbaumstamm",
+  "block.hollowwoods.stripped_hollow_acacia_log": "Entrindeter Hohler Akazienstamm",
+  "block.hollowwoods.stripped_hollow_dark_oak_log": "Entrindeter Hohler Schwarzeichenstamm",
+  "block.hollowwoods.stripped_hollow_crimson_stem": "Entrindeter Hohler Karmesinstiel",
+  "block.hollowwoods.stripped_hollow_warped_stem": "Entrindeter Hohler Wirrstiel",
+
+  "itemGroup.hollowwoods.main": "Hollow Woods"
+}
