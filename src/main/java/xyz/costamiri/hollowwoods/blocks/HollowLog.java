@@ -105,6 +105,12 @@ public class HollowLog extends PillarBlock implements Waterloggable {
 
     @Override
     @SuppressWarnings("deprecation")
+    public VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
+        return VoxelShapes.fullCube();
+    }
+
+    @Override
+    @SuppressWarnings("deprecation")
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (strippedBlock == null) {
             return ActionResult.PASS;
