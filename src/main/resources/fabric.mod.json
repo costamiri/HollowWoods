@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "hollowwoods",
-  "version": "${version}",
+  "version": "1.0.1",
 
   "name": "HollowWoods",
   "description": "Carve your logs and hollow them out!",
@@ -9,11 +9,11 @@
     "Costamiri"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/costamiri",
+    "sources": "https://github.com/costamiri/HollowWoods"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPL-3.0-or-later",
   "icon": "assets/hollowwoods/icon.png",
 
   "environment": "*",
