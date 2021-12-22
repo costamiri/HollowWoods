@@ -1,8 +1,9 @@
 {
-  "parent": "hollowwoods:block/hollow_oak_log",
+  "parent": "hollowwoods:block/hollow_log",
   "textures": {
     "outside": "minecraft:block/dark_oak_log",
-	"top": "minecraft:block/dark_oak_log_top",
-	"inside": "minecraft:block/stripped_dark_oak_log"
+    "top": "minecraft:block/dark_oak_log_top",
+    "inside": "minecraft:block/stripped_dark_oak_log",
+    "particle": "minecraft:block/dark_oak_log"
   }
 }

@@ -1,8 +1,9 @@
 {
-  "parent": "hollowwoods:block/hollow_oak_log",
+  "parent": "hollowwoods:block/hollow_log",
   "textures": {
     "outside": "minecraft:block/warped_stem",
-	"top": "minecraft:block/warped_stem_top",
-	"inside": "minecraft:block/stripped_warped_stem"
+    "top": "minecraft:block/warped_stem_top",
+    "inside": "minecraft:block/stripped_warped_stem",
+    "particle": "minecraft:block/warped_stem"
   }
 }
