@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:stripped_hollow_spruce_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft:spruce_planks",
+    "count": 2
+  }
+}

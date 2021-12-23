@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:stripped_hollow_acacia_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_planks",
+    "count": 2
+  }
+}
