@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "betternether:nether_sakura_stripped_log"
-  },
-  "result": "hollowwoods:stripped_hollow_nether_sakura_log",
-  "count": 1
-}

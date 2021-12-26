@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "betternether:willow_log"
-  },
-  "result": "hollowwoods:hollow_willow_log",
-  "count": 1
-}

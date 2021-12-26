@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "betternether:rubeus_log"
-  },
-  "result": "hollowwoods:hollow_rubeus_log",
-  "count": 1
-}
