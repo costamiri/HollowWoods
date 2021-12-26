@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "betternether:block/striped_rubeus_log_side",
+    "top": "betternether:block/striped_rubeus_log_top",
+    "inside": "betternether:block/striped_rubeus_log_side",
+    "particle": "betternether:block/striped_rubeus_log_side"
+  }
+}

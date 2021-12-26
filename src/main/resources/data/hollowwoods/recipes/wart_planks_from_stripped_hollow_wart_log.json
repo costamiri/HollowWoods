@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:stripped_hollow_wart_log"
+    }
+  ],
+  "result": {
+    "item": "betternether:wart_planks",
+    "count": 2
+  }
+}

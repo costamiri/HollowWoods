@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:stripped_hollow_mushroom_fir_log"
+    }
+  ],
+  "result": {
+    "item": "betternether:mushroom_fir_planks",
+    "count": 2
+  }
+}

@@ -1,10 +1,10 @@
-package xyz.costamiri.hollowwoods.registry;
+package xyz.costamiri.hollowwoods.registry.block;
 
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 
-public class VanillaBlocks {
+public class VanillaMinecraft {
     public static final HollowLog STRIPPED_HOLLOW_OAK_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_SPRUCE_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_BIRCH_LOG = new HollowLog();

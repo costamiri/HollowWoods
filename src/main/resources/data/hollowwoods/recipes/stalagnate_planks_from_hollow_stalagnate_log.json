@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:hollow_stalagnate_log"
+    }
+  ],
+  "result": {
+    "item": "betternether:stalagnate_planks",
+    "count": 2
+  }
+}

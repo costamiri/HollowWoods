@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:stripped_hollow_willow_log"
+    }
+  ],
+  "result": {
+    "item": "betternether:willow_planks",
+    "count": 2
+  }
+}

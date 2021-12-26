@@ -5,15 +5,17 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import xyz.costamiri.hollowwoods.registry.VanillaBlocks;
+import xyz.costamiri.hollowwoods.registry.block.BetterNether;
+import xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft;
 
-import static xyz.costamiri.hollowwoods.registry.VanillaBlocks.STRIPPED_HOLLOW_OAK_LOG;
+import static xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft.STRIPPED_HOLLOW_OAK_LOG;
 
 public class HollowWoods implements ModInitializer {
 	public static final String MODID = "hollowwoods";
@@ -24,10 +26,12 @@ public class HollowWoods implements ModInitializer {
 
 	private static final FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
 	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
+	private static final FabricLoader fabricLoader = FabricLoader.getInstance();
 
 	@Override
 	public void onInitialize() {
-		VanillaBlocks.init();
+		VanillaMinecraft.init();
+		if (fabricLoader.isModLoaded("betternether")) BetterNether.init();
 	}
 
 	public static void registerBlock(Block block, String path) {

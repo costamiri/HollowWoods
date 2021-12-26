@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "betternether:mushroom_fir_stripped_log"
+  },
+  "result": "hollowwoods:stripped_hollow_mushroom_fir_log",
+  "count": 1
+}

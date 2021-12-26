@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "betternether:stalagnate_log"
+  },
+  "result": "hollowwoods:hollow_stalagnate_log",
+  "count": 1
+}

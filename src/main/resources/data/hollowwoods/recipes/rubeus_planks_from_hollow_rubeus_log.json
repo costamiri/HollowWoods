@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hollowwoods:hollow_rubeus_log"
+    }
+  ],
+  "result": {
+    "item": "betternether:rubeus_planks",
+    "count": 2
+  }
+}
