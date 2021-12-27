@@ -25,7 +25,7 @@ public class BetterNether {
 
     public static void init() {
         registerBlocks();
-        addRecipes();
+        addAllRecipes();
     }
 
     public static void registerBlocks() {
@@ -45,20 +45,26 @@ public class BetterNether {
         registerLog(STRIPPED_HOLLOW_WILLOW_LOG, "stripped_hollow_willow_log", false);
     }
 
-    public static void addRecipes() {
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_anchor_tree_log"), new Identifier("betternether", "anchor_tree_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_mushroom_fir_log"), new Identifier("betternether", "mushroom_fir_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_nether_sakura_log"), new Identifier("betternether", "nether_sakura_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_rubeus_log"), new Identifier("betternether", "rubeus_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_stalagnate_log"), new Identifier("betternether", "stalagnate_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_wart_log"), new Identifier("betternether", "wart_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "hollow_willow_log"), new Identifier("betternether", "willow_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_anchor_tree_log"), new Identifier("betternether", "anchor_tree_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_mushroom_fir_log"), new Identifier("betternether", "mushroom_fir_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_nether_sakura_log"), new Identifier("betternether", "nether_sakura_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_rubeus_log"), new Identifier("betternether", "rubeus_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_stalagnate_log"), new Identifier("betternether", "stalagnate_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_wart_log"), new Identifier("betternether", "wart_planks"), 2);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, "stripped_hollow_willow_log"), new Identifier("betternether", "willow_planks"), 2);
+    public static void addAllRecipes() {
+        addRecipesForLog("hollow_anchor_tree_log", "anchor_tree_log", "anchor_tree_planks");
+        addRecipesForLog("hollow_mushroom_fir_log", "mushroom_fir_log", "mushroom_fir_planks");
+        addRecipesForLog("hollow_nether_sakura_log", "nether_sakura_log", "nether_sakura_planks");
+        addRecipesForLog("hollow_rubeus_log", "rubeus_log", "rubeus_planks");
+        addRecipesForLog("hollow_stalagnate_log", "stalagnate_log", "stalagnate_planks");
+        addRecipesForLog("hollow_wart_log", "wart_log", "wart_planks");
+        addRecipesForLog("hollow_willow_log", "willow_log", "willow_planks");
+
+        addRecipesForLog("stripped_hollow_anchor_tree_log", "anchor_tree_stripped_log", "anchor_tree_planks");
+        addRecipesForLog("stripped_hollow_mushroom_fir_log", "mushroom_fir_stripped_log", "mushroom_fir_planks");
+        addRecipesForLog("stripped_hollow_nether_sakura_log", "nether_sakura_stripped_log", "nether_sakura_planks");
+        addRecipesForLog("stripped_hollow_rubeus_log", "rubeus_stripped_log", "rubeus_planks");
+        addRecipesForLog("stripped_hollow_stalagnate_log", "stalagnate_stripped_log", "stalagnate_planks");
+        addRecipesForLog("stripped_hollow_wart_log", "wart_stripped_log", "wart_planks");
+        addRecipesForLog("stripped_hollow_willow_log", "willow_stripped_log", "willow_planks");
+    }
+
+    private static void addRecipesForLog(String hwLog, String bnLog, String bnPlanks) {
+        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, hwLog), new Identifier("betternether", bnPlanks), 2);
+        HWRecipeManager.addStonecuttingRecipe(new Identifier("betternether", bnLog), new Identifier(MODID, hwLog), 1);
     }
 }
