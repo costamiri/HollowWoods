@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -15,11 +16,16 @@ import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.registry.block.BetterNether;
 import xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft.STRIPPED_HOLLOW_OAK_LOG;
 
 public class HollowWoods implements ModInitializer {
 	public static final String MODID = "hollowwoods";
 
+	public static final Map<String, Block> blocks = new HashMap<>();
+	public static final Map<String, Item> items = new HashMap<>();
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "main"),
 			() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG));
@@ -35,12 +41,9 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void registerBlock(Block block, String path) {
-		Registry.register(Registry.BLOCK,
-				new Identifier(MODID, path),
-				block);
-		Registry.register(Registry.ITEM,
-				new Identifier(MODID, path),
-				new BlockItem(block, new FabricItemSettings().group(ITEM_GROUP)));
+		blocks.put(path, Registry.register(Registry.BLOCK, new Identifier(MODID, path), block));
+		items.put(path, Registry.register(Registry.ITEM, new Identifier(MODID, path),
+				new BlockItem(block, new FabricItemSettings().group(ITEM_GROUP))));
 	}
 
 	public static void registerLog(Block block, String path, boolean flammable) {
