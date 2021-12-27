@@ -4,6 +4,7 @@
   "package": "xyz.costamiri.hollowwoods.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "LootManagerMixin",
     "RecipeManagerMixin"
   ],
   "client": [],

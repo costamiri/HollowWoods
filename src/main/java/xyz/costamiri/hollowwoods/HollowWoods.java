@@ -13,6 +13,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.registry.block.BetterNether;
 import xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft;
 
@@ -48,6 +49,7 @@ public class HollowWoods implements ModInitializer {
 
 	public static void registerLog(Block block, String path, boolean flammable) {
 		registerBlock(block, path);
+		HWLootManager.addLootTable(new Identifier(MODID, path));
 		fuelRegistry.add(block, 300);
 		if (flammable) flammableRegistry.add(block, 5, 5);
 	}
