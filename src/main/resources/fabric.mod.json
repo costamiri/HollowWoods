@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "xyz.costamiri.hollowwoods.HollowWoods"
+    ],
+    "client": [
+      "xyz.costamiri.hollowwoods.HollowWoodsClient"
     ]
   },
   "mixins": [
