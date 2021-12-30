@@ -16,6 +16,20 @@
     "hollowwoods:stripped_hollow_acacia_log",
     "hollowwoods:stripped_hollow_dark_oak_log",
     "hollowwoods:stripped_hollow_crimson_stem",
-    "hollowwoods:stripped_hollow_warped_stem"
+    "hollowwoods:stripped_hollow_warped_stem",
+    { "id": "hollowwoods:hollow_anchor_tree_log", "required": false },
+    { "id": "hollowwoods:hollow_mushroom_fir_log", "required": false },
+    { "id": "hollowwoods:hollow_nether_sakura_log", "required": false },
+    { "id": "hollowwoods:hollow_rubeus_log", "required": false },
+    { "id": "hollowwoods:hollow_stalagnate_log", "required": false },
+    { "id": "hollowwoods:hollow_wart_log", "required": false },
+    { "id": "hollowwoods:hollow_willow_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_anchor_tree_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_mushroom_fir_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_nether_sakura_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_rubeus_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_stalagnate_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_wart_log", "required": false },
+    { "id": "hollowwoods:stripped_hollow_willow_log", "required": false }
   ]
 }
