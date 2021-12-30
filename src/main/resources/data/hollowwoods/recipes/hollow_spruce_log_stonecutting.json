@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:spruce_log"
-  },
-  "result": "hollowwoods:hollow_spruce_log",
-  "count": 1
-}
