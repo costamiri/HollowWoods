@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "#hollowwoods:hollow_oak_logs",
+    "#hollowwoods:hollow_spruce_logs",
+    "#hollowwoods:hollow_birch_logs",
+    "#hollowwoods:hollow_jungle_logs",
+    "#hollowwoods:hollow_acacia_logs",
+    "#hollowwoods:hollow_dark_oak_logs",
+    "#hollowwoods:hollow_crimson_stems",
+    "#hollowwoods:hollow_warped_stems",
+    { "id": "#hollowwoods:betternether/hollow_anchor_tree_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_mushroom_fir_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_nether_sakura_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_rubeus_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_stalagnate_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_wart_logs", "required": false },
+    { "id": "#hollowwoods:betternether/hollow_willow_logs", "required": false }
+  ]
+}

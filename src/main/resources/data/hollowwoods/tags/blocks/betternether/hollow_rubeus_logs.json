@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "hollowwoods:betternether/hollow_rubeus_log", "required": false },
+    { "id": "hollowwoods:betternether/stripped_hollow_rubeus_log", "required": false }
+  ]
+}
