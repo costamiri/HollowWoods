@@ -18,7 +18,15 @@ public abstract class HollowBlocks {
     public abstract void addRecipes();
 
     public void addLogRecipes(String hwLog, String otherLog, String otherPlanks) {
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, hwLog), new Identifier(this.namespace, otherPlanks), 2);
+        addShapelessPlanksRecipe(hwLog, otherPlanks);
+        addStonecuttingLogRecipe(hwLog, otherLog);
+    }
+
+    public void addShapelessPlanksRecipe(String hwLog, String planks) {
+        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, hwLog), new Identifier(this.namespace, planks), 2);
+    }
+
+    public void addStonecuttingLogRecipe(String hwLog, String otherLog) {
         HWRecipeManager.addStonecuttingRecipe(new Identifier(this.namespace, otherLog), new Identifier(MODID, hwLog), 1);
     }
 }
