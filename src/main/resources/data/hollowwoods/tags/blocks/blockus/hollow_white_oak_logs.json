@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "hollowwoods:blockus/hollow_white_oak_log", "required": false },
+    { "id": "hollowwoods:blockus/stripped_hollow_white_oak_log", "required": false }
+  ]
+}

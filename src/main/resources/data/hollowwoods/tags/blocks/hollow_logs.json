@@ -15,6 +15,7 @@
     { "id": "#hollowwoods:betternether/hollow_rubeus_logs", "required": false },
     { "id": "#hollowwoods:betternether/hollow_stalagnate_logs", "required": false },
     { "id": "#hollowwoods:betternether/hollow_wart_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_willow_logs", "required": false }
+    { "id": "#hollowwoods:betternether/hollow_willow_logs", "required": false },
+    { "id": "#hollowwoods:blockus/hollow_white_oak_logs", "required": false }
   ]
 }
