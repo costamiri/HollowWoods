@@ -34,5 +34,8 @@
   "block.hollowwoods.blockus.hollow_white_oak_log": "Hollow White Oak Log",
   "block.hollowwoods.blockus.stripped_hollow_white_oak_log": "Stripped Hollow White Oak Log",
 
+  "block.hollowwoods.architects_palette.hollow_twisted_log": "Hollow Twisted Log",
+  "block.hollowwoods.architects_palette.stripped_hollow_twisted_log": "Stripped Hollow Twisted Log",
+
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }

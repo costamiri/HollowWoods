@@ -9,13 +9,14 @@
     "#hollowwoods:hollow_dark_oak_logs",
     "#hollowwoods:hollow_crimson_stems",
     "#hollowwoods:hollow_warped_stems",
-    { "id": "#hollowwoods:betternether/hollow_anchor_tree_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_mushroom_fir_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_nether_sakura_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_rubeus_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_stalagnate_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_wart_logs", "required": false },
-    { "id": "#hollowwoods:betternether/hollow_willow_logs", "required": false },
-    { "id": "#hollowwoods:blockus/hollow_white_oak_logs", "required": false }
+    "#hollowwoods:betternether/hollow_anchor_tree_logs",
+    "#hollowwoods:betternether/hollow_mushroom_fir_logs",
+    "#hollowwoods:betternether/hollow_nether_sakura_logs",
+    "#hollowwoods:betternether/hollow_rubeus_logs",
+    "#hollowwoods:betternether/hollow_stalagnate_logs",
+    "#hollowwoods:betternether/hollow_wart_logs",
+    "#hollowwoods:betternether/hollow_willow_logs",
+    "#hollowwoods:blockus/hollow_white_oak_logs",
+    "#hollowwoods:architects_palette/hollow_twisted_logs"
   ]
 }

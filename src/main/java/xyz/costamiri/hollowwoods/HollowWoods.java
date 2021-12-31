@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
+import xyz.costamiri.hollowwoods.registry.block.ArchitectsPalette;
 import xyz.costamiri.hollowwoods.registry.block.BetterNether;
 import xyz.costamiri.hollowwoods.registry.block.Blockus;
 import xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft;
@@ -41,6 +42,7 @@ public class HollowWoods implements ModInitializer {
 		new VanillaMinecraft().init();
 		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
 		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
+		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
 	}
 
 	public static void registerBlock(Block block, String path) {
