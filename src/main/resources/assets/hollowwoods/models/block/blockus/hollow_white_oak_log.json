@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "blockus:block/white_oak_log",
+    "top": "blockus:block/white_oak_log_top",
+    "inside": "blockus:block/stripped_white_oak_log",
+    "particle": "blockus:block/white_oak_log"
+  }
+}
