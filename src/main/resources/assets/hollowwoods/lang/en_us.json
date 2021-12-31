@@ -37,8 +37,8 @@
   "block.hollowwoods.architects_palette.hollow_twisted_log": "Hollow Twisted Log",
   "block.hollowwoods.architects_palette.stripped_hollow_twisted_log": "Stripped Hollow Twisted Log",
 
-  "block.hollowwoods.croptopia.cinnamon_log": "Hollow Cinnamon Log",
-  "block.hollowwoods.croptopia.stripped_cinnamon_log": "Stripped Hollow Cinnamon Log",
+  "block.hollowwoods.croptopia.hollow_cinnamon_log": "Hollow Cinnamon Log",
+  "block.hollowwoods.croptopia.stripped_hollow_cinnamon_log": "Stripped Hollow Cinnamon Log",
 
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }
