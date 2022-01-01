@@ -43,6 +43,7 @@ public class HollowWoods implements ModInitializer {
 		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
 		if (fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
+		if (fabricLoader.isModLoaded("promenade")) new Promenade().init();
 
 		modifyAxeBlockStripping();
 	}
@@ -65,7 +66,7 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void modifyAxeBlockStripping() {
-		ImmutableMap.Builder<Block, Block> map = new ImmutableMap.Builder<Block, Block>();
+		ImmutableMap.Builder<Block, Block> map = new ImmutableMap.Builder<>();
 		map.putAll(AxeAccess.getStrippedBlocks());
 		map.putAll(HollowBlocks.strippedBlocks);
 		AxeAccess.setStrippedBlocks(map.build());

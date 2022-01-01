@@ -40,5 +40,10 @@
   "block.hollowwoods.croptopia.hollow_cinnamon_log": "Hollow Cinnamon Log",
   "block.hollowwoods.croptopia.stripped_hollow_cinnamon_log": "Stripped Hollow Cinnamon Log",
 
+  "block.hollowwoods.promenade.hollow_cherry_oak_log": "Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.hollow_palm_log": "Hollow Palm Log",
+  "block.hollowwoods.promenade.stripped_hollow_cherry_oak_log": "Stripped Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.stripped_hollow_palm_log": "Stripped Hollow Palm Log",
+
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }
