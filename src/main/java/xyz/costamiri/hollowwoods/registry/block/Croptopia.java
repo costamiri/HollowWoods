@@ -14,13 +14,13 @@ public class Croptopia extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        registerLog(HOLLOW_CINNAMON_LOG, "croptopia/hollow_cinnamon_log");
-        registerLog(STRIPPED_HOLLOW_CINNAMON_LOG, "croptopia/stripped_hollow_cinnamon_log");
+        _registerLog(HOLLOW_CINNAMON_LOG, "hollow_cinnamon_log");
+        _registerLog(STRIPPED_HOLLOW_CINNAMON_LOG, "stripped_hollow_cinnamon_log");
     }
 
     @Override
     public void addRecipes() {
-        addStonecuttingLogRecipe("croptopia/hollow_cinnamon_log", "cinnamon_log");
-        addStonecuttingLogRecipe("croptopia/stripped_hollow_cinnamon_log", "stripped_cinnamon_log");
+        addStonecuttingLogRecipe("hollow_cinnamon_log", "cinnamon_log");
+        addStonecuttingLogRecipe("stripped_hollow_cinnamon_log", "stripped_cinnamon_log");
     }
 }
