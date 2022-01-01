@@ -4,7 +4,7 @@ import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class ArchitectsPalette extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_TWISTED_LOG = new HollowLog(STRIPPED_HOLLOW_TWISTED_LOG);
+    public static final HollowLog HOLLOW_TWISTED_LOG = new HollowLog();
 
     public ArchitectsPalette() {
         this.namespace = "architects_palette";
@@ -14,6 +14,11 @@ public class ArchitectsPalette extends HollowBlocks {
     public void registerBlocks() {
         _registerLog(HOLLOW_TWISTED_LOG, "hollow_twisted_log");
         _registerLog(STRIPPED_HOLLOW_TWISTED_LOG, "stripped_hollow_twisted_log");
+    }
+
+    @Override
+    public void addBlocksStripping() {
+        addStrippedBlock(HOLLOW_TWISTED_LOG, STRIPPED_HOLLOW_TWISTED_LOG);
     }
 
     @Override

@@ -6,7 +6,7 @@ import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 
 public class Croptopia extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_CINNAMON_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_CINNAMON_LOG = new HollowLog(STRIPPED_HOLLOW_CINNAMON_LOG);
+    public static final HollowLog HOLLOW_CINNAMON_LOG = new HollowLog();
 
     public Croptopia() {
         this.namespace = "croptopia";
@@ -16,6 +16,11 @@ public class Croptopia extends HollowBlocks {
     public void registerBlocks() {
         _registerLog(HOLLOW_CINNAMON_LOG, "hollow_cinnamon_log");
         _registerLog(STRIPPED_HOLLOW_CINNAMON_LOG, "stripped_hollow_cinnamon_log");
+    }
+
+    @Override
+    public void addBlocksStripping() {
+        addStrippedBlock(HOLLOW_CINNAMON_LOG, STRIPPED_HOLLOW_CINNAMON_LOG);
     }
 
     @Override

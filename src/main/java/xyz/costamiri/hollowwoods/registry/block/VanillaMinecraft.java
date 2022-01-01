@@ -11,14 +11,14 @@ public class VanillaMinecraft extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_DARK_OAK_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_CRIMSON_STEM = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_WARPED_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_OAK_LOG = new HollowLog(STRIPPED_HOLLOW_OAK_LOG);
-    public static final HollowLog HOLLOW_SPRUCE_LOG = new HollowLog(STRIPPED_HOLLOW_SPRUCE_LOG);
-    public static final HollowLog HOLLOW_BIRCH_LOG = new HollowLog(STRIPPED_HOLLOW_BIRCH_LOG);
-    public static final HollowLog HOLLOW_JUNGLE_LOG = new HollowLog(STRIPPED_HOLLOW_JUNGLE_LOG);
-    public static final HollowLog HOLLOW_ACACIA_LOG = new HollowLog(STRIPPED_HOLLOW_ACACIA_LOG);
-    public static final HollowLog HOLLOW_DARK_OAK_LOG = new HollowLog(STRIPPED_HOLLOW_DARK_OAK_LOG);
-    public static final HollowLog HOLLOW_CRIMSON_STEM = new HollowLog(STRIPPED_HOLLOW_CRIMSON_STEM);
-    public static final HollowLog HOLLOW_WARPED_STEM = new HollowLog(STRIPPED_HOLLOW_WARPED_STEM);
+    public static final HollowLog HOLLOW_OAK_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_SPRUCE_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_BIRCH_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_JUNGLE_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_ACACIA_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_DARK_OAK_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_CRIMSON_STEM = new HollowLog();
+    public static final HollowLog HOLLOW_WARPED_STEM = new HollowLog();
 
     public VanillaMinecraft() {
         this.namespace = "minecraft";
@@ -42,6 +42,18 @@ public class VanillaMinecraft extends HollowBlocks {
         _registerLog(STRIPPED_HOLLOW_DARK_OAK_LOG, "stripped_hollow_dark_oak_log");
         _registerLog(STRIPPED_HOLLOW_CRIMSON_STEM, "stripped_hollow_crimson_stem", false);
         _registerLog(STRIPPED_HOLLOW_WARPED_STEM, "stripped_hollow_warped_stem", false);
+    }
+
+    @Override
+    public void addBlocksStripping() {
+        addStrippedBlock(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
+        addStrippedBlock(HOLLOW_SPRUCE_LOG, STRIPPED_HOLLOW_SPRUCE_LOG);
+        addStrippedBlock(HOLLOW_BIRCH_LOG, STRIPPED_HOLLOW_BIRCH_LOG);
+        addStrippedBlock(HOLLOW_JUNGLE_LOG, STRIPPED_HOLLOW_JUNGLE_LOG);
+        addStrippedBlock(HOLLOW_ACACIA_LOG, STRIPPED_HOLLOW_ACACIA_LOG);
+        addStrippedBlock(HOLLOW_DARK_OAK_LOG, STRIPPED_HOLLOW_DARK_OAK_LOG);
+        addStrippedBlock(HOLLOW_CRIMSON_STEM, STRIPPED_HOLLOW_CRIMSON_STEM);
+        addStrippedBlock(HOLLOW_WARPED_STEM, STRIPPED_HOLLOW_WARPED_STEM);
     }
 
     @Override

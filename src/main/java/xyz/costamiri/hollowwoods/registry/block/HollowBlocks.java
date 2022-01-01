@@ -4,14 +4,19 @@ import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 
 public abstract class HollowBlocks {
     public String namespace;
+    public static Map<Block, Block> strippedBlocks = new HashMap<>();
 
     public void init() {
         registerBlocks();
+        addBlocksStripping();
         addRecipes();
     }
 
@@ -23,6 +28,12 @@ public abstract class HollowBlocks {
 
     public void _registerLog(Block block, String blockName) {
         _registerLog(block, blockName, true);
+    }
+
+    public abstract void addBlocksStripping();
+
+    public void addStrippedBlock(Block from, Block to) {
+        strippedBlocks.put(from, to);
     }
 
     public abstract void addRecipes();

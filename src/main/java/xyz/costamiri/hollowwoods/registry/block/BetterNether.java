@@ -10,13 +10,13 @@ public class BetterNether extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_STALAGNATE_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_WART_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_WILLOW_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_ANCHOR_TREE_LOG = new HollowLog(STRIPPED_HOLLOW_ANCHOR_TREE_LOG);
-    public static final HollowLog HOLLOW_MUSHROOM_FIR_LOG = new HollowLog(STRIPPED_HOLLOW_MUSHROOM_FIR_LOG);
-    public static final HollowLog HOLLOW_NETHER_SAKURA_LOG = new HollowLog(STRIPPED_HOLLOW_NETHER_SAKURA_LOG);
-    public static final HollowLog HOLLOW_RUBEUS_LOG = new HollowLog(STRIPPED_HOLLOW_RUBEUS_LOG);
-    public static final HollowLog HOLLOW_STALAGNATE_LOG = new HollowLog(STRIPPED_HOLLOW_STALAGNATE_LOG);
-    public static final HollowLog HOLLOW_WART_LOG = new HollowLog(STRIPPED_HOLLOW_WART_LOG);
-    public static final HollowLog HOLLOW_WILLOW_LOG = new HollowLog(STRIPPED_HOLLOW_WILLOW_LOG);
+    public static final HollowLog HOLLOW_ANCHOR_TREE_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_MUSHROOM_FIR_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_NETHER_SAKURA_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_RUBEUS_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_STALAGNATE_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_WART_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_WILLOW_LOG = new HollowLog();
 
     public BetterNether() {
         this.namespace = "betternether";
@@ -38,6 +38,17 @@ public class BetterNether extends HollowBlocks {
         _registerLog(STRIPPED_HOLLOW_STALAGNATE_LOG, "stripped_hollow_stalagnate_log", false);
         _registerLog(STRIPPED_HOLLOW_WART_LOG, "stripped_hollow_wart_log", false);
         _registerLog(STRIPPED_HOLLOW_WILLOW_LOG, "stripped_hollow_willow_log", false);
+    }
+
+    @Override
+    public void addBlocksStripping() {
+        addStrippedBlock(HOLLOW_ANCHOR_TREE_LOG, STRIPPED_HOLLOW_ANCHOR_TREE_LOG);
+        addStrippedBlock(HOLLOW_MUSHROOM_FIR_LOG, STRIPPED_HOLLOW_MUSHROOM_FIR_LOG);
+        addStrippedBlock(HOLLOW_NETHER_SAKURA_LOG, STRIPPED_HOLLOW_NETHER_SAKURA_LOG);
+        addStrippedBlock(HOLLOW_RUBEUS_LOG, STRIPPED_HOLLOW_RUBEUS_LOG);
+        addStrippedBlock(HOLLOW_STALAGNATE_LOG, STRIPPED_HOLLOW_STALAGNATE_LOG);
+        addStrippedBlock(HOLLOW_WART_LOG, STRIPPED_HOLLOW_WART_LOG);
+        addStrippedBlock(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
     }
 
     @Override
