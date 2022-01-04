@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:terrestria/hollow_japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_japanese_maple_log",
+      "required": false
+    }
+  ]
+}

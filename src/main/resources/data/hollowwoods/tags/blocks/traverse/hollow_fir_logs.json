@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:traverse/hollow_fir_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:traverse/stripped_hollow_fir_log",
+      "required": false
+    }
+  ]
+}

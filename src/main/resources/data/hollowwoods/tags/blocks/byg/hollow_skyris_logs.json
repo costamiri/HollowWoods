@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:byg/hollow_skyris_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_skyris_log",
+      "required": false
+    }
+  ]
+}
