@@ -45,5 +45,8 @@
   "block.hollowwoods.promenade.stripped_hollow_cherry_oak_log": "Stripped Hollow Cherry Oak Log",
   "block.hollowwoods.promenade.stripped_hollow_palm_log": "Stripped Hollow Palm Log",
 
+  "block.hollowwoods.traverse.hollow_fir_log": "Hollow Fir Log",
+  "block.hollowwoods.traverse.stripped_hollow_fir_log": "Stripped Hollow Fir Log",
+
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }

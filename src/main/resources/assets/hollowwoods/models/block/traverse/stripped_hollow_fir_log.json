@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "traverse:block/stripped_fir_log",
+    "top": "traverse:block/stripped_fir_log_top",
+    "inside": "traverse:block/stripped_fir_log",
+    "particle": "traverse:block/stripped_fir_log"
+  }
+}
