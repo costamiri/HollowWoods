@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "byg:block/stripped_zelkova_log",
+    "top": "byg:block/stripped_zelkova_log_top",
+    "inside": "byg:block/stripped_zelkova_log",
+    "particle": "byg:block/stripped_zelkova_log"
+  }
+}
