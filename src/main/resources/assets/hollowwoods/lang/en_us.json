@@ -48,5 +48,20 @@
   "block.hollowwoods.traverse.hollow_fir_log": "Hollow Fir Log",
   "block.hollowwoods.traverse.stripped_hollow_fir_log": "Stripped Hollow Fir Log",
 
+  "block.hollowwoods.terrestria.hollow_cypress_log": "Hollow Cypress Log",
+  "block.hollowwoods.terrestria.hollow_hemlock_log": "Hollow Hemlock Log",
+  "block.hollowwoods.terrestria.hollow_japanese_maple_log": "Hollow Japanese Maple Log",
+  "block.hollowwoods.terrestria.hollow_rainbow_eucalyptus_log": "Hollow Rainbow Eucalyptus Log",
+  "block.hollowwoods.terrestria.hollow_redwood_log": "Hollow Redwood Log",
+  "block.hollowwoods.terrestria.hollow_rubber_log": "Hollow Rubber Log",
+  "block.hollowwoods.terrestria.hollow_willow_log": "Hollow Willow Log",
+  "block.hollowwoods.terrestria.stripped_hollow_cypress_log": "Stripped Hollow Cypress Log",
+  "block.hollowwoods.terrestria.stripped_hollow_hemlock_log": "Stripped Hollow Hemlock Log",
+  "block.hollowwoods.terrestria.stripped_hollow_japanese_maple_log": "Stripped Hollow Japanese Maple Log",
+  "block.hollowwoods.terrestria.stripped_hollow_rainbow_eucalyptus_log": "Stripped Hollow Rainbow Eucalyptus Log",
+  "block.hollowwoods.terrestria.stripped_hollow_redwood_log": "Stripped Hollow Redwood Log",
+  "block.hollowwoods.terrestria.stripped_hollow_rubber_log": "Stripped Hollow Rubber Log",
+  "block.hollowwoods.terrestria.stripped_hollow_willow_log": "Stripped Hollow Willow Log",
+
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }

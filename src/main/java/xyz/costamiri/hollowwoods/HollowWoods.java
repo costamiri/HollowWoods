@@ -45,6 +45,7 @@ public class HollowWoods implements ModInitializer {
 		if (fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
 		if (fabricLoader.isModLoaded("promenade")) new Promenade().init();
 		if (fabricLoader.isModLoaded("traverse")) new Traverse().init();
+		if (fabricLoader.isModLoaded("terrestria")) new Terrestria().init();
 
 		modifyAxeBlockStripping();
 	}
