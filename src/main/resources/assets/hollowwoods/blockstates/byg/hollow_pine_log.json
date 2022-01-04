@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hollowwoods:block/byg/hollow_pine_log",
+      "x": 90,
+      "y": 90,
+      "z": 90
+    },
+    "axis=y": {
+      "model": "hollowwoods:block/byg/hollow_pine_log"
+    },
+    "axis=z": {
+      "model": "hollowwoods:block/byg/hollow_pine_log",
+      "x": 90,
+      "z": 90
+    }
+  }
+}

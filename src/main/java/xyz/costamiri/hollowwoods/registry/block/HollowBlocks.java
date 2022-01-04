@@ -44,7 +44,8 @@ public abstract class HollowBlocks {
     }
 
     public void addShapelessPlanksRecipe(String blockName, String planks) {
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, buildPath(blockName)), new Identifier(this.namespace, planks), 2);
+        Identifier planksId = planks.contains(":") ? new Identifier(planks) : new Identifier(this.namespace, planks);
+        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, buildPath(blockName)), planksId, 2);
     }
 
     public void addStonecuttingLogRecipe(String blockName, String otherLog) {
