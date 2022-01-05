@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:byg/hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_redwood_log",
+      "required": false
+    }
+  ]
+}

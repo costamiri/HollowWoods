@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "promenade:block/cherry_oak_log/side",
+    "top": "promenade:block/cherry_oak_log/top",
+    "inside": "promenade:block/stripped_cherry_oak_log/side",
+    "particle": "promenade:block/cherry_oak_log/side"
+  }
+}

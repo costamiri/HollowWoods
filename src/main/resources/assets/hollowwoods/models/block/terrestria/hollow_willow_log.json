@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "terrestria:block/willow_log",
+    "top": "terrestria:block/willow_log_top",
+    "inside": "terrestria:block/stripped_willow_log",
+    "particle": "terrestria:block/willow_log"
+  }
+}

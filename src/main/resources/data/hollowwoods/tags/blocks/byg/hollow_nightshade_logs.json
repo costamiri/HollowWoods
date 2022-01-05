@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:byg/hollow_nightshade_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_nightshade_log",
+      "required": false
+    }
+  ]
+}

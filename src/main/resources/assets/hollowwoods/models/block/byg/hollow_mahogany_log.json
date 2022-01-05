@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "byg:block/mahogany_log",
+    "top": "byg:block/mahogany_log_top",
+    "inside": "byg:block/stripped_mahogany_log",
+    "particle": "byg:block/mahogany_log"
+  }
+}

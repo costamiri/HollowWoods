@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods;
 
+import com.google.common.collect.ImmutableMap;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -14,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
+import xyz.costamiri.hollowwoods.mixin.AxeAccess;
 import xyz.costamiri.hollowwoods.registry.block.*;
 
 import java.util.HashMap;
@@ -41,6 +43,12 @@ public class HollowWoods implements ModInitializer {
 		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
 		if (fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
+		if (fabricLoader.isModLoaded("promenade")) new Promenade().init();
+		if (fabricLoader.isModLoaded("traverse")) new Traverse().init();
+		if (fabricLoader.isModLoaded("terrestria")) new Terrestria().init();
+		if (fabricLoader.isModLoaded("byg")) new Byg().init();
+
+		modifyAxeBlockStripping();
 	}
 
 	public static void registerBlock(Block block, String path) {
@@ -58,5 +66,12 @@ public class HollowWoods implements ModInitializer {
 
 	public static void registerLog(Block block, String path) {
 		registerLog(block, path, true);
+	}
+
+	public static void modifyAxeBlockStripping() {
+		ImmutableMap.Builder<Block, Block> map = new ImmutableMap.Builder<>();
+		map.putAll(AxeAccess.getStrippedBlocks());
+		map.putAll(HollowBlocks.strippedBlocks);
+		AxeAccess.setStrippedBlocks(map.build());
 	}
 }

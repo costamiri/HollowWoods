@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "hollowwoods:promenade/hollow_cherry_oak_log", "required": false },
+    { "id": "hollowwoods:promenade/stripped_hollow_cherry_oak_log", "required": false }
+  ]
+}

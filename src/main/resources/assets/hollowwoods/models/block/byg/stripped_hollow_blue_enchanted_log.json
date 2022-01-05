@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "byg:block/stripped_blue_enchanted_log",
+    "top": "byg:block/stripped_blue_enchanted_log_top",
+    "inside": "byg:block/stripped_blue_enchanted_log",
+    "particle": "byg:block/stripped_blue_enchanted_log"
+  }
+}
