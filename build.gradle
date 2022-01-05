@@ -16,8 +16,8 @@ repositories {
 	}
 }
 
-minecraft {
-	accessWidener =  file("src/main/resources/hollowwoods.accesswidener")
+loom {
+	accessWidenerPath =  file("src/main/resources/hollowwoods.accesswidener")
 }
 
 dependencies {
