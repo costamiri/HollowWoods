@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hollowwoods:item/iron_hollower"
+  }
+}

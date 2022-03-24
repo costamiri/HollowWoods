@@ -17,11 +17,12 @@ import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
 import xyz.costamiri.hollowwoods.registry.block.*;
+import xyz.costamiri.hollowwoods.registry.item.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static xyz.costamiri.hollowwoods.registry.block.VanillaMinecraft.STRIPPED_HOLLOW_OAK_LOG;
+import static xyz.costamiri.hollowwoods.registry.block.VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG;
 
 public class HollowWoods implements ModInitializer {
 	public static final String MODID = "hollowwoods";
@@ -38,7 +39,8 @@ public class HollowWoods implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		new VanillaMinecraft().init();
+		new VanillaMinecraftBlocks().init();
+		new VanillaMinecraftItems().init();
 		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
 		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
@@ -55,6 +57,10 @@ public class HollowWoods implements ModInitializer {
 		blocks.put(path, Registry.register(Registry.BLOCK, new Identifier(MODID, path), block));
 		items.put(path, Registry.register(Registry.ITEM, new Identifier(MODID, path),
 				new BlockItem(block, new FabricItemSettings().group(ITEM_GROUP))));
+	}
+
+	public static void registerItem(Item item, String path) {
+		items.put(path, Registry.register(Registry.ITEM, new Identifier(MODID, path), item));
 	}
 
 	public static void registerLog(Block block, String path, boolean flammable) {

@@ -145,7 +145,7 @@ public class Byg extends HollowBlocks {
         addStrippedBlock(HOLLOW_SKYRIS_LOG, STRIPPED_HOLLOW_SKYRIS_LOG);
         addStrippedBlock(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
         addStrippedBlock(HOLLOW_WITCH_HAZEL_LOG, STRIPPED_HOLLOW_WITCH_HAZEL_LOG);
-        addStrippedBlock(HOLLOW_WITHERING_OAK_LOG, VanillaMinecraft.STRIPPED_HOLLOW_OAK_LOG);
+        addStrippedBlock(HOLLOW_WITHERING_OAK_LOG, VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG);
         addStrippedBlock(HOLLOW_ZELKOVA_LOG, STRIPPED_HOLLOW_ZELKOVA_LOG);
     }
 

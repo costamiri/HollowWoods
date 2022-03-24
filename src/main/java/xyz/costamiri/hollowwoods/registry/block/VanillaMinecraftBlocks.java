@@ -2,7 +2,7 @@ package xyz.costamiri.hollowwoods.registry.block;
 
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
-public class VanillaMinecraft extends HollowBlocks {
+public class VanillaMinecraftBlocks extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_OAK_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_SPRUCE_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_BIRCH_LOG = new HollowLog();
@@ -20,7 +20,7 @@ public class VanillaMinecraft extends HollowBlocks {
     public static final HollowLog HOLLOW_CRIMSON_STEM = new HollowLog();
     public static final HollowLog HOLLOW_WARPED_STEM = new HollowLog();
 
-    public VanillaMinecraft() {
+    public VanillaMinecraftBlocks() {
         this.namespace = "minecraft";
     }
 

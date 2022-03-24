@@ -117,5 +117,12 @@
   "block.hollowwoods.byg.stripped_hollow_witch_hazel_log": "Stripped Hollow Witch Hazel Log",
   "block.hollowwoods.byg.stripped_hollow_zelkova_log": "Stripped Hollow Zelkova Log",
 
+  "item.hollowwoods.wooden_hollower": "Wooden Hollower",
+  "item.hollowwoods.stone_hollower": "Stone Hollower",
+  "item.hollowwoods.golden_hollower": "Golden Hollower",
+  "item.hollowwoods.iron_hollower": "Iron Hollower",
+  "item.hollowwoods.diamond_hollower": "Diamond Hollower",
+  "item.hollowwoods.netherite_hollower": "Netherite Hollower",
+
   "itemGroup.hollowwoods.main": "Hollow Woods"
 }
