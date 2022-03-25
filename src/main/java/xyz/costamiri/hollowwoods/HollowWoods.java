@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -93,6 +94,10 @@ public class HollowWoods implements ModInitializer {
 			Block hollowedBlock = HollowBlocks.hollowedBlocks.get(Registry.BLOCK.getId(state.getBlock()));
 			if (hollowedBlock == null) return true;
 			world.setBlockState(pos, hollowedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
+			if (!player.isCreative()) {
+				ItemStack planks = new ItemStack(Registry.BLOCK.get(HollowBlocks.planksConversion.get(hollowedBlock)).asItem(), 2);
+				world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), planks));
+			}
 			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 			return false;
 		});
