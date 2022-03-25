@@ -71,21 +71,20 @@ public class BetterNether extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_anchor_tree_log", "anchor_tree_log", "anchor_tree_planks");
-        addLogRecipes("hollow_mushroom_fir_log", "mushroom_fir_log", "mushroom_fir_planks");
-        addLogRecipes("hollow_nether_sakura_log", "nether_sakura_log", "nether_sakura_planks");
-        addLogRecipes("hollow_rubeus_log", "rubeus_log", "rubeus_planks");
-        addLogRecipes("hollow_stalagnate_log", "stalagnate_log", "stalagnate_planks");
-        addLogRecipes("hollow_wart_log", "wart_log", "wart_planks");
-        addLogRecipes("hollow_willow_log", "willow_log", "willow_planks");
-
-        addLogRecipes("stripped_hollow_anchor_tree_log", "anchor_tree_stripped_log", "anchor_tree_planks");
-        addLogRecipes("stripped_hollow_mushroom_fir_log", "mushroom_fir_stripped_log", "mushroom_fir_planks");
-        addLogRecipes("stripped_hollow_nether_sakura_log", "nether_sakura_stripped_log", "nether_sakura_planks");
-        addLogRecipes("stripped_hollow_rubeus_log", "rubeus_stripped_log", "rubeus_planks");
-        addLogRecipes("stripped_hollow_stalagnate_log", "stalagnate_stripped_log", "stalagnate_planks");
-        addLogRecipes("stripped_hollow_wart_log", "wart_stripped_log", "wart_planks");
-        addLogRecipes("stripped_hollow_willow_log", "willow_stripped_log", "willow_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_ANCHOR_TREE_LOG, new Identifier(namespace, "anchor_tree_planks"));
+        planksConversion.put(HOLLOW_MUSHROOM_FIR_LOG, new Identifier(namespace, "mushroom_fir_planks"));
+        planksConversion.put(HOLLOW_NETHER_SAKURA_LOG, new Identifier(namespace, "nether_sakura_planks"));
+        planksConversion.put(HOLLOW_RUBEUS_LOG, new Identifier(namespace, "rubeus_planks"));
+        planksConversion.put(HOLLOW_STALAGNATE_LOG, new Identifier(namespace, "stalagnate_planks"));
+        planksConversion.put(HOLLOW_WART_LOG, new Identifier(namespace, "wart_planks"));
+        planksConversion.put(HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_ANCHOR_TREE_LOG, new Identifier(namespace, "anchor_tree_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_MUSHROOM_FIR_LOG, new Identifier(namespace, "mushroom_fir_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_NETHER_SAKURA_LOG, new Identifier(namespace, "nether_sakura_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_RUBEUS_LOG, new Identifier(namespace, "rubeus_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_STALAGNATE_LOG, new Identifier(namespace, "stalagnate_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WART_LOG, new Identifier(namespace, "wart_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
     }
 }

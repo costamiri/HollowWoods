@@ -32,8 +32,7 @@ public class Croptopia extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addStonecuttingLogRecipe("hollow_cinnamon_log", "cinnamon_log");
-        addStonecuttingLogRecipe("stripped_hollow_cinnamon_log", "stripped_cinnamon_log");
+    public void addPlanksConversion() {
+        // no Planks
     }
 }

@@ -29,8 +29,8 @@ public class ArchitectsPalette extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_twisted_log", "twisted_log", "twisted_planks");
-        addLogRecipes("stripped_hollow_twisted_log", "stripped_twisted_log", "twisted_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_TWISTED_LOG, new Identifier(namespace, "twisted_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_TWISTED_LOG, new Identifier(namespace, "twisted_planks"));
     }
 }

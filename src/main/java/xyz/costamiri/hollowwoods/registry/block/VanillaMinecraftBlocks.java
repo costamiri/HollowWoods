@@ -78,22 +78,22 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_oak_log", "oak_log", "oak_planks");
-        addLogRecipes("hollow_spruce_log", "spruce_log", "spruce_planks");
-        addLogRecipes("hollow_birch_log", "birch_log", "birch_planks");
-        addLogRecipes("hollow_jungle_log", "jungle_log", "jungle_planks");
-        addLogRecipes("hollow_acacia_log", "acacia_log", "acacia_planks");
-        addLogRecipes("hollow_dark_oak_log", "dark_oak_log", "dark_oak_planks");
-        addLogRecipes("hollow_crimson_stem", "crimson_stem", "crimson_planks");
-        addLogRecipes("hollow_warped_stem", "warped_stem", "warped_planks");
-        addLogRecipes("stripped_hollow_oak_log", "stripped_oak_log", "oak_planks");
-        addLogRecipes("stripped_hollow_spruce_log", "stripped_spruce_log", "spruce_planks");
-        addLogRecipes("stripped_hollow_birch_log", "stripped_birch_log", "birch_planks");
-        addLogRecipes("stripped_hollow_jungle_log", "stripped_jungle_log", "jungle_planks");
-        addLogRecipes("stripped_hollow_acacia_log", "stripped_acacia_log", "acacia_planks");
-        addLogRecipes("stripped_hollow_dark_oak_log", "stripped_dark_oak_log", "dark_oak_planks");
-        addLogRecipes("stripped_hollow_crimson_stem", "stripped_crimson_stem", "crimson_planks");
-        addLogRecipes("stripped_hollow_warped_stem", "stripped_warped_stem", "warped_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_OAK_LOG, Registry.BLOCK.getId(Blocks.OAK_PLANKS));
+        planksConversion.put(HOLLOW_SPRUCE_LOG, Registry.BLOCK.getId(Blocks.SPRUCE_PLANKS));
+        planksConversion.put(HOLLOW_BIRCH_LOG, Registry.BLOCK.getId(Blocks.BIRCH_PLANKS));
+        planksConversion.put(HOLLOW_JUNGLE_LOG, Registry.BLOCK.getId(Blocks.JUNGLE_PLANKS));
+        planksConversion.put(HOLLOW_ACACIA_LOG, Registry.BLOCK.getId(Blocks.ACACIA_PLANKS));
+        planksConversion.put(HOLLOW_DARK_OAK_LOG, Registry.BLOCK.getId(Blocks.DARK_OAK_PLANKS));
+        planksConversion.put(HOLLOW_CRIMSON_STEM, Registry.BLOCK.getId(Blocks.CRIMSON_PLANKS));
+        planksConversion.put(HOLLOW_WARPED_STEM, Registry.BLOCK.getId(Blocks.WARPED_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_OAK_LOG, Registry.BLOCK.getId(Blocks.OAK_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_SPRUCE_LOG, Registry.BLOCK.getId(Blocks.SPRUCE_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_BIRCH_LOG, Registry.BLOCK.getId(Blocks.BIRCH_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_JUNGLE_LOG, Registry.BLOCK.getId(Blocks.JUNGLE_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_ACACIA_LOG, Registry.BLOCK.getId(Blocks.ACACIA_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_DARK_OAK_LOG, Registry.BLOCK.getId(Blocks.DARK_OAK_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_CRIMSON_STEM, Registry.BLOCK.getId(Blocks.CRIMSON_PLANKS));
+        planksConversion.put(STRIPPED_HOLLOW_WARPED_STEM, Registry.BLOCK.getId(Blocks.WARPED_PLANKS));
     }
 }

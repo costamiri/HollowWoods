@@ -2,23 +2,25 @@ package xyz.costamiri.hollowwoods.registry.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 
 public abstract class HollowBlocks {
     public String namespace;
     public static Map<Block, Block> strippedBlocks = new HashMap<>();
     public static Map<Identifier, Block> hollowedBlocks = new HashMap<>();
+    public static Map<Block, Identifier> planksConversion = new HashMap<>();
 
     public void init() {
         registerBlocks();
         addBlocksStripping();
         addBlocksHollowing();
+        addPlanksConversion();
         addRecipes();
     }
 
@@ -40,20 +42,11 @@ public abstract class HollowBlocks {
 
     public abstract void addBlocksHollowing();
 
-    public abstract void addRecipes();
+    public abstract void addPlanksConversion();
 
-    public void addLogRecipes(String blockName, String otherLog, String otherPlanks) {
-        addShapelessPlanksRecipe(blockName, otherPlanks);
-        addStonecuttingLogRecipe(blockName, otherLog);
-    }
-
-    public void addShapelessPlanksRecipe(String blockName, String planks) {
-        Identifier planksId = planks.contains(":") ? new Identifier(planks) : new Identifier(this.namespace, planks);
-        HWRecipeManager.addShapelessRecipe(new Identifier(MODID, buildPath(blockName)), planksId, 2);
-    }
-
-    public void addStonecuttingLogRecipe(String blockName, String otherLog) {
-        HWRecipeManager.addStonecuttingRecipe(new Identifier(this.namespace, otherLog), new Identifier(MODID, buildPath(blockName)), 1);
+    public void addRecipes() {
+        hollowedBlocks.forEach((logId, block) -> HWRecipeManager.addStonecuttingRecipe(logId, Registry.BLOCK.getId(block), 1));
+        planksConversion.forEach((block, planksId) -> HWRecipeManager.addShapelessRecipe(Registry.BLOCK.getId(block), planksId, 2));
     }
 
     public String buildPath(String blockName) {

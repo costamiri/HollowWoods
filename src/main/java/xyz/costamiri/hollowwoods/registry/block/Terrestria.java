@@ -71,26 +71,20 @@ public class Terrestria extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_cypress_log", "cypress_log", "cypress_planks");
-        addLogRecipes("stripped_hollow_cypress_log", "stripped_cypress_log", "cypress_planks");
-
-        addLogRecipes("hollow_hemlock_log", "hemlock_log", "hemlock_planks");
-        addLogRecipes("stripped_hollow_hemlock_log", "stripped_hemlock_log", "hemlock_planks");
-
-        addLogRecipes("hollow_japanese_maple_log", "japanese_maple_log", "japanese_maple_planks");
-        addLogRecipes("stripped_hollow_japanese_maple_log", "stripped_japanese_maple_log", "japanese_maple_planks");
-
-        addLogRecipes("hollow_rainbow_eucalyptus_log", "rainbow_eucalyptus_log", "rainbow_eucalyptus_planks");
-        addLogRecipes("stripped_hollow_rainbow_eucalyptus_log", "stripped_rainbow_eucalyptus_log", "rainbow_eucalyptus_planks");
-
-        addLogRecipes("hollow_redwood_log", "redwood_log", "redwood_planks");
-        addLogRecipes("stripped_hollow_redwood_log", "stripped_redwood_log", "redwood_planks");
-
-        addLogRecipes("hollow_rubber_log", "rubber_log", "rubber_planks");
-        addLogRecipes("stripped_hollow_rubber_log", "stripped_rubber_log", "rubber_planks");
-
-        addLogRecipes("hollow_willow_log", "willow_log", "willow_planks");
-        addLogRecipes("stripped_hollow_willow_log", "stripped_willow_log", "willow_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        planksConversion.put(HOLLOW_HEMLOCK_LOG, new Identifier(namespace, "hemlock_planks"));
+        planksConversion.put(HOLLOW_JAPANESE_MAPLE_LOG, new Identifier(namespace, "japanese_maple_planks"));
+        planksConversion.put(HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(namespace, "rainbow_eucalyptus_planks"));
+        planksConversion.put(HOLLOW_REDWOOD_LOG, new Identifier(namespace, "redwood_planks"));
+        planksConversion.put(HOLLOW_RUBBER_LOG, new Identifier(namespace, "rubber_planks"));
+        planksConversion.put(HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_HEMLOCK_LOG, new Identifier(namespace, "hemlock_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_JAPANESE_MAPLE_LOG, new Identifier(namespace, "japanese_maple_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(namespace, "rainbow_eucalyptus_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_REDWOOD_LOG, new Identifier(namespace, "redwood_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_RUBBER_LOG, new Identifier(namespace, "rubber_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
     }
 }

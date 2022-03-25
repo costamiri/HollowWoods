@@ -209,85 +209,59 @@ public class Byg extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_aspen_log", "aspen_log", "aspen_planks");
-        addLogRecipes("stripped_hollow_aspen_log", "stripped_aspen_log", "aspen_planks");
-
-        addLogRecipes("hollow_baobab_log", "baobab_log", "baobab_planks");
-        addLogRecipes("stripped_hollow_baobab_log", "stripped_baobab_log", "baobab_planks");
-
-        addLogRecipes("hollow_blue_enchanted_log", "blue_enchanted_log", "blue_enchanted_planks");
-        addLogRecipes("stripped_hollow_blue_enchanted_log", "stripped_blue_enchanted_log", "blue_enchanted_planks");
-
-        addLogRecipes("hollow_cherry_log", "cherry_log", "cherry_planks");
-        addLogRecipes("stripped_hollow_cherry_log", "stripped_cherry_log", "cherry_planks");
-
-        addLogRecipes("hollow_cika_log", "cika_log", "cika_planks");
-        addLogRecipes("stripped_hollow_cika_log", "stripped_cika_log", "cika_planks");
-
-        addLogRecipes("hollow_cypress_log", "cypress_log", "cypress_planks");
-        addLogRecipes("stripped_hollow_cypress_log", "stripped_cypress_log", "cypress_planks");
-
-        addLogRecipes("hollow_ebony_log", "ebony_log", "ebony_planks");
-        addLogRecipes("stripped_hollow_ebony_log", "stripped_ebony_log", "ebony_planks");
-
-        addLogRecipes("hollow_ether_log", "ether_log", "ether_planks");
-        addLogRecipes("stripped_hollow_ether_log", "stripped_ether_log", "ether_planks");
-
-        addLogRecipes("hollow_fir_log", "fir_log", "fir_planks");
-        addLogRecipes("stripped_hollow_fir_log", "stripped_fir_log", "fir_planks");
-
-        addLogRecipes("hollow_green_enchanted_log", "green_enchanted_log", "green_enchanted_planks");
-        addLogRecipes("stripped_hollow_green_enchanted_log", "stripped_green_enchanted_log", "green_enchanted_planks");
-
-        addLogRecipes("hollow_holly_log", "holly_log", "holly_planks");
-        addLogRecipes("stripped_hollow_holly_log", "stripped_holly_log", "holly_planks");
-
-        addLogRecipes("hollow_jacaranda_log", "jacaranda_log", "jacaranda_planks");
-        addLogRecipes("stripped_hollow_jacaranda_log", "stripped_jacaranda_log", "jacaranda_planks");
-
-        addLogRecipes("hollow_lament_log", "lament_log", "lament_planks");
-        addLogRecipes("stripped_hollow_lament_log", "stripped_lament_log", "lament_planks");
-
-        addLogRecipes("hollow_mahogany_log", "mahogany_log", "mahogany_planks");
-        addLogRecipes("stripped_hollow_mahogany_log", "stripped_mahogany_log", "mahogany_planks");
-
-        addLogRecipes("hollow_mangrove_log", "mangrove_log", "mangrove_planks");
-        addLogRecipes("stripped_hollow_mangrove_log", "stripped_mangrove_log", "mangrove_planks");
-
-        addLogRecipes("hollow_maple_log", "maple_log", "maple_planks");
-        addLogRecipes("stripped_hollow_maple_log", "stripped_maple_log", "maple_planks");
-
-        addLogRecipes("hollow_nightshade_log", "nightshade_log", "nightshade_planks");
-        addLogRecipes("stripped_hollow_nightshade_log", "stripped_nightshade_log", "nightshade_planks");
-
-        addLogRecipes("hollow_palm_log", "palm_log", "palm_planks");
-        addLogRecipes("stripped_hollow_palm_log", "stripped_palm_log", "palm_planks");
-
-        addLogRecipes("hollow_palo_verde_log", "palo_verde_log", "minecraft:birch_planks");
-        addLogRecipes("stripped_hollow_palo_verde_log", "stripped_palo_verde_log", "minecraft:birch_planks");
-
-        addLogRecipes("hollow_pine_log", "pine_log", "pine_planks");
-        addLogRecipes("stripped_hollow_pine_log", "stripped_pine_log", "pine_planks");
-
-        addLogRecipes("hollow_rainbow_eucalyptus_log", "rainbow_eucalyptus_log", "rainbow_eucalyptus_planks");
-        addLogRecipes("stripped_hollow_rainbow_eucalyptus_log", "stripped_rainbow_eucalyptus_log", "rainbow_eucalyptus_planks");
-
-        addLogRecipes("hollow_redwood_log", "redwood_log", "redwood_planks");
-        addLogRecipes("stripped_hollow_redwood_log", "stripped_redwood_log", "redwood_planks");
-
-        addLogRecipes("hollow_skyris_log", "skyris_log", "skyris_planks");
-        addLogRecipes("stripped_hollow_skyris_log", "stripped_skyris_log", "skyris_planks");
-
-        addLogRecipes("hollow_willow_log", "willow_log", "willow_planks");
-        addLogRecipes("stripped_hollow_willow_log", "stripped_willow_log", "willow_planks");
-
-        addLogRecipes("hollow_witch_hazel_log", "witch_hazel_log", "witch_hazel_planks");
-        addLogRecipes("stripped_hollow_witch_hazel_log", "stripped_witch_hazel_log", "witch_hazel_planks");
-
-        addLogRecipes("hollow_withering_oak_log", "withering_oak_log", "minecraft:oak_planks");
-
-        addLogRecipes("hollow_zelkova_log", "zelkova_log", "zelkova_planks");
-        addLogRecipes("stripped_hollow_zelkova_log", "stripped_zelkova_log", "zelkova_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_ASPEN_LOG, new Identifier(namespace, "aspen_planks"));
+        planksConversion.put(HOLLOW_BAOBAB_LOG, new Identifier(namespace, "baobab_planks"));
+        planksConversion.put(HOLLOW_BLUE_ENCHANTED_LOG, new Identifier(namespace, "blue_enchanted_planks"));
+        planksConversion.put(HOLLOW_CHERRY_LOG, new Identifier(namespace, "cherry_planks"));
+        planksConversion.put(HOLLOW_CIKA_LOG, new Identifier(namespace, "cika_planks"));
+        planksConversion.put(HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        planksConversion.put(HOLLOW_EBONY_LOG, new Identifier(namespace, "ebony_planks"));
+        planksConversion.put(HOLLOW_ETHER_LOG, new Identifier(namespace, "ether_planks"));
+        planksConversion.put(HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
+        planksConversion.put(HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(namespace, "green_enchanted_planks"));
+        planksConversion.put(HOLLOW_HOLLY_LOG, new Identifier(namespace, "holly_planks"));
+        planksConversion.put(HOLLOW_JACARANDA_LOG, new Identifier(namespace, "jacaranda_planks"));
+        planksConversion.put(HOLLOW_LAMENT_LOG, new Identifier(namespace, "lament_planks"));
+        planksConversion.put(HOLLOW_MAHOGANY_LOG, new Identifier(namespace, "mahogany_planks"));
+        planksConversion.put(HOLLOW_MANGROVE_LOG, new Identifier(namespace, "mangrove_planks"));
+        planksConversion.put(HOLLOW_MAPLE_LOG, new Identifier(namespace, "maple_planks"));
+        planksConversion.put(HOLLOW_NIGHTSHADE_LOG, new Identifier(namespace, "nightshade_planks"));
+        planksConversion.put(HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
+        planksConversion.put(HOLLOW_PALO_VERDE_LOG, new Identifier("minecraft", "birch_planks"));
+        planksConversion.put(HOLLOW_PINE_LOG, new Identifier(namespace, "pine_planks"));
+        planksConversion.put(HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(namespace, "rainbow_eucalyptus_planks"));
+        planksConversion.put(HOLLOW_REDWOOD_LOG, new Identifier(namespace, "redwood_planks"));
+        planksConversion.put(HOLLOW_SKYRIS_LOG, new Identifier(namespace, "skyris_planks"));
+        planksConversion.put(HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
+        planksConversion.put(HOLLOW_WITCH_HAZEL_LOG, new Identifier(namespace, "witch_hazel_planks"));
+        planksConversion.put(HOLLOW_WITHERING_OAK_LOG, new Identifier("minecraft", "oak_planks"));
+        planksConversion.put(HOLLOW_ZELKOVA_LOG, new Identifier(namespace, "zelkova_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_ASPEN_LOG, new Identifier(namespace, "aspen_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_BAOBAB_LOG, new Identifier(namespace, "baobab_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG, new Identifier(namespace, "blue_enchanted_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_CHERRY_LOG, new Identifier(namespace, "cherry_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_CIKA_LOG, new Identifier(namespace, "cika_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_EBONY_LOG, new Identifier(namespace, "ebony_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_ETHER_LOG, new Identifier(namespace, "ether_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(namespace, "green_enchanted_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_HOLLY_LOG, new Identifier(namespace, "holly_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_JACARANDA_LOG, new Identifier(namespace, "jacaranda_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_LAMENT_LOG, new Identifier(namespace, "lament_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_MAHOGANY_LOG, new Identifier(namespace, "mahogany_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_MANGROVE_LOG, new Identifier(namespace, "mangrove_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_MAPLE_LOG, new Identifier(namespace, "maple_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_NIGHTSHADE_LOG, new Identifier(namespace, "nightshade_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_PALO_VERDE_LOG, new Identifier("minecraft", "birch_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_PINE_LOG, new Identifier(namespace, "pine_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(namespace, "rainbow_eucalyptus_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_REDWOOD_LOG, new Identifier(namespace, "redwood_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_SKYRIS_LOG, new Identifier(namespace, "skyris_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WILLOW_LOG, new Identifier(namespace, "willow_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WITCH_HAZEL_LOG, new Identifier(namespace, "witch_hazel_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_ZELKOVA_LOG, new Identifier(namespace, "zelkova_planks"));
     }
 }

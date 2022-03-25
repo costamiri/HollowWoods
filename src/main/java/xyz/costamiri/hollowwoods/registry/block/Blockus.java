@@ -29,8 +29,8 @@ public class Blockus extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_white_oak_log", "white_oak_log", "white_oak_planks");
-        addLogRecipes("stripped_hollow_white_oak_log", "stripped_white_oak_log", "white_oak_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_WHITE_OAK_LOG, new Identifier(namespace, "white_oak_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_WHITE_OAK_LOG, new Identifier(namespace, "white_oak_planks"));
     }
 }

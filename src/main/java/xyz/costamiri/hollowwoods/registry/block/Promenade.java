@@ -36,10 +36,10 @@ public class Promenade extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_cherry_oak_log", "cherry_oak_log", "cherry_oak_planks");
-        addLogRecipes("hollow_palm_log", "palm_log", "palm_planks");
-        addLogRecipes("stripped_hollow_cherry_oak_log", "stripped_cherry_oak_log", "cherry_oak_planks");
-        addLogRecipes("stripped_hollow_palm_log", "stripped_palm_log", "palm_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_CHERRY_OAK_LOG, new Identifier(namespace, "cherry_oak_planks"));
+        planksConversion.put(HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_CHERRY_OAK_LOG, new Identifier(namespace, "cherry_oak_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
     }
 }

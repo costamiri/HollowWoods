@@ -29,8 +29,8 @@ public class Traverse extends HollowBlocks {
     }
 
     @Override
-    public void addRecipes() {
-        addLogRecipes("hollow_fir_log", "fir_log", "fir_planks");
-        addLogRecipes("stripped_hollow_fir_log", "stripped_fir_log", "fir_planks");
+    public void addPlanksConversion() {
+        planksConversion.put(HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
     }
 }
