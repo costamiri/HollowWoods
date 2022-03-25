@@ -96,7 +96,7 @@ public class HollowWoods implements ModInitializer {
 			world.setBlockState(pos, hollowedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
 			if (!player.isCreative()) {
 				ItemStack planks = new ItemStack(Registry.BLOCK.get(HollowBlocks.planksConversion.get(hollowedBlock)).asItem(), 2);
-				world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), planks));
+				world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, planks));
 			}
 			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 			return false;
