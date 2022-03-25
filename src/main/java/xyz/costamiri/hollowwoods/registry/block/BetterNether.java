@@ -43,13 +43,13 @@ public class BetterNether extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_ANCHOR_TREE_LOG, STRIPPED_HOLLOW_ANCHOR_TREE_LOG);
-        addStrippedBlock(HOLLOW_MUSHROOM_FIR_LOG, STRIPPED_HOLLOW_MUSHROOM_FIR_LOG);
-        addStrippedBlock(HOLLOW_NETHER_SAKURA_LOG, STRIPPED_HOLLOW_NETHER_SAKURA_LOG);
-        addStrippedBlock(HOLLOW_RUBEUS_LOG, STRIPPED_HOLLOW_RUBEUS_LOG);
-        addStrippedBlock(HOLLOW_STALAGNATE_LOG, STRIPPED_HOLLOW_STALAGNATE_LOG);
-        addStrippedBlock(HOLLOW_WART_LOG, STRIPPED_HOLLOW_WART_LOG);
-        addStrippedBlock(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
+        strippedBlocks.put(HOLLOW_ANCHOR_TREE_LOG, STRIPPED_HOLLOW_ANCHOR_TREE_LOG);
+        strippedBlocks.put(HOLLOW_MUSHROOM_FIR_LOG, STRIPPED_HOLLOW_MUSHROOM_FIR_LOG);
+        strippedBlocks.put(HOLLOW_NETHER_SAKURA_LOG, STRIPPED_HOLLOW_NETHER_SAKURA_LOG);
+        strippedBlocks.put(HOLLOW_RUBEUS_LOG, STRIPPED_HOLLOW_RUBEUS_LOG);
+        strippedBlocks.put(HOLLOW_STALAGNATE_LOG, STRIPPED_HOLLOW_STALAGNATE_LOG);
+        strippedBlocks.put(HOLLOW_WART_LOG, STRIPPED_HOLLOW_WART_LOG);
+        strippedBlocks.put(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
     }
 
     @Override

@@ -19,7 +19,7 @@ public class Traverse extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_FIR_LOG, STRIPPED_HOLLOW_FIR_LOG);
+        strippedBlocks.put(HOLLOW_FIR_LOG, STRIPPED_HOLLOW_FIR_LOG);
     }
 
     @Override

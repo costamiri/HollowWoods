@@ -22,7 +22,7 @@ public class Croptopia extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_CINNAMON_LOG, STRIPPED_HOLLOW_CINNAMON_LOG);
+        strippedBlocks.put(HOLLOW_CINNAMON_LOG, STRIPPED_HOLLOW_CINNAMON_LOG);
     }
 
     @Override

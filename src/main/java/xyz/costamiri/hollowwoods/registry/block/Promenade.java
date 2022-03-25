@@ -23,8 +23,8 @@ public class Promenade extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_CHERRY_OAK_LOG, STRIPPED_HOLLOW_CHERRY_OAK_LOG);
-        addStrippedBlock(HOLLOW_PALM_LOG, STRIPPED_HOLLOW_PALM_LOG);
+        strippedBlocks.put(HOLLOW_CHERRY_OAK_LOG, STRIPPED_HOLLOW_CHERRY_OAK_LOG);
+        strippedBlocks.put(HOLLOW_PALM_LOG, STRIPPED_HOLLOW_PALM_LOG);
     }
 
     @Override

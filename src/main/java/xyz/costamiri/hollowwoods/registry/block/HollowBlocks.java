@@ -36,10 +36,6 @@ public abstract class HollowBlocks {
 
     public abstract void addBlocksStripping();
 
-    public void addStrippedBlock(Block from, Block to) {
-        strippedBlocks.put(from, to);
-    }
-
     public abstract void addBlocksHollowing();
 
     public abstract void addPlanksConversion();

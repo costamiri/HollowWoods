@@ -19,7 +19,7 @@ public class ArchitectsPalette extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_TWISTED_LOG, STRIPPED_HOLLOW_TWISTED_LOG);
+        strippedBlocks.put(HOLLOW_TWISTED_LOG, STRIPPED_HOLLOW_TWISTED_LOG);
     }
 
     @Override

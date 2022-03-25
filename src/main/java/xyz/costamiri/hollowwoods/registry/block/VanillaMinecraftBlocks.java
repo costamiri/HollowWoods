@@ -48,14 +48,14 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
-        addStrippedBlock(HOLLOW_SPRUCE_LOG, STRIPPED_HOLLOW_SPRUCE_LOG);
-        addStrippedBlock(HOLLOW_BIRCH_LOG, STRIPPED_HOLLOW_BIRCH_LOG);
-        addStrippedBlock(HOLLOW_JUNGLE_LOG, STRIPPED_HOLLOW_JUNGLE_LOG);
-        addStrippedBlock(HOLLOW_ACACIA_LOG, STRIPPED_HOLLOW_ACACIA_LOG);
-        addStrippedBlock(HOLLOW_DARK_OAK_LOG, STRIPPED_HOLLOW_DARK_OAK_LOG);
-        addStrippedBlock(HOLLOW_CRIMSON_STEM, STRIPPED_HOLLOW_CRIMSON_STEM);
-        addStrippedBlock(HOLLOW_WARPED_STEM, STRIPPED_HOLLOW_WARPED_STEM);
+        strippedBlocks.put(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
+        strippedBlocks.put(HOLLOW_SPRUCE_LOG, STRIPPED_HOLLOW_SPRUCE_LOG);
+        strippedBlocks.put(HOLLOW_BIRCH_LOG, STRIPPED_HOLLOW_BIRCH_LOG);
+        strippedBlocks.put(HOLLOW_JUNGLE_LOG, STRIPPED_HOLLOW_JUNGLE_LOG);
+        strippedBlocks.put(HOLLOW_ACACIA_LOG, STRIPPED_HOLLOW_ACACIA_LOG);
+        strippedBlocks.put(HOLLOW_DARK_OAK_LOG, STRIPPED_HOLLOW_DARK_OAK_LOG);
+        strippedBlocks.put(HOLLOW_CRIMSON_STEM, STRIPPED_HOLLOW_CRIMSON_STEM);
+        strippedBlocks.put(HOLLOW_WARPED_STEM, STRIPPED_HOLLOW_WARPED_STEM);
     }
 
     public void addBlocksHollowing() {

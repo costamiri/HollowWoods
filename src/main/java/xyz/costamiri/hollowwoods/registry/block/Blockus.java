@@ -19,7 +19,7 @@ public class Blockus extends HollowBlocks {
 
     @Override
     public void addBlocksStripping() {
-        addStrippedBlock(HOLLOW_WHITE_OAK_LOG, STRIPPED_HOLLOW_WHITE_OAK_LOG);
+        strippedBlocks.put(HOLLOW_WHITE_OAK_LOG, STRIPPED_HOLLOW_WHITE_OAK_LOG);
     }
 
     @Override
