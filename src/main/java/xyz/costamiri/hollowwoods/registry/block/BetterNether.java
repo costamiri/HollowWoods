@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class BetterNether extends HollowBlocks {
@@ -49,6 +50,24 @@ public class BetterNether extends HollowBlocks {
         addStrippedBlock(HOLLOW_STALAGNATE_LOG, STRIPPED_HOLLOW_STALAGNATE_LOG);
         addStrippedBlock(HOLLOW_WART_LOG, STRIPPED_HOLLOW_WART_LOG);
         addStrippedBlock(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
+    }
+
+    @Override
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(new Identifier(namespace, "anchor_tree_log"), HOLLOW_ANCHOR_TREE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "mushroom_fir_log"), HOLLOW_MUSHROOM_FIR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "nether_sakura_log"), HOLLOW_NETHER_SAKURA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "rubeus_log"), HOLLOW_RUBEUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stalagnate_log"), HOLLOW_STALAGNATE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "wart_log"), HOLLOW_WART_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "willow_log"), HOLLOW_WILLOW_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "anchor_tree_stripped_log"), STRIPPED_HOLLOW_ANCHOR_TREE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "mushroom_fir_stripped_log"), STRIPPED_HOLLOW_MUSHROOM_FIR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "nether_sakura_stripped_log"), STRIPPED_HOLLOW_NETHER_SAKURA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "rubeus_stripped_log"), STRIPPED_HOLLOW_RUBEUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stalagnate_stripped_log"), STRIPPED_HOLLOW_STALAGNATE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "wart_stripped_log"), STRIPPED_HOLLOW_WART_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "willow_stripped_log"), STRIPPED_HOLLOW_WILLOW_LOG);
     }
 
     @Override

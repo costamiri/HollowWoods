@@ -1,5 +1,7 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class VanillaMinecraftBlocks extends HollowBlocks {
@@ -54,6 +56,25 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
         addStrippedBlock(HOLLOW_DARK_OAK_LOG, STRIPPED_HOLLOW_DARK_OAK_LOG);
         addStrippedBlock(HOLLOW_CRIMSON_STEM, STRIPPED_HOLLOW_CRIMSON_STEM);
         addStrippedBlock(HOLLOW_WARPED_STEM, STRIPPED_HOLLOW_WARPED_STEM);
+    }
+
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.OAK_LOG), HOLLOW_OAK_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.SPRUCE_LOG), HOLLOW_SPRUCE_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.BIRCH_LOG), HOLLOW_BIRCH_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.JUNGLE_LOG), HOLLOW_JUNGLE_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.ACACIA_LOG), HOLLOW_ACACIA_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.DARK_OAK_LOG), HOLLOW_DARK_OAK_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.CRIMSON_STEM), HOLLOW_CRIMSON_STEM);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.WARPED_STEM), HOLLOW_WARPED_STEM);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_OAK_LOG), STRIPPED_HOLLOW_OAK_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_SPRUCE_LOG), STRIPPED_HOLLOW_SPRUCE_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_BIRCH_LOG), STRIPPED_HOLLOW_BIRCH_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_JUNGLE_LOG), STRIPPED_HOLLOW_JUNGLE_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_ACACIA_LOG), STRIPPED_HOLLOW_ACACIA_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_DARK_OAK_LOG), STRIPPED_HOLLOW_DARK_OAK_LOG);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_CRIMSON_STEM), STRIPPED_HOLLOW_CRIMSON_STEM);
+        hollowedBlocks.put(Registry.BLOCK.getId(Blocks.STRIPPED_WARPED_STEM), STRIPPED_HOLLOW_WARPED_STEM);
     }
 
     @Override

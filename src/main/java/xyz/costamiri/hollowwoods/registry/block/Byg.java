@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class Byg extends HollowBlocks {
@@ -147,6 +148,64 @@ public class Byg extends HollowBlocks {
         addStrippedBlock(HOLLOW_WITCH_HAZEL_LOG, STRIPPED_HOLLOW_WITCH_HAZEL_LOG);
         addStrippedBlock(HOLLOW_WITHERING_OAK_LOG, VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG);
         addStrippedBlock(HOLLOW_ZELKOVA_LOG, STRIPPED_HOLLOW_ZELKOVA_LOG);
+    }
+
+    @Override
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(new Identifier(namespace, "aspen_log"), HOLLOW_ASPEN_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "baobab_log"), HOLLOW_BAOBAB_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "blue_enchanted_log"), HOLLOW_BLUE_ENCHANTED_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "cherry_log"), HOLLOW_CHERRY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "cika_log"), HOLLOW_CIKA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "cypress_log"), HOLLOW_CYPRESS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "ebony_log"), HOLLOW_EBONY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "ether_log"), HOLLOW_ETHER_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "fir_log"), HOLLOW_FIR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "green_enchanted_log"), HOLLOW_GREEN_ENCHANTED_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "holly_log"), HOLLOW_HOLLY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "jacaranda_log"), HOLLOW_JACARANDA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "lament_log"), HOLLOW_LAMENT_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "mahogany_log"), HOLLOW_MAHOGANY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "mangrove_log"), HOLLOW_MANGROVE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "maple_log"), HOLLOW_MAPLE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "nightshade_log"), HOLLOW_NIGHTSHADE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "palm_log"), HOLLOW_PALM_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "palo_verde_log"), HOLLOW_PALO_VERDE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "pine_log"), HOLLOW_PINE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "rainbow_eucalyptus_log"), HOLLOW_RAINBOW_EUCALYPTUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "redwood_log"), HOLLOW_REDWOOD_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "skyris_log"), HOLLOW_SKYRIS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "willow_log"), HOLLOW_WILLOW_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "witch_hazel_log"), HOLLOW_WITCH_HAZEL_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "withering_oak_log"), HOLLOW_WITHERING_OAK_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "zelkova_log"), HOLLOW_ZELKOVA_LOG);
+
+        hollowedBlocks.put(new Identifier(namespace, "stripped_aspen_log"), STRIPPED_HOLLOW_ASPEN_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_baobab_log"), STRIPPED_HOLLOW_BAOBAB_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_blue_enchanted_log"), STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_cherry_log"), STRIPPED_HOLLOW_CHERRY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_cika_log"), STRIPPED_HOLLOW_CIKA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_cypress_log"), STRIPPED_HOLLOW_CYPRESS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_ebony_log"), STRIPPED_HOLLOW_EBONY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_ether_log"), STRIPPED_HOLLOW_ETHER_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_fir_log"), STRIPPED_HOLLOW_FIR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_green_enchanted_log"), STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_holly_log"), STRIPPED_HOLLOW_HOLLY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_jacaranda_log"), STRIPPED_HOLLOW_JACARANDA_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_lament_log"), STRIPPED_HOLLOW_LAMENT_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_mahogany_log"), STRIPPED_HOLLOW_MAHOGANY_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_mangrove_log"), STRIPPED_HOLLOW_MANGROVE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_maple_log"), STRIPPED_HOLLOW_MAPLE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_nightshade_log"), STRIPPED_HOLLOW_NIGHTSHADE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_palm_log"), STRIPPED_HOLLOW_PALM_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_palo_verde_log"), STRIPPED_HOLLOW_PALO_VERDE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_pine_log"), STRIPPED_HOLLOW_PINE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_rainbow_eucalyptus_log"), STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_redwood_log"), STRIPPED_HOLLOW_REDWOOD_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_skyris_log"), STRIPPED_HOLLOW_SKYRIS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_willow_log"), STRIPPED_HOLLOW_WILLOW_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_witch_hazel_log"), STRIPPED_HOLLOW_WITCH_HAZEL_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_zelkova_log"), STRIPPED_HOLLOW_ZELKOVA_LOG);
     }
 
     @Override

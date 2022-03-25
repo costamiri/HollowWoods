@@ -3,25 +3,29 @@ package xyz.costamiri.hollowwoods;
 import com.google.common.collect.ImmutableMap;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
 import xyz.costamiri.hollowwoods.registry.block.*;
-import xyz.costamiri.hollowwoods.registry.item.*;
+import xyz.costamiri.hollowwoods.registry.item.VanillaMinecraftItems;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static net.minecraft.block.PillarBlock.AXIS;
 import static xyz.costamiri.hollowwoods.registry.block.VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG;
 
 public class HollowWoods implements ModInitializer {
@@ -51,6 +55,7 @@ public class HollowWoods implements ModInitializer {
 		if (fabricLoader.isModLoaded("byg")) new Byg().init();
 
 		modifyAxeBlockStripping();
+		hollowerBlockBreak();
 	}
 
 	public static void registerBlock(Block block, String path) {
@@ -79,5 +84,17 @@ public class HollowWoods implements ModInitializer {
 		map.putAll(AxeAccess.getStrippedBlocks());
 		map.putAll(HollowBlocks.strippedBlocks);
 		AxeAccess.setStrippedBlocks(map.build());
+	}
+
+	public static void hollowerBlockBreak() {
+		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, entity) -> {
+			ItemStack stack = player.getMainHandStack();
+			if (stack.getItem().getClass() != HollowerTool.class) return true;
+			Block hollowedBlock = HollowBlocks.hollowedBlocks.get(Registry.BLOCK.getId(state.getBlock()));
+			if (hollowedBlock == null) return true;
+			world.setBlockState(pos, hollowedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
+			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+			return false;
+		});
 	}
 }

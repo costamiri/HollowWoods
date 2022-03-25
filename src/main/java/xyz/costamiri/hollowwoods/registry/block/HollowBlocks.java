@@ -13,10 +13,12 @@ import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 public abstract class HollowBlocks {
     public String namespace;
     public static Map<Block, Block> strippedBlocks = new HashMap<>();
+    public static Map<Identifier, Block> hollowedBlocks = new HashMap<>();
 
     public void init() {
         registerBlocks();
         addBlocksStripping();
+        addBlocksHollowing();
         addRecipes();
     }
 
@@ -36,6 +38,8 @@ public abstract class HollowBlocks {
         strippedBlocks.put(from, to);
     }
 
+    public abstract void addBlocksHollowing();
+
     public abstract void addRecipes();
 
     public void addLogRecipes(String blockName, String otherLog, String otherPlanks) {
@@ -52,7 +56,7 @@ public abstract class HollowBlocks {
         HWRecipeManager.addStonecuttingRecipe(new Identifier(this.namespace, otherLog), new Identifier(MODID, buildPath(blockName)), 1);
     }
 
-    private String buildPath(String blockName) {
+    public String buildPath(String blockName) {
         return this.namespace.equals("minecraft") ? blockName : "%s/%s".formatted(this.namespace, blockName);
     }
 }

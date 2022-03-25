@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class ArchitectsPalette extends HollowBlocks {
@@ -19,6 +20,12 @@ public class ArchitectsPalette extends HollowBlocks {
     @Override
     public void addBlocksStripping() {
         addStrippedBlock(HOLLOW_TWISTED_LOG, STRIPPED_HOLLOW_TWISTED_LOG);
+    }
+
+    @Override
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(new Identifier(namespace, "twisted_log"), HOLLOW_TWISTED_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_twisted_log"), STRIPPED_HOLLOW_TWISTED_LOG);
     }
 
     @Override

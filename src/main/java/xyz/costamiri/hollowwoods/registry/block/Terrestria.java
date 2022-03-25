@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class Terrestria extends HollowBlocks {
@@ -49,6 +50,24 @@ public class Terrestria extends HollowBlocks {
         addStrippedBlock(HOLLOW_REDWOOD_LOG, STRIPPED_HOLLOW_REDWOOD_LOG);
         addStrippedBlock(HOLLOW_RUBBER_LOG, STRIPPED_HOLLOW_RUBBER_LOG);
         addStrippedBlock(HOLLOW_WILLOW_LOG, STRIPPED_HOLLOW_WILLOW_LOG);
+    }
+
+    @Override
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(new Identifier(namespace, "cypress_log"), HOLLOW_CYPRESS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "hemlock_log"), HOLLOW_HEMLOCK_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "japanese_maple_log"), HOLLOW_JAPANESE_MAPLE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "rainbow_eucalyptus_log"), HOLLOW_RAINBOW_EUCALYPTUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "redwood_log"), HOLLOW_REDWOOD_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "rubber_log"), HOLLOW_RUBBER_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "willow_log"), HOLLOW_WILLOW_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_cypress_log"), STRIPPED_HOLLOW_CYPRESS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_hemlock_log"), STRIPPED_HOLLOW_HEMLOCK_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_japanese_maple_log"), STRIPPED_HOLLOW_JAPANESE_MAPLE_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_rainbow_eucalyptus_log"), STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_redwood_log"), STRIPPED_HOLLOW_REDWOOD_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_rubber_log"), STRIPPED_HOLLOW_RUBBER_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_willow_log"), STRIPPED_HOLLOW_WILLOW_LOG);
     }
 
     @Override

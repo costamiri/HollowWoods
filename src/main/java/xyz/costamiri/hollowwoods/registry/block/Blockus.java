@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 public class Blockus extends HollowBlocks {
@@ -19,6 +20,12 @@ public class Blockus extends HollowBlocks {
     @Override
     public void addBlocksStripping() {
         addStrippedBlock(HOLLOW_WHITE_OAK_LOG, STRIPPED_HOLLOW_WHITE_OAK_LOG);
+    }
+
+    @Override
+    public void addBlocksHollowing() {
+        hollowedBlocks.put(new Identifier(namespace, "white_oak_log"), HOLLOW_WHITE_OAK_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_white_oak_log"), STRIPPED_HOLLOW_WHITE_OAK_LOG);
     }
 
     @Override
