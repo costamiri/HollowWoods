@@ -124,5 +124,7 @@
   "item.hollowwoods.diamond_hollower": "Diamond Hollower",
   "item.hollowwoods.netherite_hollower": "Netherite Hollower",
 
-  "itemGroup.hollowwoods.main": "Hollow Woods"
+  "itemGroup.hollowwoods.main": "Hollow Woods",
+
+  "rei.hollowwoods.hollowing": "Hollower"
 }

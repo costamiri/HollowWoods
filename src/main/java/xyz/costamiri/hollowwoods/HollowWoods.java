@@ -20,6 +20,7 @@ import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
+import xyz.costamiri.hollowwoods.registry.HWRecipeTypes;
 import xyz.costamiri.hollowwoods.registry.block.*;
 import xyz.costamiri.hollowwoods.registry.item.VanillaMinecraftItems;
 
@@ -57,6 +58,7 @@ public class HollowWoods implements ModInitializer {
 
 		modifyAxeBlockStripping();
 		hollowerBlockBreak();
+		HWRecipeTypes.init();
 	}
 
 	public static void registerBlock(Block block, String path) {
