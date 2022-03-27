@@ -1,10 +1,9 @@
-package xyz.costamiri.hollowwoods.registry;
+package xyz.costamiri.hollowwoods.recipes;
 
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import xyz.costamiri.hollowwoods.recipes.HollowerRecipe;
 
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 

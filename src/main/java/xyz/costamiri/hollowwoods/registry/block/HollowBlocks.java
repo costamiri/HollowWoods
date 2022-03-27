@@ -41,8 +41,11 @@ public abstract class HollowBlocks {
     public abstract void addPlanksConversion();
 
     public void addRecipes() {
-        hollowedBlocks.forEach((logId, block) -> HWRecipeManager.addStonecuttingRecipe(logId, Registry.BLOCK.getId(block), 1));
-        planksConversion.forEach((block, planksId) -> HWRecipeManager.addShapelessRecipe(Registry.BLOCK.getId(block), planksId, 2));
+        hollowedBlocks.forEach((fullLogId, hollowLog) -> {
+            Identifier planksId = planksConversion.getOrDefault(hollowLog, new Identifier("minecraft:air"));
+            Identifier hollowLogId = Registry.BLOCK.getId(hollowLog);
+            HWRecipeManager.addHollowLogRecipes(fullLogId, hollowLogId, planksId, 2);
+        });
     }
 
     public String buildPath(String blockName) {

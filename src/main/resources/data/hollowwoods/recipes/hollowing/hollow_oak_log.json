@@ -1,9 +1,0 @@
-{
-  "type": "hollowwoods:hollowing",
-  "log": "oak_log",
-  "hollowed_log": "hollowwoods:hollow_oak_log",
-  "result": {
-    "item": "oak_planks",
-    "count": 2
-  }
-}

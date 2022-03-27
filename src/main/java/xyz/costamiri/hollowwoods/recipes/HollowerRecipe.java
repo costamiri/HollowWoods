@@ -13,7 +13,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
-import xyz.costamiri.hollowwoods.registry.HWRecipeTypes;
 
 public class HollowerRecipe implements Recipe<Inventory> {
     private final Identifier identifier;
