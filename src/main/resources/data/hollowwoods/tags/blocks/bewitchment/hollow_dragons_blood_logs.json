@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:bewitchment/hollow_dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_dragons_blood_log",
+      "required": false
+    }
+  ]
+}

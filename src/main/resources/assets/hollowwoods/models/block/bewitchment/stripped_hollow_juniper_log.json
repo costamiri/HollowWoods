@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "bewitchment:block/stripped_juniper_log",
+    "top": "bewitchment:block/stripped_juniper_log_top",
+    "inside": "bewitchment:block/stripped_juniper_log",
+    "particle": "bewitchment:block/stripped_juniper_log"
+  }
+}

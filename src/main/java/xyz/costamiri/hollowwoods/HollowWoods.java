@@ -47,14 +47,15 @@ public class HollowWoods implements ModInitializer {
 	public void onInitialize() {
 		new VanillaMinecraftBlocks().init();
 		new VanillaMinecraftItems().init();
-		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
-		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
+		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
+		if (fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
+		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
+		if (fabricLoader.isModLoaded("byg")) new Byg().init();
 		if (fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
 		if (fabricLoader.isModLoaded("promenade")) new Promenade().init();
-		if (fabricLoader.isModLoaded("traverse")) new Traverse().init();
 		if (fabricLoader.isModLoaded("terrestria")) new Terrestria().init();
-		if (fabricLoader.isModLoaded("byg")) new Byg().init();
+		if (fabricLoader.isModLoaded("traverse")) new Traverse().init();
 
 		modifyAxeBlockStripping();
 		hollowerBlockBreak();
@@ -96,10 +97,8 @@ public class HollowWoods implements ModInitializer {
 			Block hollowedBlock = HollowBlocks.hollowedBlocks.get(Registry.BLOCK.getId(state.getBlock()));
 			if (hollowedBlock == null) return true;
 			world.setBlockState(pos, hollowedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
-			if (!player.isCreative()) {
-				ItemStack planks = new ItemStack(Registry.BLOCK.get(HollowBlocks.planksConversion.get(hollowedBlock)).asItem(), 2);
-				world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, planks));
-			}
+			ItemStack planks = new ItemStack(Registry.BLOCK.get(HollowBlocks.planksConversion.get(hollowedBlock)).asItem(), 2);
+			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, planks));
 			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 			return false;
 		});

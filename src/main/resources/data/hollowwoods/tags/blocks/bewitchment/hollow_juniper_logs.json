@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:bewitchment/hollow_juniper_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_juniper_log",
+      "required": false
+    }
+  ]
+}
