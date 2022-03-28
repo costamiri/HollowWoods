@@ -51,13 +51,13 @@ public class Bewitchment extends HollowBlocks {
 
     @Override
     public void addPlanksConversion() {
-        planksConversion.put(HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
-        planksConversion.put(HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(namespace, "dragons_blood_planks"));
-        planksConversion.put(HOLLOW_ELDER_LOG, new Identifier(namespace, "elder_planks"));
-        planksConversion.put(HOLLOW_JUNIPER_LOG, new Identifier(namespace, "juniper_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(namespace, "dragons_blood_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_ELDER_LOG, new Identifier(namespace, "elder_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_JUNIPER_LOG, new Identifier(namespace, "juniper_planks"));
+        // planksConversion.put(HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        // planksConversion.put(HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(namespace, "dragons_blood_planks"));
+        // planksConversion.put(HOLLOW_ELDER_LOG, new Identifier(namespace, "elder_planks"));
+        // planksConversion.put(HOLLOW_JUNIPER_LOG, new Identifier(namespace, "juniper_planks"));
+        // planksConversion.put(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
+        // planksConversion.put(STRIPPED_HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(namespace, "dragons_blood_planks"));
+        // planksConversion.put(STRIPPED_HOLLOW_ELDER_LOG, new Identifier(namespace, "elder_planks"));
+        // planksConversion.put(STRIPPED_HOLLOW_JUNIPER_LOG, new Identifier(namespace, "juniper_planks"));
     }
 }

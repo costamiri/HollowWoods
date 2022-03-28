@@ -65,7 +65,9 @@ public class HollowerRecipe implements Recipe<Inventory> {
 
         @Override
         public HollowerRecipe read(Identifier id, JsonObject json) {
-            return new HollowerRecipe(id, Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "log"))), Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "hollowed_log"))), ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "result")));
+            JsonObject result = JsonHelper.getObject(json, "result", null);
+            return new HollowerRecipe(id, Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "log"))),
+                    Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "hollowed_log"))), result != null ? ShapedRecipe.outputFromJson(result) : ItemStack.EMPTY);
         }
 
         @Override

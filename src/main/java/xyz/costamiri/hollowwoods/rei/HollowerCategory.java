@@ -38,15 +38,15 @@ public class HollowerCategory implements DisplayCategory<HollowerDisplay> {
 
     @Override
     public List<Widget> setupDisplay(HollowerDisplay display, Rectangle bounds) {
-        Point startPoint = new Point(bounds.getCenterX() - 51, bounds.getCenterY() - 13);
+        Point startPoint = new Point(bounds.getCenterX() - 51, bounds.getCenterY() - 8);
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
-        widgets.add(Widgets.createArrow(new Point(startPoint.x + 27, startPoint.y + 4)));
-        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 61, startPoint.y + 5)));
-        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 87, startPoint.y + 5)));
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 4, startPoint.y + 5)).entries(display.getInputEntries().get(0)).markInput());
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 61, startPoint.y + 5)).entries(display.getOutputEntries().get(0)).disableBackground().markOutput());
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 87, startPoint.y + 5)).entries(display.getOutputEntries().get(1)).disableBackground().markOutput());
+        widgets.add(Widgets.createArrow(new Point(startPoint.x + 27, startPoint.y - 1)));
+        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 61, startPoint.y)));
+        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 87, startPoint.y)));
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 4, startPoint.y)).entries(display.getInputEntries().get(0)).markInput());
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 61, startPoint.y)).entries(display.getOutputEntries().get(0)).disableBackground().markOutput());
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 87, startPoint.y)).entries(display.getOutputEntries().get(1)).disableBackground().markOutput());
         return widgets;
     }
 }

@@ -42,7 +42,7 @@ public abstract class HollowBlocks {
 
     public void addRecipes() {
         hollowedBlocks.forEach((fullLogId, hollowLog) -> {
-            Identifier planksId = planksConversion.getOrDefault(hollowLog, new Identifier("minecraft:air"));
+            Identifier planksId = planksConversion.get(hollowLog);
             Identifier hollowLogId = Registry.BLOCK.getId(hollowLog);
             HWRecipeManager.addHollowLogRecipes(fullLogId, hollowLogId, planksId, 2);
         });
