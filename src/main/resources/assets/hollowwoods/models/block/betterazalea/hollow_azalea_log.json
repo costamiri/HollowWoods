@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "betterazalea:block/azalea_log",
+    "top": "betterazalea:block/azalea_log_top",
+    "inside": "betterazalea:block/stripped_azalea_log",
+    "particle": "betterazalea:block/azalea_log"
+  }
+}

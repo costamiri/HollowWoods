@@ -16,6 +16,13 @@
   "block.hollowwoods.stripped_hollow_crimson_stem": "Stripped Hollow Crimson Stem",
   "block.hollowwoods.stripped_hollow_warped_stem": "Stripped Hollow Warped Stem",
 
+  "block.hollowwoods.architects_palette.hollow_twisted_log": "Hollow Twisted Log",
+  "block.hollowwoods.architects_palette.stripped_hollow_twisted_log": "Stripped Hollow Twisted Log",
+
+  "block.hollowwoods.betterazalea.hollow_azalea_log": "Hollow Azalea Log",
+  "block.hollowwoods.betterazalea.hollow_flowering_azalea_log": "Hollow Flowering Azalea Log",
+  "block.hollowwoods.betterazalea.stripped_hollow_azalea_log": "Stripped Hollow Azalea Log",
+
   "block.hollowwoods.betternether.hollow_anchor_tree_log": "Hollow Anchor Tree Log",
   "block.hollowwoods.betternether.hollow_mushroom_fir_log": "Hollow Mushroom Fir Log",
   "block.hollowwoods.betternether.hollow_nether_sakura_log": "Hollow Nether Sakura Log",
@@ -31,37 +38,17 @@
   "block.hollowwoods.betternether.stripped_hollow_wart_log": "Stripped Hollow Wart Log",
   "block.hollowwoods.betternether.stripped_hollow_willow_log": "Stripped Hollow Willow Log",
 
+  "block.hollowwoods.bewitchment.hollow_cypress_log": "Hollow Cypress Log",
+  "block.hollowwoods.bewitchment.hollow_dragons_blood_log": "Hollow Dragons Blood Log",
+  "block.hollowwoods.bewitchment.hollow_elder_log": "Hollow Elder Log",
+  "block.hollowwoods.bewitchment.hollow_juniper_log": "Hollow Juniper Log",
+  "block.hollowwoods.bewitchment.stripped_hollow_cypress_log": "Stripped Hollow Cypress Log",
+  "block.hollowwoods.bewitchment.stripped_hollow_dragons_blood_log": "Stripped Hollow Dragons Blood Log",
+  "block.hollowwoods.bewitchment.stripped_hollow_elder_log": "Stripped Hollow Elder Log",
+  "block.hollowwoods.bewitchment.stripped_hollow_juniper_log": "Stripped Hollow Juniper Log",
+
   "block.hollowwoods.blockus.hollow_white_oak_log": "Hollow White Oak Log",
   "block.hollowwoods.blockus.stripped_hollow_white_oak_log": "Stripped Hollow White Oak Log",
-
-  "block.hollowwoods.architects_palette.hollow_twisted_log": "Hollow Twisted Log",
-  "block.hollowwoods.architects_palette.stripped_hollow_twisted_log": "Stripped Hollow Twisted Log",
-
-  "block.hollowwoods.croptopia.hollow_cinnamon_log": "Hollow Cinnamon Log",
-  "block.hollowwoods.croptopia.stripped_hollow_cinnamon_log": "Stripped Hollow Cinnamon Log",
-
-  "block.hollowwoods.promenade.hollow_cherry_oak_log": "Hollow Cherry Oak Log",
-  "block.hollowwoods.promenade.hollow_palm_log": "Hollow Palm Log",
-  "block.hollowwoods.promenade.stripped_hollow_cherry_oak_log": "Stripped Hollow Cherry Oak Log",
-  "block.hollowwoods.promenade.stripped_hollow_palm_log": "Stripped Hollow Palm Log",
-
-  "block.hollowwoods.traverse.hollow_fir_log": "Hollow Fir Log",
-  "block.hollowwoods.traverse.stripped_hollow_fir_log": "Stripped Hollow Fir Log",
-
-  "block.hollowwoods.terrestria.hollow_cypress_log": "Hollow Cypress Log",
-  "block.hollowwoods.terrestria.hollow_hemlock_log": "Hollow Hemlock Log",
-  "block.hollowwoods.terrestria.hollow_japanese_maple_log": "Hollow Japanese Maple Log",
-  "block.hollowwoods.terrestria.hollow_rainbow_eucalyptus_log": "Hollow Rainbow Eucalyptus Log",
-  "block.hollowwoods.terrestria.hollow_redwood_log": "Hollow Redwood Log",
-  "block.hollowwoods.terrestria.hollow_rubber_log": "Hollow Rubber Log",
-  "block.hollowwoods.terrestria.hollow_willow_log": "Hollow Willow Log",
-  "block.hollowwoods.terrestria.stripped_hollow_cypress_log": "Stripped Hollow Cypress Log",
-  "block.hollowwoods.terrestria.stripped_hollow_hemlock_log": "Stripped Hollow Hemlock Log",
-  "block.hollowwoods.terrestria.stripped_hollow_japanese_maple_log": "Stripped Hollow Japanese Maple Log",
-  "block.hollowwoods.terrestria.stripped_hollow_rainbow_eucalyptus_log": "Stripped Hollow Rainbow Eucalyptus Log",
-  "block.hollowwoods.terrestria.stripped_hollow_redwood_log": "Stripped Hollow Redwood Log",
-  "block.hollowwoods.terrestria.stripped_hollow_rubber_log": "Stripped Hollow Rubber Log",
-  "block.hollowwoods.terrestria.stripped_hollow_willow_log": "Stripped Hollow Willow Log",
 
   "block.hollowwoods.byg.hollow_aspen_log": "Hollow Aspen Log",
   "block.hollowwoods.byg.hollow_baobab_log": "Hollow Baobab Log",
@@ -116,6 +103,32 @@
   "block.hollowwoods.byg.stripped_hollow_willow_log": "Stripped Hollow Willow Log",
   "block.hollowwoods.byg.stripped_hollow_witch_hazel_log": "Stripped Hollow Witch Hazel Log",
   "block.hollowwoods.byg.stripped_hollow_zelkova_log": "Stripped Hollow Zelkova Log",
+
+  "block.hollowwoods.croptopia.hollow_cinnamon_log": "Hollow Cinnamon Log",
+  "block.hollowwoods.croptopia.stripped_hollow_cinnamon_log": "Stripped Hollow Cinnamon Log",
+
+  "block.hollowwoods.promenade.hollow_cherry_oak_log": "Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.hollow_palm_log": "Hollow Palm Log",
+  "block.hollowwoods.promenade.stripped_hollow_cherry_oak_log": "Stripped Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.stripped_hollow_palm_log": "Stripped Hollow Palm Log",
+
+  "block.hollowwoods.traverse.hollow_fir_log": "Hollow Fir Log",
+  "block.hollowwoods.traverse.stripped_hollow_fir_log": "Stripped Hollow Fir Log",
+
+  "block.hollowwoods.terrestria.hollow_cypress_log": "Hollow Cypress Log",
+  "block.hollowwoods.terrestria.hollow_hemlock_log": "Hollow Hemlock Log",
+  "block.hollowwoods.terrestria.hollow_japanese_maple_log": "Hollow Japanese Maple Log",
+  "block.hollowwoods.terrestria.hollow_rainbow_eucalyptus_log": "Hollow Rainbow Eucalyptus Log",
+  "block.hollowwoods.terrestria.hollow_redwood_log": "Hollow Redwood Log",
+  "block.hollowwoods.terrestria.hollow_rubber_log": "Hollow Rubber Log",
+  "block.hollowwoods.terrestria.hollow_willow_log": "Hollow Willow Log",
+  "block.hollowwoods.terrestria.stripped_hollow_cypress_log": "Stripped Hollow Cypress Log",
+  "block.hollowwoods.terrestria.stripped_hollow_hemlock_log": "Stripped Hollow Hemlock Log",
+  "block.hollowwoods.terrestria.stripped_hollow_japanese_maple_log": "Stripped Hollow Japanese Maple Log",
+  "block.hollowwoods.terrestria.stripped_hollow_rainbow_eucalyptus_log": "Stripped Hollow Rainbow Eucalyptus Log",
+  "block.hollowwoods.terrestria.stripped_hollow_redwood_log": "Stripped Hollow Redwood Log",
+  "block.hollowwoods.terrestria.stripped_hollow_rubber_log": "Stripped Hollow Rubber Log",
+  "block.hollowwoods.terrestria.stripped_hollow_willow_log": "Stripped Hollow Willow Log",
 
   "item.hollowwoods.wooden_hollower": "Wooden Hollower",
   "item.hollowwoods.stone_hollower": "Stone Hollower",

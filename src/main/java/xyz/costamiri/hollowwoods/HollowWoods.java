@@ -49,6 +49,7 @@ public class HollowWoods implements ModInitializer {
 		new VanillaMinecraftBlocks().init();
 		new VanillaMinecraftItems().init();
 		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
+		if (fabricLoader.isModLoaded("betterazalea")) new BetterAzalea().init();
 		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
 		if (fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
 		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
