@@ -21,6 +21,7 @@ import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeTypes;
+import xyz.costamiri.hollowwoods.recipes.HollowerRecipe;
 import xyz.costamiri.hollowwoods.registry.block.*;
 import xyz.costamiri.hollowwoods.registry.item.VanillaMinecraftItems;
 
@@ -94,11 +95,10 @@ public class HollowWoods implements ModInitializer {
 		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, entity) -> {
 			ItemStack stack = player.getMainHandStack();
 			if (stack.getItem().getClass() != HollowerTool.class) return true;
-			Block hollowedBlock = HollowBlocks.hollowedBlocks.get(Registry.BLOCK.getId(state.getBlock()));
-			if (hollowedBlock == null) return true;
-			world.setBlockState(pos, hollowedBlock.getDefaultState().with(AXIS, state.get(AXIS)));
-			ItemStack planks = new ItemStack(Registry.BLOCK.get(HollowBlocks.planksConversion.get(hollowedBlock)).asItem(), 2);
-			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, planks));
+			HollowerRecipe hollowingRecipe = world.getRecipeManager().listAllOfType(HWRecipeTypes.HOLLOWER_RECIPE_TYPE).stream().filter(recipe -> recipe.log == state.getBlock()).findFirst().orElse(null);
+			if (hollowingRecipe == null) return true;
+			world.setBlockState(pos, hollowingRecipe.hollowedLog.getDefaultState().with(AXIS, state.get(AXIS)));
+			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, hollowingRecipe.byproduct));
 			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 			return false;
 		});

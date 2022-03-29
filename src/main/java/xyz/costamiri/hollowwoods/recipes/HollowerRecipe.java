@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 
 public class HollowerRecipe implements Recipe<Inventory> {
     private final Identifier identifier;
-    private final ItemStack byproduct;
+    public final ItemStack byproduct;
     public final Block log, hollowedLog;
 
     public HollowerRecipe(Identifier identifier, Block log, Block hollowedLog, ItemStack byproduct) {
