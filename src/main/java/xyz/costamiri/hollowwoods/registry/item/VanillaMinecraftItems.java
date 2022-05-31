@@ -3,7 +3,9 @@ package xyz.costamiri.hollowwoods.registry.item;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
+import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 public class VanillaMinecraftItems extends HollowItems {
     public static final HollowerTool WOODEN_HOLLOWER = new HollowerTool(ToolMaterials.WOOD, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
@@ -15,6 +17,7 @@ public class VanillaMinecraftItems extends HollowItems {
 
     public VanillaMinecraftItems() {
         this.namespace = "minecraft";
+        addRecipes();
     }
 
     @Override
@@ -25,5 +28,14 @@ public class VanillaMinecraftItems extends HollowItems {
         _registerItem(IRON_HOLLOWER, "iron_hollower");
         _registerItem(DIAMOND_HOLLOWER, "diamond_hollower");
         _registerItem(NETHERITE_HOLLOWER, "netherite_hollower");
+    }
+
+    public void addRecipes() {
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("wooden_axe"), "wooden_hollower");
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("stone_axe"), "stone_hollower");
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("golden_axe"), "golden_hollower");
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("iron_axe"), "iron_hollower");
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("diamond_axe"), "diamond_hollower");
+        HWRecipeManager.addHollowerToolRecipe(new Identifier("netherite_axe"), "netherite_hollower");
     }
 }
