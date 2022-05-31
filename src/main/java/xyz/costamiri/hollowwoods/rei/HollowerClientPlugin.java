@@ -23,7 +23,6 @@ public class HollowerClientPlugin implements REIClientPlugin {
         registry.addWorkstations(HOLLOWING, EntryStacks.of(VanillaMinecraftItems.IRON_HOLLOWER));
         registry.addWorkstations(HOLLOWING, EntryStacks.of(VanillaMinecraftItems.DIAMOND_HOLLOWER));
         registry.addWorkstations(HOLLOWING, EntryStacks.of(VanillaMinecraftItems.NETHERITE_HOLLOWER));
-        registry.removePlusButton(HOLLOWING);
     }
 
     @Override
