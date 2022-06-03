@@ -11,8 +11,12 @@ Hollow Woods is a FabricMC mod that simply adds hollow log blocks to all existin
 - Including Crimson and Warped Stem from the Nether
 - Waterloggable!
 - Stand inside them, crawl through them
-- Languages: 🇬🇧 🇩🇪
+- Languages: 🇬🇧 🇩🇪 ([Crowdin](https://crowdin.com/project/mc-hollow-woods))
 
 ### How to get them
 
-All hollowed logs can be crafted via the Stonecutter!
+All hollowed logs can be crafted via the Stonecutter! Also with the hollower tool, log blocks in the world can be turned into their hollow counterpart.
+
+### Hollower Tool
+
+The Hollower tool can be crafted in the smithing table by combining an axe with an iron ingot.
