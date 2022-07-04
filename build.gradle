@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.10-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -25,11 +25,11 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Crowdin translations
-	modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.18.2"
-	include "de.guntram.mcmod:crowdin-translate:1.4+1.18.2"
+	modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.19"
+	include "de.guntram.mcmod:crowdin-translate:1.4+1.19"
 
 	// Roughly Enough Items
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:8.2.470"
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:9.0.493"
 }
 
 processResources {

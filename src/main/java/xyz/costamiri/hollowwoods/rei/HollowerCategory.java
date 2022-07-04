@@ -12,14 +12,13 @@ import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import xyz.costamiri.hollowwoods.registry.item.VanillaMinecraftItems;
 
 import java.util.List;
 
 public class HollowerCategory implements DisplayCategory<HollowerDisplay> {
     public static final EntryStack<ItemStack> ICON = EntryStacks.of(VanillaMinecraftItems.IRON_HOLLOWER);
-    public static final TranslatableText TITLE = new TranslatableText("rei.hollowwoods.hollowing");
+    public static final Text TITLE = Text.translatable("rei.hollowwoods.hollowing");
 
     @Override
     public Renderer getIcon() {
