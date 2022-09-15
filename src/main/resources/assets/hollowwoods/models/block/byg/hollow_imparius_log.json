@@ -3,7 +3,7 @@
   "textures": {
     "outside": "byg:block/imparius/log",
     "top": "byg:block/imparius/log_top",
-    "inside": "byg:block/imparius/stripped_log",
+    "inside": "byg:block/imparius/planks",
     "particle": "byg:block/imparius/log"
   }
 }
