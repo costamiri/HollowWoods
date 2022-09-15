@@ -12,7 +12,7 @@ public class Byg extends HollowBlocks {
     public static final HollowLog HOLLOW_CIKA_LOG = new HollowLog();
     public static final HollowLog HOLLOW_CYPRESS_LOG = new HollowLog();
     public static final HollowLog HOLLOW_EBONY_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_EMBUR_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_EMBUR_PEDU = new HollowLog();
     public static final HollowLog HOLLOW_ETHER_LOG = new HollowLog();
     public static final HollowLog HOLLOW_FIR_LOG = new HollowLog();
     public static final HollowLog HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog();
@@ -44,7 +44,7 @@ public class Byg extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_CIKA_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_EBONY_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_EMBUR_LOG = new HollowLog();
+    public static final HollowLog STRIPPED_HOLLOW_EMBUR_PEDU = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_ETHER_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_FIR_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog();
@@ -80,7 +80,7 @@ public class Byg extends HollowBlocks {
         _registerLog(HOLLOW_CIKA_LOG, "hollow_cika_log");
         _registerLog(HOLLOW_CYPRESS_LOG, "hollow_cypress_log");
         _registerLog(HOLLOW_EBONY_LOG, "hollow_ebony_log");
-        _registerLog(HOLLOW_EMBUR_LOG, "hollow_embur_log");
+        _registerLog(HOLLOW_EMBUR_PEDU, "hollow_embur_pedu");
         _registerLog(HOLLOW_ETHER_LOG, "hollow_ether_log");
         _registerLog(HOLLOW_FIR_LOG, "hollow_fir_log");
         _registerLog(HOLLOW_GREEN_ENCHANTED_LOG, "hollow_green_enchanted_log");
@@ -112,7 +112,7 @@ public class Byg extends HollowBlocks {
         _registerLog(STRIPPED_HOLLOW_CIKA_LOG, "stripped_hollow_cika_log");
         _registerLog(STRIPPED_HOLLOW_CYPRESS_LOG, "stripped_hollow_cypress_log");
         _registerLog(STRIPPED_HOLLOW_EBONY_LOG, "stripped_hollow_ebony_log");
-        _registerLog(STRIPPED_HOLLOW_EMBUR_LOG, "stripped_hollow_embur_log");
+        _registerLog(STRIPPED_HOLLOW_EMBUR_PEDU, "stripped_hollow_embur_pedu");
         _registerLog(STRIPPED_HOLLOW_ETHER_LOG, "stripped_hollow_ether_log");
         _registerLog(STRIPPED_HOLLOW_FIR_LOG, "stripped_hollow_fir_log");
         _registerLog(STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG, "stripped_hollow_green_enchanted_log");
@@ -145,7 +145,7 @@ public class Byg extends HollowBlocks {
         strippedBlocks.put(HOLLOW_CIKA_LOG, STRIPPED_HOLLOW_CIKA_LOG);
         strippedBlocks.put(HOLLOW_CYPRESS_LOG, STRIPPED_HOLLOW_CYPRESS_LOG);
         strippedBlocks.put(HOLLOW_EBONY_LOG, STRIPPED_HOLLOW_EBONY_LOG);
-        strippedBlocks.put(HOLLOW_EMBUR_LOG, STRIPPED_HOLLOW_EMBUR_LOG);
+        strippedBlocks.put(HOLLOW_EMBUR_PEDU, STRIPPED_HOLLOW_EMBUR_PEDU);
         strippedBlocks.put(HOLLOW_ETHER_LOG, STRIPPED_HOLLOW_ETHER_LOG);
         strippedBlocks.put(HOLLOW_FIR_LOG, STRIPPED_HOLLOW_FIR_LOG);
         strippedBlocks.put(HOLLOW_GREEN_ENCHANTED_LOG, STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG);
@@ -180,7 +180,7 @@ public class Byg extends HollowBlocks {
         hollowedBlocks.put(new Identifier(namespace, "cika_log"), HOLLOW_CIKA_LOG);
         hollowedBlocks.put(new Identifier(namespace, "cypress_log"), HOLLOW_CYPRESS_LOG);
         hollowedBlocks.put(new Identifier(namespace, "ebony_log"), HOLLOW_EBONY_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "embur_log"), HOLLOW_EMBUR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "embur_pedu"), HOLLOW_EMBUR_PEDU);
         hollowedBlocks.put(new Identifier(namespace, "ether_log"), HOLLOW_ETHER_LOG);
         hollowedBlocks.put(new Identifier(namespace, "fir_log"), HOLLOW_FIR_LOG);
         hollowedBlocks.put(new Identifier(namespace, "green_enchanted_log"), HOLLOW_GREEN_ENCHANTED_LOG);
@@ -213,7 +213,7 @@ public class Byg extends HollowBlocks {
         hollowedBlocks.put(new Identifier(namespace, "stripped_cika_log"), STRIPPED_HOLLOW_CIKA_LOG);
         hollowedBlocks.put(new Identifier(namespace, "stripped_cypress_log"), STRIPPED_HOLLOW_CYPRESS_LOG);
         hollowedBlocks.put(new Identifier(namespace, "stripped_ebony_log"), STRIPPED_HOLLOW_EBONY_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "stripped_embur_log"), STRIPPED_HOLLOW_EMBUR_LOG);
+        hollowedBlocks.put(new Identifier(namespace, "stripped_embur_pedu"), STRIPPED_HOLLOW_EMBUR_PEDU);
         hollowedBlocks.put(new Identifier(namespace, "stripped_ether_log"), STRIPPED_HOLLOW_ETHER_LOG);
         hollowedBlocks.put(new Identifier(namespace, "stripped_fir_log"), STRIPPED_HOLLOW_FIR_LOG);
         hollowedBlocks.put(new Identifier(namespace, "stripped_green_enchanted_log"), STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG);
@@ -246,7 +246,7 @@ public class Byg extends HollowBlocks {
         planksConversion.put(HOLLOW_CIKA_LOG, new Identifier(namespace, "cika_planks"));
         planksConversion.put(HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
         planksConversion.put(HOLLOW_EBONY_LOG, new Identifier(namespace, "ebony_planks"));
-        planksConversion.put(HOLLOW_EMBUR_LOG, new Identifier(namespace, "embur_planks"));
+        planksConversion.put(HOLLOW_EMBUR_PEDU, new Identifier(namespace, "embur_planks"));
         planksConversion.put(HOLLOW_ETHER_LOG, new Identifier(namespace, "ether_planks"));
         planksConversion.put(HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
         planksConversion.put(HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(namespace, "green_enchanted_planks"));
@@ -277,7 +277,7 @@ public class Byg extends HollowBlocks {
         planksConversion.put(STRIPPED_HOLLOW_CIKA_LOG, new Identifier(namespace, "cika_planks"));
         planksConversion.put(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(namespace, "cypress_planks"));
         planksConversion.put(STRIPPED_HOLLOW_EBONY_LOG, new Identifier(namespace, "ebony_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_EMBUR_LOG, new Identifier(namespace, "embur_planks"));
+        planksConversion.put(STRIPPED_HOLLOW_EMBUR_PEDU, new Identifier(namespace, "embur_planks"));
         planksConversion.put(STRIPPED_HOLLOW_ETHER_LOG, new Identifier(namespace, "ether_planks"));
         planksConversion.put(STRIPPED_HOLLOW_FIR_LOG, new Identifier(namespace, "fir_planks"));
         planksConversion.put(STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(namespace, "green_enchanted_planks"));
