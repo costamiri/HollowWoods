@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "outside": "byg:block/cika_log",
-    "top": "byg:block/cika_log_top",
-    "inside": "byg:block/stripped_cika_log",
-    "particle": "byg:block/cika_log"
+    "outside": "byg:block/cika/log",
+    "top": "byg:block/cika/log_top",
+    "inside": "byg:block/cika/stripped_log",
+    "particle": "byg:block/cika/log"
   }
 }

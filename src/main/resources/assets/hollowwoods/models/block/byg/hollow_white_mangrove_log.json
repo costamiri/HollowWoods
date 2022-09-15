@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "byg:block/white_mangrove/log",
+    "top": "byg:block/white_mangrove/log_top",
+    "inside": "byg:block/white_mangrove/stripped_log",
+    "particle": "byg:block/white_mangrove/log"
+  }
+}

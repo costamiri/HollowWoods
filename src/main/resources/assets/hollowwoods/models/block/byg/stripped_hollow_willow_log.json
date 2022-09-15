@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "outside": "byg:block/stripped_willow_log",
-    "top": "byg:block/stripped_willow_log_top",
-    "inside": "byg:block/stripped_willow_log",
-    "particle": "byg:block/stripped_willow_log"
+    "outside": "byg:block/willow/stripped_log",
+    "top": "byg:block/willow/stripped_log_top",
+    "inside": "byg:block/willow/stripped_log",
+    "particle": "byg:block/willow/stripped_log"
   }
 }

@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "outside": "byg:block/nightshade_log",
-    "top": "byg:block/nightshade_log_top",
-    "inside": "byg:block/stripped_nightshade_log",
-    "particle": "byg:block/nightshade_log"
+    "outside": "byg:block/nightshade/log",
+    "top": "byg:block/nightshade/log_top",
+    "inside": "byg:block/nightshade/stripped_log",
+    "particle": "byg:block/nightshade/log"
   }
 }

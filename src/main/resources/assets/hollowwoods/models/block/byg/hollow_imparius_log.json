@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "outside": "byg:block/imparius/log",
+    "top": "byg:block/imparius/log_top",
+    "inside": "byg:block/imparius/stripped_log",
+    "particle": "byg:block/imparius/log"
+  }
+}
