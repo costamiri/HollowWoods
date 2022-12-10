@@ -1,22 +1,29 @@
 package xyz.costamiri.hollowwoods.registry.item;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 public class VanillaMinecraftItems extends HollowItems {
-    public static final HollowerTool WOODEN_HOLLOWER = new HollowerTool(ToolMaterials.WOOD, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
-    public static final HollowerTool STONE_HOLLOWER = new HollowerTool(ToolMaterials.STONE, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
-    public static final HollowerTool GOLDEN_HOLLOWER = new HollowerTool(ToolMaterials.GOLD, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
-    public static final HollowerTool IRON_HOLLOWER = new HollowerTool(ToolMaterials.IRON, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
-    public static final HollowerTool DIAMOND_HOLLOWER = new HollowerTool(ToolMaterials.DIAMOND, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
-    public static final HollowerTool NETHERITE_HOLLOWER = new HollowerTool(ToolMaterials.NETHERITE, 2, -2.5f, (new Item.Settings()).group(ItemGroup.TOOLS));
+    public static final HollowerTool WOODEN_HOLLOWER = new HollowerTool(ToolMaterials.WOOD, 2, -2.5f, new Item.Settings());
+    public static final HollowerTool STONE_HOLLOWER = new HollowerTool(ToolMaterials.STONE, 2, -2.5f, new Item.Settings());
+    public static final HollowerTool GOLDEN_HOLLOWER = new HollowerTool(ToolMaterials.GOLD, 2, -2.5f, new Item.Settings());
+    public static final HollowerTool IRON_HOLLOWER = new HollowerTool(ToolMaterials.IRON, 2, -2.5f, new Item.Settings());
+    public static final HollowerTool DIAMOND_HOLLOWER = new HollowerTool(ToolMaterials.DIAMOND, 2, -2.5f, new Item.Settings());
+    public static final HollowerTool NETHERITE_HOLLOWER = new HollowerTool(ToolMaterials.NETHERITE, 2, -2.5f, new Item.Settings());
 
     public VanillaMinecraftItems() {
         this.namespace = "minecraft";
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(WOODEN_HOLLOWER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(STONE_HOLLOWER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(GOLDEN_HOLLOWER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(IRON_HOLLOWER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(DIAMOND_HOLLOWER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(NETHERITE_HOLLOWER));
         addRecipes();
     }
 

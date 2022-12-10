@@ -9,9 +9,9 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.ShapedRecipe;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class HollowerRecipe implements Recipe<Inventory> {
@@ -66,19 +66,19 @@ public class HollowerRecipe implements Recipe<Inventory> {
         @Override
         public HollowerRecipe read(Identifier id, JsonObject json) {
             JsonObject result = JsonHelper.getObject(json, "result", null);
-            return new HollowerRecipe(id, Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "log"))),
-                    Registry.BLOCK.get(new Identifier(JsonHelper.getString(json, "hollowed_log"))), result != null ? ShapedRecipe.outputFromJson(result) : ItemStack.EMPTY);
+            return new HollowerRecipe(id, Registries.BLOCK.get(new Identifier(JsonHelper.getString(json, "log"))),
+                    Registries.BLOCK.get(new Identifier(JsonHelper.getString(json, "hollowed_log"))), result != null ? ShapedRecipe.outputFromJson(result) : ItemStack.EMPTY);
         }
 
         @Override
         public HollowerRecipe read(Identifier id, PacketByteBuf buf) {
-            return new HollowerRecipe(id, Registry.BLOCK.get(new Identifier(buf.readString())), Registry.BLOCK.get(new Identifier(buf.readString())), buf.readItemStack());
+            return new HollowerRecipe(id, Registries.BLOCK.get(new Identifier(buf.readString())), Registries.BLOCK.get(new Identifier(buf.readString())), buf.readItemStack());
         }
 
         @Override
         public void write(PacketByteBuf buf, HollowerRecipe recipe) {
-            buf.writeString(Registry.BLOCK.getId(recipe.log).toString());
-            buf.writeString(Registry.BLOCK.getId(recipe.hollowedLog).toString());
+            buf.writeString(Registries.BLOCK.getId(recipe.log).toString());
+            buf.writeString(Registries.BLOCK.getId(recipe.hollowedLog).toString());
             buf.writeItemStack(recipe.getOutput());
         }
     }

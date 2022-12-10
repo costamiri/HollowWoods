@@ -25,8 +25,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Crowdin translations
-	modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.19"
-	include "de.guntram.mcmod:crowdin-translate:1.4+1.19"
+	modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.19.3"
+	include "de.guntram.mcmod:crowdin-translate:1.4+1.19.3"
 
 	// Roughly Enough Items
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:9.0.493"

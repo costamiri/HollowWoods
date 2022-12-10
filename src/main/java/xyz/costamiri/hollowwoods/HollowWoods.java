@@ -2,9 +2,7 @@ package xyz.costamiri.hollowwoods;
 
 import com.google.common.collect.ImmutableMap;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
@@ -13,10 +11,10 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
@@ -36,9 +34,6 @@ public class HollowWoods implements ModInitializer {
 
 	public static final Map<String, Block> blocks = new HashMap<>();
 	public static final Map<String, Item> items = new HashMap<>();
-	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-			new Identifier(MODID, "main"),
-			() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG));
 
 	private static final FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
 	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
@@ -65,13 +60,13 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void registerBlock(Block block, String path) {
-		blocks.put(path, Registry.register(Registry.BLOCK, new Identifier(MODID, path), block));
-		items.put(path, Registry.register(Registry.ITEM, new Identifier(MODID, path),
-				new BlockItem(block, new FabricItemSettings().group(ITEM_GROUP))));
+		blocks.put(path, Registry.register(Registries.BLOCK, new Identifier(MODID, path), block));
+		items.put(path, Registry.register(Registries.ITEM, new Identifier(MODID, path),
+				new BlockItem(block, new Item.Settings())));
 	}
 
 	public static void registerItem(Item item, String path) {
-		items.put(path, Registry.register(Registry.ITEM, new Identifier(MODID, path), item));
+		items.put(path, Registry.register(Registries.ITEM, new Identifier(MODID, path), item));
 	}
 
 	public static void registerLog(Block block, String path, boolean flammable) {

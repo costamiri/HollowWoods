@@ -4,8 +4,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.tag.BlockTags;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.BlockTags;
 import xyz.costamiri.hollowwoods.registry.block.HollowBlocks;
 
 public class HollowerTool extends MiningToolItem {
@@ -15,11 +15,11 @@ public class HollowerTool extends MiningToolItem {
 
     @Override
     public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
-        return HollowBlocks.hollowedBlocks.containsKey(Registry.BLOCK.getId(state.getBlock())) ? this.miningSpeed : 1.0f;
+        return HollowBlocks.hollowedBlocks.containsKey(Registries.BLOCK.getId(state.getBlock())) ? this.miningSpeed : 1.0f;
     }
 
     @Override
     public boolean isSuitableFor(BlockState state) {
-        return HollowBlocks.hollowedBlocks.containsKey(Registry.BLOCK.getId(state.getBlock()));
+        return HollowBlocks.hollowedBlocks.containsKey(Registries.BLOCK.getId(state.getBlock()));
     }
 }

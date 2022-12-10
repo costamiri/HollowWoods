@@ -1,7 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
 import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;

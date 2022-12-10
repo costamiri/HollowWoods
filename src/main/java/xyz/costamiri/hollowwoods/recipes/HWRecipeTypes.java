@@ -2,8 +2,9 @@ package xyz.costamiri.hollowwoods.recipes;
 
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 
@@ -17,7 +18,7 @@ public class HWRecipeTypes {
     };
 
     public static void init() {
-        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_SERIALIZER);
-        Registry.register(Registry.RECIPE_TYPE, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_TYPE);
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_SERIALIZER);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_TYPE);
     }
 }

@@ -1,8 +1,8 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 import java.util.HashMap;
@@ -43,7 +43,7 @@ public abstract class HollowBlocks {
     public void addRecipes() {
         hollowedBlocks.forEach((fullLogId, hollowLog) -> {
             Identifier planksId = planksConversion.get(hollowLog);
-            Identifier hollowLogId = Registry.BLOCK.getId(hollowLog);
+            Identifier hollowLogId = Registries.BLOCK.getId(hollowLog);
             HWRecipeManager.addHollowLogRecipes(fullLogId, hollowLogId, planksId, 2);
         });
     }
