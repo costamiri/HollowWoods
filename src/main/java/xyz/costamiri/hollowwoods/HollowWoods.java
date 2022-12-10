@@ -3,15 +3,15 @@ package xyz.costamiri.hollowwoods;
 import com.google.common.collect.ImmutableMap;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ItemEntity;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -38,6 +38,10 @@ public class HollowWoods implements ModInitializer {
 	private static final FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
 	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
 	private static final FabricLoader fabricLoader = FabricLoader.getInstance();
+
+	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier(MODID, "main"))
+			.icon(() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG))
+			.build();
 
 	@Override
 	public void onInitialize() {
@@ -71,6 +75,8 @@ public class HollowWoods implements ModInitializer {
 
 	public static void registerLog(Block block, String path, boolean flammable) {
 		registerBlock(block, path);
+		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(block));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.add(block));
 		HWLootManager.addLootTable(new Identifier(MODID, path));
 		fuelRegistry.add(block, 300);
 		if (flammable) flammableRegistry.add(block, 5, 5);
@@ -78,6 +84,12 @@ public class HollowWoods implements ModInitializer {
 
 	public static void registerLog(Block block, String path) {
 		registerLog(block, path, true);
+	}
+
+	public static void registerTool(HollowerTool tool, String path) {
+		registerItem(tool, path);
+		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(tool));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(tool));
 	}
 
 	public static void modifyAxeBlockStripping() {

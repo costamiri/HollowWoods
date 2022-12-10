@@ -1,8 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
@@ -18,23 +16,17 @@ public class VanillaMinecraftItems extends HollowItems {
 
     public VanillaMinecraftItems() {
         this.namespace = "minecraft";
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(WOODEN_HOLLOWER));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(STONE_HOLLOWER));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(GOLDEN_HOLLOWER));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(IRON_HOLLOWER));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(DIAMOND_HOLLOWER));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(NETHERITE_HOLLOWER));
         addRecipes();
     }
 
     @Override
     public void registerItems() {
-        _registerItem(WOODEN_HOLLOWER, "wooden_hollower");
-        _registerItem(STONE_HOLLOWER, "stone_hollower");
-        _registerItem(GOLDEN_HOLLOWER, "golden_hollower");
-        _registerItem(IRON_HOLLOWER, "iron_hollower");
-        _registerItem(DIAMOND_HOLLOWER, "diamond_hollower");
-        _registerItem(NETHERITE_HOLLOWER, "netherite_hollower");
+        _registerTool(WOODEN_HOLLOWER, "wooden_hollower");
+        _registerTool(STONE_HOLLOWER, "stone_hollower");
+        _registerTool(GOLDEN_HOLLOWER, "golden_hollower");
+        _registerTool(IRON_HOLLOWER, "iron_hollower");
+        _registerTool(DIAMOND_HOLLOWER, "diamond_hollower");
+        _registerTool(NETHERITE_HOLLOWER, "netherite_hollower");
     }
 
     public void addRecipes() {
