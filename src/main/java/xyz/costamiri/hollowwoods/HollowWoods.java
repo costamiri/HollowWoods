@@ -61,6 +61,7 @@ public class HollowWoods implements ModInitializer {
 		modifyAxeBlockStripping();
 		hollowerBlockBreak();
 		HWRecipeTypes.init();
+		insertBuildingBlockGroup();
 	}
 
 	public static void registerBlock(Block block, String path) {
@@ -76,7 +77,6 @@ public class HollowWoods implements ModInitializer {
 	public static void registerLog(Block block, String path, boolean flammable) {
 		registerBlock(block, path);
 		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(block));
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.add(block));
 		HWLootManager.addLootTable(new Identifier(MODID, path));
 		fuelRegistry.add(block, 300);
 		if (flammable) flammableRegistry.add(block, 5, 5);
@@ -110,5 +110,10 @@ public class HollowWoods implements ModInitializer {
 			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 			return false;
 		});
+	}
+
+	public static void insertBuildingBlockGroup() {
+		HollowBlocks.hollowedBlocks.forEach((fullLogId, hollowedLog) ->
+				ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.addAfter(Registries.BLOCK.get(fullLogId), hollowedLog)));
 	}
 }
