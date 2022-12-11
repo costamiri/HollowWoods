@@ -24,8 +24,10 @@
     "client": [
       "xyz.costamiri.hollowwoods.HollowWoodsClient"
     ],
-    "rei": [
-      "xyz.costamiri.hollowwoods.rei.HollowerServerPlugin",
+    "rei_server": [
+      "xyz.costamiri.hollowwoods.rei.HollowerServerPlugin"
+    ],
+    "rei_client": [
       "xyz.costamiri.hollowwoods.rei.HollowerClientPlugin"
     ]
   },
