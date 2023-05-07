@@ -13,6 +13,7 @@ group = project.maven_group
 repositories {
 	maven { url = "https://minecraft.guntram.de/maven/" }
 	maven { url = "https://maven.shedaniel.me" }
+	maven { url = "https://maven.terraformersmc.com" }
 }
 
 dependencies {
@@ -30,6 +31,9 @@ dependencies {
 
 	// Roughly Enough Items
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:9.0.493"
+
+	// EMI
+	modCompileOnly "dev.emi:emi:0.7.3+1.19.3:api"
 }
 
 processResources {

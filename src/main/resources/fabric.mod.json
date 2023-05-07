@@ -29,6 +29,9 @@
     ],
     "rei_client": [
       "xyz.costamiri.hollowwoods.rei.HollowerClientPlugin"
+    ],
+    "emi": [
+      "xyz.costamiri.hollowwoods.emi.HollowerEmiPlugin"
     ]
   },
   "mixins": [
