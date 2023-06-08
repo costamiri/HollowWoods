@@ -22,7 +22,7 @@ public class HollowerEmiRecipe implements EmiRecipe {
         this.recipe = recipe;
         this.input = EmiStack.of(recipe.log);
         this.hollowedLog = EmiStack.of(recipe.hollowedLog);
-        this.output = EmiStack.of(recipe.getOutput());
+        this.output = EmiStack.of(recipe.getOutput(null));
     }
 
     @Override

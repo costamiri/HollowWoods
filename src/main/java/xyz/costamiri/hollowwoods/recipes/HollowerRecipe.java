@@ -9,6 +9,7 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.ShapedRecipe;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
@@ -32,7 +33,7 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack craft(Inventory inventory) {
+    public ItemStack craft(Inventory inventory, DynamicRegistryManager registryManager) {
         return byproduct;
     }
 
@@ -42,7 +43,7 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack getOutput() {
+    public ItemStack getOutput(DynamicRegistryManager registryManager) {
         return byproduct;
     }
 
@@ -79,7 +80,7 @@ public class HollowerRecipe implements Recipe<Inventory> {
         public void write(PacketByteBuf buf, HollowerRecipe recipe) {
             buf.writeString(Registries.BLOCK.getId(recipe.log).toString());
             buf.writeString(Registries.BLOCK.getId(recipe.hollowedLog).toString());
-            buf.writeItemStack(recipe.getOutput());
+            buf.writeItemStack(recipe.getOutput(null));
         }
     }
 }

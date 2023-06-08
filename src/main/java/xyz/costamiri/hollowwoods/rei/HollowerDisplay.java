@@ -16,7 +16,7 @@ public class HollowerDisplay implements Display {
 
     public HollowerDisplay(HollowerRecipe recipe) {
         this.input = Collections.singletonList(EntryIngredients.of(new ItemStack(recipe.log)));
-        this.output = List.of(EntryIngredients.of(new ItemStack(recipe.hollowedLog.asItem())), EntryIngredients.of(recipe.getOutput()));
+        this.output = List.of(EntryIngredients.of(new ItemStack(recipe.hollowedLog.asItem())), EntryIngredients.of(recipe.getOutput(null)));
     }
 
     @Override
