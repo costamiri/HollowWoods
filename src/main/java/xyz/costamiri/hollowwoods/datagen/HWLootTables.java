@@ -3,7 +3,6 @@ package xyz.costamiri.hollowwoods.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import xyz.costamiri.hollowwoods.registry.block.VanillaMinecraftBlocks;
 
 import java.util.ArrayList;
 
