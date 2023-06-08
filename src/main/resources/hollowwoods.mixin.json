@@ -6,7 +6,6 @@
   "mixins": [
     "AxeAccess",
     "AxeItemMixin",
-    "LootManagerMixin",
     "RecipeManagerMixin"
   ],
   "client": [],

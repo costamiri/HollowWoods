@@ -15,8 +15,8 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import xyz.costamiri.hollowwoods.datagen.HWLootTables;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
-import xyz.costamiri.hollowwoods.loot.HWLootManager;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeTypes;
 import xyz.costamiri.hollowwoods.recipes.HollowerRecipe;
@@ -77,7 +77,7 @@ public class HollowWoods implements ModInitializer {
 	public static void registerLog(Block block, String path, boolean flammable) {
 		registerBlock(block, path);
 		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(block));
-		HWLootManager.addLootTable(new Identifier(MODID, path));
+		HWLootTables.blocks.add(block);
 		fuelRegistry.add(block, 300);
 		if (flammable) flammableRegistry.add(block, 5, 5);
 	}
