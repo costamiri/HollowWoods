@@ -43,20 +43,22 @@ public class HollowWoods implements ModInitializer {
 			.icon(() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG))
 			.build();
 
+	private static final boolean datagen = false;
+
 	@Override
 	public void onInitialize() {
 		new VanillaMinecraftBlocks().init();
 		new VanillaMinecraftItems().init();
-		if (fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
-		if (fabricLoader.isModLoaded("betterazalea")) new BetterAzalea().init();
-		if (fabricLoader.isModLoaded("betternether")) new BetterNether().init();
-		if (fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
-		if (fabricLoader.isModLoaded("blockus")) new Blockus().init();
-		if (fabricLoader.isModLoaded("byg")) new Byg().init();
-		if (fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
-		if (fabricLoader.isModLoaded("promenade")) new Promenade().init();
-		if (fabricLoader.isModLoaded("terrestria")) new Terrestria().init();
-		if (fabricLoader.isModLoaded("traverse")) new Traverse().init();
+		if (datagen || fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
+		if (datagen || fabricLoader.isModLoaded("betterazalea")) new BetterAzalea().init();
+		if (datagen || fabricLoader.isModLoaded("betternether")) new BetterNether().init();
+		if (datagen || fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
+		if (datagen || fabricLoader.isModLoaded("blockus")) new Blockus().init();
+		if (datagen || fabricLoader.isModLoaded("byg")) new Byg().init();
+		if (datagen || fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
+		if (datagen || fabricLoader.isModLoaded("promenade")) new Promenade().init();
+		if (datagen || fabricLoader.isModLoaded("terrestria")) new Terrestria().init();
+		if (datagen || fabricLoader.isModLoaded("traverse")) new Traverse().init();
 
 		modifyAxeBlockStripping();
 		hollowerBlockBreak();
