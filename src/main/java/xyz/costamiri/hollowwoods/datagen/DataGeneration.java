@@ -7,5 +7,6 @@ public class DataGeneration implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.createPack().addProvider(HWLootTables::new);
+        fabricDataGenerator.createPack().addProvider(HWModelGenerator::new);
     }
 }
