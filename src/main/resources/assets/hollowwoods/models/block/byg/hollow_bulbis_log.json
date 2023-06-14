@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "byg:block/bulbis/log",
-    "top": "byg:block/bulbis/log_top",
-    "inside": "byg:block/bulbis/stripped_log",
-    "particle": "byg:block/bulbis/log"
-  }
-}

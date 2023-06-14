@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "bewitchment:block/stripped_elder_log",
+    "particle": "bewitchment:block/elder_log",
+    "side": "bewitchment:block/elder_log",
+    "top": "bewitchment:block/elder_log_top"
+  }
+}

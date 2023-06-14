@@ -15,31 +15,21 @@ public class Promenade extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        _registerLog(HOLLOW_CHERRY_OAK_LOG, "hollow_cherry_oak_log");
-        _registerLog(HOLLOW_PALM_LOG, "hollow_palm_log");
-        _registerLog(STRIPPED_HOLLOW_CHERRY_OAK_LOG, "stripped_hollow_cherry_oak_log");
-        _registerLog(STRIPPED_HOLLOW_PALM_LOG, "stripped_hollow_palm_log");
-    }
-
-    @Override
-    public void addBlocksStripping() {
-        strippedBlocks.put(HOLLOW_CHERRY_OAK_LOG, STRIPPED_HOLLOW_CHERRY_OAK_LOG);
-        strippedBlocks.put(HOLLOW_PALM_LOG, STRIPPED_HOLLOW_PALM_LOG);
-    }
-
-    @Override
-    public void addBlocksHollowing() {
-        hollowedBlocks.put(new Identifier(namespace, "cherry_oak_log"), HOLLOW_CHERRY_OAK_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "palm_log"), HOLLOW_PALM_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "stripped_cherry_oak_log"), STRIPPED_HOLLOW_CHERRY_OAK_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "stripped_palm_log"), STRIPPED_HOLLOW_PALM_LOG);
-    }
-
-    @Override
-    public void addPlanksConversion() {
-        planksConversion.put(HOLLOW_CHERRY_OAK_LOG, new Identifier(namespace, "cherry_oak_planks"));
-        planksConversion.put(HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_CHERRY_OAK_LOG, new Identifier(namespace, "cherry_oak_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_PALM_LOG, new Identifier(namespace, "palm_planks"));
+        createLog(
+                HOLLOW_CHERRY_OAK_LOG,
+                STRIPPED_HOLLOW_CHERRY_OAK_LOG,
+                "cherry_oak_log",
+                new Identifier(namespace, "cherry_oak_log"),
+                new Identifier(namespace, "stripped_cherry_oak_log"),
+                new Identifier(namespace, "cherry_oak_planks")
+        );
+        createLog(
+                HOLLOW_PALM_LOG,
+                STRIPPED_HOLLOW_PALM_LOG,
+                "palm_log",
+                new Identifier(namespace, "palm_log"),
+                new Identifier(namespace, "stripped_palm_log"),
+                new Identifier(namespace, "palm_planks")
+        );
     }
 }

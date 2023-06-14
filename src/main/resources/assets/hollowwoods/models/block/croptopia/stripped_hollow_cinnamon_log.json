@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "croptopia:block/stripped_cinnamon_log",
-    "top": "croptopia:block/stripped_cinnamon_log_top",
-    "inside": "croptopia:block/stripped_cinnamon_log",
-    "particle": "croptopia:block/stripped_cinnamon_log"
-  }
-}

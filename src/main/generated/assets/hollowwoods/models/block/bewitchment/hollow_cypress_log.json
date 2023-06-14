@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "bewitchment:block/stripped_cypress_log",
+    "particle": "bewitchment:block/cypress_log",
+    "side": "bewitchment:block/cypress_log",
+    "top": "bewitchment:block/cypress_log_top"
+  }
+}

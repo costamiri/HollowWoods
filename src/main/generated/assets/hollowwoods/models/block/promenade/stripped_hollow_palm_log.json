@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "promenade:block/stripped_palm_log",
+    "particle": "promenade:block/stripped_palm_log",
+    "side": "promenade:block/stripped_palm_log",
+    "top": "promenade:block/stripped_palm_log_top"
+  }
+}

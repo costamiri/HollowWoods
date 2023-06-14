@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "byg:block/cypress/stripped_log",
-    "top": "byg:block/cypress/stripped_log_top",
-    "inside": "byg:block/cypress/stripped_log",
-    "particle": "byg:block/cypress/stripped_log"
-  }
-}

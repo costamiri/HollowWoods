@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "architects_palette:block/stripped_twisted_log",
-    "top": "architects_palette:block/stripped_twisted_log_top",
-    "inside": "architects_palette:block/stripped_twisted_log",
-    "particle": "architects_palette:block/stripped_twisted_log"
-  }
-}

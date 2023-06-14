@@ -4,10 +4,13 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
+import net.minecraft.item.Item;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import xyz.costamiri.hollowwoods.HollowWoods;
+import xyz.costamiri.hollowwoods.items.HollowerTool;
+import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +36,9 @@ public class HWModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        for (Item item : HollowWoods.items.values()) {
+            if (item instanceof HollowerTool) itemModelGenerator.register(item, Models.HANDHELD);
+        }
     }
 
     public BlockStateSupplier createBlockStateSupplier(Block block, Identifier model) {

@@ -13,24 +13,13 @@ public class Blockus extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        _registerLog(HOLLOW_WHITE_OAK_LOG, "hollow_white_oak_log");
-        _registerLog(STRIPPED_HOLLOW_WHITE_OAK_LOG, "stripped_hollow_white_oak_log");
-    }
-
-    @Override
-    public void addBlocksStripping() {
-        strippedBlocks.put(HOLLOW_WHITE_OAK_LOG, STRIPPED_HOLLOW_WHITE_OAK_LOG);
-    }
-
-    @Override
-    public void addBlocksHollowing() {
-        hollowedBlocks.put(new Identifier(namespace, "white_oak_log"), HOLLOW_WHITE_OAK_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "stripped_white_oak_log"), STRIPPED_HOLLOW_WHITE_OAK_LOG);
-    }
-
-    @Override
-    public void addPlanksConversion() {
-        planksConversion.put(HOLLOW_WHITE_OAK_LOG, new Identifier(namespace, "white_oak_planks"));
-        planksConversion.put(STRIPPED_HOLLOW_WHITE_OAK_LOG, new Identifier(namespace, "white_oak_planks"));
+        createLog(
+                HOLLOW_WHITE_OAK_LOG,
+                STRIPPED_HOLLOW_WHITE_OAK_LOG,
+                "white_oak_log",
+                new Identifier(namespace, "white_oak_log"),
+                new Identifier(namespace, "stripped_white_oak_log"),
+                new Identifier(namespace, "white_oak_planks")
+        );
     }
 }

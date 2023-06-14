@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "byg:block/jacaranda/stripped_log",
-    "top": "byg:block/jacaranda/stripped_log_top",
-    "inside": "byg:block/jacaranda/stripped_log",
-    "particle": "byg:block/jacaranda/stripped_log"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "betternether:block/mushroom_fir_bark",
-    "top": "betternether:block/mushroom_fir_log_top",
-    "inside": "betternether:block/mushroom_fir_stripped_log_side",
-    "particle": "betternether:block/mushroom_fir_bark"
-  }
-}

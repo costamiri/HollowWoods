@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "betternether:block/nether_sakura_log_side",
-    "top": "betternether:block/nether_sakura_log_top",
-    "inside": "betternether:block/nether_sakura_stripped_log_side",
-    "particle": "betternether:block/nether_sakura_log_side"
-  }
-}

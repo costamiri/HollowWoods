@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "terrestria:block/japanese_maple_log",
-    "top": "terrestria:block/japanese_maple_log_top",
-    "inside": "terrestria:block/stripped_japanese_maple_log",
-    "particle": "terrestria:block/japanese_maple_log"
-  }
-}

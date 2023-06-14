@@ -15,23 +15,13 @@ public class Croptopia extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        _registerLog(HOLLOW_CINNAMON_LOG, "hollow_cinnamon_log");
-        _registerLog(STRIPPED_HOLLOW_CINNAMON_LOG, "stripped_hollow_cinnamon_log");
-    }
-
-    @Override
-    public void addBlocksStripping() {
-        strippedBlocks.put(HOLLOW_CINNAMON_LOG, STRIPPED_HOLLOW_CINNAMON_LOG);
-    }
-
-    @Override
-    public void addBlocksHollowing() {
-        hollowedBlocks.put(new Identifier(namespace, "cinnamon_log"), HOLLOW_CINNAMON_LOG);
-        hollowedBlocks.put(new Identifier(namespace, "stripped_cinnamon_log"), STRIPPED_HOLLOW_CINNAMON_LOG);
-    }
-
-    @Override
-    public void addPlanksConversion() {
-        // no Planks
+        createLog(
+                HOLLOW_CINNAMON_LOG,
+                STRIPPED_HOLLOW_CINNAMON_LOG,
+                "cinnamon_log",
+                new Identifier(namespace, "cinnamon_log"),
+                new Identifier(namespace, "stripped_cinnamon_log"),
+                null
+        );
     }
 }

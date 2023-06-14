@@ -1,9 +1,0 @@
-{
-  "parent": "hollowwoods:block/templates/hollow_log",
-  "textures": {
-    "outside": "bewitchment:block/stripped_dragons_blood_log",
-    "top": "bewitchment:block/stripped_dragons_blood_log_top",
-    "inside": "bewitchment:block/stripped_dragons_blood_log",
-    "particle": "bewitchment:block/stripped_dragons_blood_log"
-  }
-}

@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "betternether:block/stripped_stalagnate_log",
+    "particle": "betternether:block/stalagnate_log",
+    "side": "betternether:block/stalagnate_log",
+    "top": "betternether:block/stalagnate_log_top"
+  }
+}
