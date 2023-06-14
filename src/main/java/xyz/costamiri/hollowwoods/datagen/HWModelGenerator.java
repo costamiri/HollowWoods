@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import xyz.costamiri.hollowwoods.HollowWoods;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
-import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +17,7 @@ import java.util.Optional;
 
 public class HWModelGenerator extends FabricModelProvider {
     public static final Model HOLLOW_LOG = new Model(Optional.of(new Identifier(HollowWoods.MODID, "block/templates/hollow_log")), Optional.empty(), TextureKey.SIDE, TextureKey.INSIDE, TextureKey.TOP, TextureKey.PARTICLE);
-    public static final HashMap<Block, LogTextureMap> textures = new HashMap<>();
+    public static final HashMap<Block, TextureMap> textures = new HashMap<>();
 
     public HWModelGenerator(FabricDataOutput output) {
         super(output);
@@ -26,7 +25,7 @@ public class HWModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        for (Map.Entry<Block, LogTextureMap> entry : textures.entrySet()) {
+        for (Map.Entry<Block, TextureMap> entry : textures.entrySet()) {
             TextureMap textures = entry.getValue();
             Identifier model = HOLLOW_LOG.upload(entry.getKey(), textures, blockStateModelGenerator.modelCollector);
             BlockStateSupplier supplier = createBlockStateSupplier(entry.getKey(), model);

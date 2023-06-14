@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_bulbis_stem",
-    "particle": "byg:block/stripped_bulbis_stem",
-    "side": "byg:block/stripped_bulbis_stem",
-    "top": "byg:block/stripped_bulbis_stem_top"
+    "inside": "byg:block/bulbis/stripped_log",
+    "particle": "byg:block/bulbis/stripped_log",
+    "side": "byg:block/bulbis/stripped_log",
+    "top": "byg:block/bulbis/stripped_log_top"
   }
 }

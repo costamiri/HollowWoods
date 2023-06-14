@@ -2,6 +2,7 @@ package xyz.costamiri.hollowwoods.registry.block;
 
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
+import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 public class BetterNether extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_ANCHOR_TREE_LOG = new HollowLog();
@@ -32,7 +33,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "anchor_tree_log"),
                 new Identifier(namespace, "stripped_anchor_tree_log"),
                 new Identifier(namespace, "anchor_tree_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/anchor_tree_log_side"),
+                        new Identifier(namespace, "block/anchor_tree_stripped_log_side_1"),
+                        new Identifier(namespace, "block/anchor_tree_log_top"),
+                        new Identifier(namespace, "block/anchor_tree_stripped_log_top")
+                )
         );
         createLog(
                 HOLLOW_MUSHROOM_FIR_LOG,
@@ -41,7 +48,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "mushroom_fir_log"),
                 new Identifier(namespace, "stripped_mushroom_fir_log"),
                 new Identifier(namespace, "mushroom_fir_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/mushroom_fir_bark"),
+                        new Identifier(namespace, "block/mushroom_fir_stripped_log_side"),
+                        new Identifier(namespace, "block/mushroom_fir_log_top"),
+                        new Identifier(namespace, "block/mushroom_fir_stripped_log_top")
+                )
         );
         createLog(
                 HOLLOW_NETHER_SAKURA_LOG,
@@ -50,7 +63,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "nether_sakura_log"),
                 new Identifier(namespace, "stripped_nether_sakura_log"),
                 new Identifier(namespace, "nether_sakura_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/nether_sakura_log_side"),
+                        new Identifier(namespace, "block/nether_sakura_stripped_log_side"),
+                        new Identifier(namespace, "block/nether_sakura_log_top"),
+                        new Identifier(namespace, "block/nether_sakura_stripped_log_top")
+                )
         );
         createLog(
                 HOLLOW_RUBEUS_LOG,
@@ -59,7 +78,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "rubeus_log"),
                 new Identifier(namespace, "stripped_rubeus_log"),
                 new Identifier(namespace, "rubeus_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/rubeus_log_side"),
+                        new Identifier(namespace, "block/striped_rubeus_log_side"),
+                        new Identifier(namespace, "block/rubeus_log_top"),
+                        new Identifier(namespace, "block/striped_rubeus_log_top")
+                )
         );
         createLog(
                 HOLLOW_STALAGNATE_LOG,
@@ -68,7 +93,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "stalagnate_log"),
                 new Identifier(namespace, "stripped_stalagnate_log"),
                 new Identifier(namespace, "stalagnate_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/stalagnate_bark_side"),
+                        new Identifier(namespace, "block/stalagnate_stripped_log_side"),
+                        new Identifier(namespace, "block/stalagnate_bark_top"),
+                        new Identifier(namespace, "block/stalagnate_stripped_log_top")
+                )
         );
         createLog(
                 HOLLOW_WART_LOG,
@@ -77,7 +108,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "wart_log"),
                 new Identifier(namespace, "stripped_wart_log"),
                 new Identifier(namespace, "wart_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/wart_bark"),
+                        new Identifier(namespace, "block/wart_stripped_log_side"),
+                        new Identifier(namespace, "block/wart_log_top"),
+                        new Identifier(namespace, "block/wart_stripped_log_top")
+                )
         );
         createLog(
                 HOLLOW_WILLOW_LOG,
@@ -86,7 +123,13 @@ public class BetterNether extends HollowBlocks {
                 new Identifier(namespace, "willow_log"),
                 new Identifier(namespace, "stripped_willow_log"),
                 new Identifier(namespace, "willow_planks"),
-                false
+                false,
+                new LogTextureMap(
+                        new Identifier(namespace, "block/willow_bark"),
+                        new Identifier(namespace, "block/willow_stripped_log_side"),
+                        new Identifier(namespace, "block/willow_log_top"),
+                        new Identifier(namespace, "block/willow_stripped_log_top")
+                )
         );
     }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_fungal_imparius_stem",
+    "inside": "byg:block/imparius/planks",
     "particle": "byg:block/fungal_imparius_stem",
     "side": "byg:block/fungal_imparius_stem",
     "top": "byg:block/fungal_imparius_stem_top"

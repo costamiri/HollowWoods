@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "betternether:block/stripped_stalagnate_log",
-    "particle": "betternether:block/stalagnate_log",
-    "side": "betternether:block/stalagnate_log",
-    "top": "betternether:block/stalagnate_log_top"
+    "inside": "betternether:block/stalagnate_stripped_log_side",
+    "particle": "betternether:block/stalagnate_bark_side",
+    "side": "betternether:block/stalagnate_bark_side",
+    "top": "betternether:block/stalagnate_bark_top"
   }
 }

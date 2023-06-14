@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_skyris_log",
-    "particle": "byg:block/stripped_skyris_log",
-    "side": "byg:block/stripped_skyris_log",
-    "top": "byg:block/stripped_skyris_log_top"
+    "inside": "byg:block/skyris/stripped_log",
+    "particle": "byg:block/skyris/stripped_log",
+    "side": "byg:block/skyris/stripped_log",
+    "top": "byg:block/skyris/stripped_log_top"
   }
 }

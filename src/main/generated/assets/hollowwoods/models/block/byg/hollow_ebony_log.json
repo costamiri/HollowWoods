@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_ebony_log",
-    "particle": "byg:block/ebony_log",
-    "side": "byg:block/ebony_log",
-    "top": "byg:block/ebony_log_top"
+    "inside": "byg:block/ebony/stripped_log",
+    "particle": "byg:block/ebony/log",
+    "side": "byg:block/ebony/log",
+    "top": "byg:block/ebony/log_top"
   }
 }

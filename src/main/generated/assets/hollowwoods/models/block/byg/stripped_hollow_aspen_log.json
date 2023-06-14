@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_aspen_log",
-    "particle": "byg:block/stripped_aspen_log",
-    "side": "byg:block/stripped_aspen_log",
-    "top": "byg:block/stripped_aspen_log_top"
+    "inside": "byg:block/aspen/stripped_log",
+    "particle": "byg:block/aspen/stripped_log",
+    "side": "byg:block/aspen/stripped_log",
+    "top": "byg:block/aspen/stripped_log_top"
   }
 }

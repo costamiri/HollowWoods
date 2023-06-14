@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "betternether:block/stripped_anchor_tree_log",
-    "particle": "betternether:block/stripped_anchor_tree_log",
-    "side": "betternether:block/stripped_anchor_tree_log",
-    "top": "betternether:block/stripped_anchor_tree_log_top"
+    "inside": "betternether:block/anchor_tree_stripped_log_side_1",
+    "particle": "betternether:block/anchor_tree_stripped_log_side_1",
+    "side": "betternether:block/anchor_tree_stripped_log_side_1",
+    "top": "betternether:block/anchor_tree_stripped_log_top"
   }
 }

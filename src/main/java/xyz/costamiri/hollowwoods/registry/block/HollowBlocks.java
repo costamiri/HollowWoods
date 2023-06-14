@@ -30,10 +30,6 @@ public abstract class HollowBlocks {
         registerLog(block, buildPath(blockName), flammable);
     }
 
-    public void _registerLog(Block block, String blockName) {
-        _registerLog(block, blockName, true);
-    }
-
     public void addRecipes() {
         hollowedBlocks.forEach((fullLogId, hollowLog) -> {
             Identifier planksId = planksConversion.get(hollowLog);
@@ -42,21 +38,29 @@ public abstract class HollowBlocks {
         });
     }
 
-    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, boolean flammable) {
+    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, boolean flammable, LogTextureMap textures) {
         _registerLog(hollowLog, "hollow_" + logName, flammable);
         hollowedBlocks.put(rawLogId, hollowLog);
         if (planksId != null) planksConversion.put(hollowLog, planksId);
-        HWModelGenerator.textures.put(hollowLog, new LogTextureMap(rawLogId.getNamespace(), rawLogId.getPath(), false));
+        HWModelGenerator.textures.put(hollowLog, textures.raw());
 
         if (strippedHollowLog != null) {
             if (rawStrippedLogId.getNamespace().equals(this.namespace)) {
                 _registerLog(strippedHollowLog, "stripped_hollow_" + logName, flammable);
                 if (planksId != null) planksConversion.put(strippedHollowLog, planksId);
-                HWModelGenerator.textures.put(strippedHollowLog, new LogTextureMap(rawLogId.getNamespace(), rawLogId.getPath(), true));
+                HWModelGenerator.textures.put(strippedHollowLog, textures.stripped());
                 hollowedBlocks.put(rawStrippedLogId, strippedHollowLog);
             }
             strippedBlocks.put(hollowLog, strippedHollowLog);
         }
+    }
+
+    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, boolean flammable) {
+        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, flammable, new LogTextureMap(rawLogId.getNamespace(), rawLogId.getPath()));
+    }
+
+    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, LogTextureMap textures) {
+        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, true, textures);
     }
 
     public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId) {

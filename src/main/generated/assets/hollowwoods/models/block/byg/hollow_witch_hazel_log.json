@@ -1,9 +1,9 @@
 {
   "parent": "hollowwoods:block/templates/hollow_log",
   "textures": {
-    "inside": "byg:block/stripped_witch_hazel_log",
-    "particle": "byg:block/witch_hazel_log",
-    "side": "byg:block/witch_hazel_log",
-    "top": "byg:block/witch_hazel_log_top"
+    "inside": "byg:block/witch_hazel/stripped_log",
+    "particle": "byg:block/witch_hazel/log",
+    "side": "byg:block/witch_hazel/log",
+    "top": "byg:block/witch_hazel/log_top"
   }
 }
