@@ -24,7 +24,7 @@ public class HollowLog extends PillarBlock implements Waterloggable {
     public static BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public HollowLog() {
-        super(FabricBlockSettings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+        super(FabricBlockSettings.create().strength(2.0f).sounds(BlockSoundGroup.WOOD));
         this.setDefaultState(this.getDefaultState().with(WATERLOGGED, false));
     }
 

@@ -14,6 +14,9 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.datagen.HWLootTables;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
@@ -39,14 +42,17 @@ public class HollowWoods implements ModInitializer {
 	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
 	private static final FabricLoader fabricLoader = FabricLoader.getInstance();
 
-	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier(MODID, "main"))
-			.icon(() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG))
-			.build();
+	public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MODID, "main"));
 
 	private static final boolean datagen = false;
 
 	@Override
 	public void onInitialize() {
+		Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
+				.icon(() -> new ItemStack(STRIPPED_HOLLOW_OAK_LOG))
+				.displayName(Text.translatable("itemGroup.hollowwoods.main"))
+				.build());
+
 		new VanillaMinecraftBlocks().init();
 		new VanillaMinecraftItems().init();
 		if (datagen || fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
