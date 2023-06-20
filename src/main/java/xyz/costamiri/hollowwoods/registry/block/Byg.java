@@ -4,70 +4,71 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
+import xyz.costamiri.hollowwoods.blocks.HollowNetherStem;
 import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 public class Byg extends HollowBlocks {
-    public static final HollowLog HOLLOW_ASPEN_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_BAOBAB_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_BULBIS_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_CHERRY_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_CIKA_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_CYPRESS_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_EBONY_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_EMBUR_PEDU = new HollowLog();
-    public static final HollowLog HOLLOW_ETHER_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_FIR_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_HOLLY_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_IMPARIUS_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_FUNGAL_IMPARIUS_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_JACARANDA_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_LAMENT_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_MAHOGANY_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_MAPLE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_NIGHTSHADE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_PALM_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_PALO_VERDE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_PINE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_REDWOOD_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_SKYRIS_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_SYTHIAN_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_WHITE_MANGROVE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_WILLOW_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_WITCH_HAZEL_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_WITHERING_OAK_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_ZELKOVA_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_ASPEN_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_BAOBAB_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_BULBIS_STEM = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_CHERRY_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_CIKA_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_EBONY_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_EMBUR_PEDU = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_ETHER_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_FIR_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_HOLLY_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_JACARANDA_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_LAMENT_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_MAHOGANY_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_MAPLE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_NIGHTSHADE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_PALM_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_PALO_VERDE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_PINE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_REDWOOD_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_SKYRIS_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_SYTHIAN_STEM = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_WHITE_MANGROVE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_WILLOW_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_WITCH_HAZEL_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_ZELKOVA_LOG = new HollowLog();
+    public static HollowLog HOLLOW_ASPEN_LOG;
+    public static HollowLog HOLLOW_BAOBAB_LOG;
+    public static HollowLog HOLLOW_BLUE_ENCHANTED_LOG;
+    public static HollowNetherStem HOLLOW_BULBIS_STEM;
+    public static HollowLog HOLLOW_CHERRY_LOG;
+    public static HollowLog HOLLOW_CIKA_LOG;
+    public static HollowLog HOLLOW_CYPRESS_LOG;
+    public static HollowLog HOLLOW_EBONY_LOG;
+    public static HollowNetherStem HOLLOW_EMBUR_PEDU;
+    public static HollowLog HOLLOW_ETHER_LOG;
+    public static HollowLog HOLLOW_FIR_LOG;
+    public static HollowLog HOLLOW_GREEN_ENCHANTED_LOG;
+    public static HollowLog HOLLOW_HOLLY_LOG;
+    public static HollowLog HOLLOW_IMPARIUS_STEM;
+    public static HollowLog HOLLOW_FUNGAL_IMPARIUS_STEM;
+    public static HollowLog HOLLOW_JACARANDA_LOG;
+    public static HollowLog HOLLOW_LAMENT_LOG;
+    public static HollowLog HOLLOW_MAHOGANY_LOG;
+    public static HollowLog HOLLOW_MAPLE_LOG;
+    public static HollowLog HOLLOW_NIGHTSHADE_LOG;
+    public static HollowLog HOLLOW_PALM_LOG;
+    public static HollowLog HOLLOW_PALO_VERDE_LOG;
+    public static HollowLog HOLLOW_PINE_LOG;
+    public static HollowLog HOLLOW_RAINBOW_EUCALYPTUS_LOG;
+    public static HollowLog HOLLOW_REDWOOD_LOG;
+    public static HollowLog HOLLOW_SKYRIS_LOG;
+    public static HollowNetherStem HOLLOW_SYTHIAN_STEM;
+    public static HollowLog HOLLOW_WHITE_MANGROVE_LOG;
+    public static HollowLog HOLLOW_WILLOW_LOG;
+    public static HollowLog HOLLOW_WITCH_HAZEL_LOG;
+    public static HollowLog HOLLOW_WITHERING_OAK_LOG;
+    public static HollowLog HOLLOW_ZELKOVA_LOG;
+    public static HollowLog STRIPPED_HOLLOW_ASPEN_LOG;
+    public static HollowLog STRIPPED_HOLLOW_BAOBAB_LOG;
+    public static HollowLog STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG;
+    public static HollowNetherStem STRIPPED_HOLLOW_BULBIS_STEM;
+    public static HollowLog STRIPPED_HOLLOW_CHERRY_LOG;
+    public static HollowLog STRIPPED_HOLLOW_CIKA_LOG;
+    public static HollowLog STRIPPED_HOLLOW_CYPRESS_LOG;
+    public static HollowLog STRIPPED_HOLLOW_EBONY_LOG;
+    public static HollowNetherStem STRIPPED_HOLLOW_EMBUR_PEDU;
+    public static HollowLog STRIPPED_HOLLOW_ETHER_LOG;
+    public static HollowLog STRIPPED_HOLLOW_FIR_LOG;
+    public static HollowLog STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG;
+    public static HollowLog STRIPPED_HOLLOW_HOLLY_LOG;
+    public static HollowLog STRIPPED_HOLLOW_JACARANDA_LOG;
+    public static HollowLog STRIPPED_HOLLOW_LAMENT_LOG;
+    public static HollowLog STRIPPED_HOLLOW_MAHOGANY_LOG;
+    public static HollowLog STRIPPED_HOLLOW_MAPLE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_NIGHTSHADE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_PALM_LOG;
+    public static HollowLog STRIPPED_HOLLOW_PALO_VERDE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_PINE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG;
+    public static HollowLog STRIPPED_HOLLOW_REDWOOD_LOG;
+    public static HollowLog STRIPPED_HOLLOW_SKYRIS_LOG;
+    public static HollowNetherStem STRIPPED_HOLLOW_SYTHIAN_STEM;
+    public static HollowLog STRIPPED_HOLLOW_WHITE_MANGROVE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_WILLOW_LOG;
+    public static HollowLog STRIPPED_HOLLOW_WITCH_HAZEL_LOG;
+    public static HollowLog STRIPPED_HOLLOW_ZELKOVA_LOG;
 
     public Byg() {
         this.namespace = "byg";
@@ -76,8 +77,8 @@ public class Byg extends HollowBlocks {
     @Override
     public void registerBlocks() {
         createLog(
-                HOLLOW_ASPEN_LOG,
-                STRIPPED_HOLLOW_ASPEN_LOG,
+                HOLLOW_ASPEN_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_ASPEN_LOG = new HollowLog.Builder().build(),
                 "aspen_log",
                 new Identifier(namespace, "aspen_log"),
                 new Identifier(namespace, "stripped_aspen_log"),
@@ -90,8 +91,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_BAOBAB_LOG,
-                STRIPPED_HOLLOW_BAOBAB_LOG,
+                HOLLOW_BAOBAB_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_BAOBAB_LOG = new HollowLog.Builder().build(),
                 "baobab_log",
                 new Identifier(namespace, "baobab_log"),
                 new Identifier(namespace, "stripped_baobab_log"),
@@ -104,8 +105,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_BLUE_ENCHANTED_LOG,
-                STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG,
+                HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog.Builder().build(),
                 "blue_enchanted_log",
                 new Identifier(namespace, "blue_enchanted_log"),
                 new Identifier(namespace, "stripped_blue_enchanted_log"),
@@ -118,13 +119,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_BULBIS_STEM,
-                STRIPPED_HOLLOW_BULBIS_STEM,
+                HOLLOW_BULBIS_STEM = new HollowNetherStem.Builder().build(),
+                STRIPPED_HOLLOW_BULBIS_STEM = new HollowNetherStem.Builder().build(),
                 "bulbis_stem",
                 new Identifier(namespace, "bulbis_stem"),
                 new Identifier(namespace, "stripped_bulbis_stem"),
                 new Identifier(namespace, "bulbis_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/bulbis/log"),
                         new Identifier(namespace, "block/bulbis/stripped_log"),
@@ -133,8 +133,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_CHERRY_LOG,
-                STRIPPED_HOLLOW_CHERRY_LOG,
+                HOLLOW_CHERRY_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_CHERRY_LOG = new HollowLog.Builder().build(),
                 "cherry_log",
                 new Identifier(namespace, "cherry_log"),
                 new Identifier(namespace, "stripped_cherry_log"),
@@ -147,8 +147,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_CIKA_LOG,
-                STRIPPED_HOLLOW_CIKA_LOG,
+                HOLLOW_CIKA_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_CIKA_LOG = new HollowLog.Builder().build(),
                 "cika_log",
                 new Identifier(namespace, "cika_log"),
                 new Identifier(namespace, "stripped_cika_log"),
@@ -161,8 +161,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_CYPRESS_LOG,
-                STRIPPED_HOLLOW_CYPRESS_LOG,
+                HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build(),
                 "cypress_log",
                 new Identifier(namespace, "cypress_log"),
                 new Identifier(namespace, "stripped_cypress_log"),
@@ -175,8 +175,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_EBONY_LOG,
-                STRIPPED_HOLLOW_EBONY_LOG,
+                HOLLOW_EBONY_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_EBONY_LOG = new HollowLog.Builder().build(),
                 "ebony_log",
                 new Identifier(namespace, "ebony_log"),
                 new Identifier(namespace, "stripped_ebony_log"),
@@ -189,13 +189,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_EMBUR_PEDU,
-                STRIPPED_HOLLOW_EMBUR_PEDU,
+                HOLLOW_EMBUR_PEDU = new HollowNetherStem.Builder().build(),
+                STRIPPED_HOLLOW_EMBUR_PEDU = new HollowNetherStem.Builder().build(),
                 "embur_pedu",
                 new Identifier(namespace, "embur_pedu"),
                 new Identifier(namespace, "stripped_embur_pedu"),
                 new Identifier(namespace, "embur_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/embur/log"),
                         new Identifier(namespace, "block/embur/stripped_log"),
@@ -204,8 +203,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_ETHER_LOG,
-                STRIPPED_HOLLOW_ETHER_LOG,
+                HOLLOW_ETHER_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_ETHER_LOG = new HollowLog.Builder().build(),
                 "ether_log",
                 new Identifier(namespace, "ether_log"),
                 new Identifier(namespace, "stripped_ether_log"),
@@ -218,8 +217,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_FIR_LOG,
-                STRIPPED_HOLLOW_FIR_LOG,
+                HOLLOW_FIR_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().build(),
                 "fir_log",
                 new Identifier(namespace, "fir_log"),
                 new Identifier(namespace, "stripped_fir_log"),
@@ -232,8 +231,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_GREEN_ENCHANTED_LOG,
-                STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG,
+                HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog.Builder().build(),
                 "green_enchanted_log",
                 new Identifier(namespace, "green_enchanted_log"),
                 new Identifier(namespace, "stripped_green_enchanted_log"),
@@ -246,8 +245,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_HOLLY_LOG,
-                STRIPPED_HOLLOW_HOLLY_LOG,
+                HOLLOW_HOLLY_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_HOLLY_LOG = new HollowLog.Builder().build(),
                 "holly_log",
                 new Identifier(namespace, "holly_log"),
                 new Identifier(namespace, "stripped_holly_log"),
@@ -260,13 +259,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_IMPARIUS_STEM,
+                HOLLOW_IMPARIUS_STEM = new HollowLog.Builder().build(),
                 null,
                 "imparius_stem",
                 new Identifier(namespace, "imparius_stem"),
                 null,
                 new Identifier(namespace, "imparius_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/imparius/log"),
                         new Identifier(namespace, "block/imparius/planks"),
@@ -275,13 +273,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_FUNGAL_IMPARIUS_STEM,
+                HOLLOW_FUNGAL_IMPARIUS_STEM = new HollowLog.Builder().build(),
                 null,
                 "fungal_imparius_stem",
                 new Identifier(namespace, "fungal_imparius_stem"),
                 null,
                 new Identifier(namespace, "imparius_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/fungal_imparius_stem"),
                         new Identifier(namespace, "block/imparius/planks"),
@@ -290,8 +287,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_JACARANDA_LOG,
-                STRIPPED_HOLLOW_JACARANDA_LOG,
+                HOLLOW_JACARANDA_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_JACARANDA_LOG = new HollowLog.Builder().build(),
                 "jacaranda_log",
                 new Identifier(namespace, "jacaranda_log"),
                 new Identifier(namespace, "stripped_jacaranda_log"),
@@ -304,13 +301,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_LAMENT_LOG,
-                STRIPPED_HOLLOW_LAMENT_LOG,
+                HOLLOW_LAMENT_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_LAMENT_LOG = new HollowLog.Builder().build(),
                 "lament_log",
                 new Identifier(namespace, "lament_log"),
                 new Identifier(namespace, "stripped_lament_log"),
                 new Identifier(namespace, "lament_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/lament/log"),
                         new Identifier(namespace, "block/lament/stripped_log"),
@@ -319,8 +315,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_MAHOGANY_LOG,
-                STRIPPED_HOLLOW_MAHOGANY_LOG,
+                HOLLOW_MAHOGANY_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_MAHOGANY_LOG = new HollowLog.Builder().build(),
                 "mahogany_log",
                 new Identifier(namespace, "mahogany_log"),
                 new Identifier(namespace, "stripped_mahogany_log"),
@@ -333,8 +329,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_MAPLE_LOG,
-                STRIPPED_HOLLOW_MAPLE_LOG,
+                HOLLOW_MAPLE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_MAPLE_LOG = new HollowLog.Builder().build(),
                 "maple_log",
                 new Identifier(namespace, "maple_log"),
                 new Identifier(namespace, "stripped_maple_log"),
@@ -347,8 +343,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_NIGHTSHADE_LOG,
-                STRIPPED_HOLLOW_NIGHTSHADE_LOG,
+                HOLLOW_NIGHTSHADE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_NIGHTSHADE_LOG = new HollowLog.Builder().build(),
                 "nightshade_log",
                 new Identifier(namespace, "nightshade_log"),
                 new Identifier(namespace, "stripped_nightshade_log"),
@@ -361,8 +357,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_PALM_LOG,
-                STRIPPED_HOLLOW_PALM_LOG,
+                HOLLOW_PALM_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_PALM_LOG = new HollowLog.Builder().build(),
                 "palm_log",
                 new Identifier(namespace, "palm_log"),
                 new Identifier(namespace, "stripped_palm_log"),
@@ -375,8 +371,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_PALO_VERDE_LOG,
-                STRIPPED_HOLLOW_PALO_VERDE_LOG,
+                HOLLOW_PALO_VERDE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_PALO_VERDE_LOG = new HollowLog.Builder().build(),
                 "palo_verde_log",
                 new Identifier(namespace, "palo_verde_log"),
                 new Identifier(namespace, "stripped_palo_verde_log"),
@@ -389,8 +385,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_PINE_LOG,
-                STRIPPED_HOLLOW_PINE_LOG,
+                HOLLOW_PINE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_PINE_LOG = new HollowLog.Builder().build(),
                 "pine_log",
                 new Identifier(namespace, "pine_log"),
                 new Identifier(namespace, "stripped_pine_log"),
@@ -403,8 +399,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_RAINBOW_EUCALYPTUS_LOG,
-                STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG,
+                HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog.Builder().build(),
                 "rainbow_eucalyptus_log",
                 new Identifier(namespace, "rainbow_eucalyptus_log"),
                 new Identifier(namespace, "stripped_rainbow_eucalyptus_log"),
@@ -417,8 +413,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_REDWOOD_LOG,
-                STRIPPED_HOLLOW_REDWOOD_LOG,
+                HOLLOW_REDWOOD_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_REDWOOD_LOG = new HollowLog.Builder().build(),
                 "redwood_log",
                 new Identifier(namespace, "redwood_log"),
                 new Identifier(namespace, "stripped_redwood_log"),
@@ -431,8 +427,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_SKYRIS_LOG,
-                STRIPPED_HOLLOW_SKYRIS_LOG,
+                HOLLOW_SKYRIS_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_SKYRIS_LOG = new HollowLog.Builder().build(),
                 "skyris_log",
                 new Identifier(namespace, "skyris_log"),
                 new Identifier(namespace, "stripped_skyris_log"),
@@ -445,13 +441,12 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_SYTHIAN_STEM,
-                STRIPPED_HOLLOW_SYTHIAN_STEM,
+                HOLLOW_SYTHIAN_STEM = new HollowNetherStem.Builder().build(),
+                STRIPPED_HOLLOW_SYTHIAN_STEM = new HollowNetherStem.Builder().build(),
                 "sythian_stem",
                 new Identifier(namespace, "sythian_stem"),
                 new Identifier(namespace, "stripped_sythian_stem"),
                 new Identifier(namespace, "sythian_planks"),
-                false,
                 new LogTextureMap(
                         new Identifier(namespace, "block/sythian/log"),
                         new Identifier(namespace, "block/sythian/stripped_log"),
@@ -460,8 +455,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_WHITE_MANGROVE_LOG,
-                STRIPPED_HOLLOW_WHITE_MANGROVE_LOG,
+                HOLLOW_WHITE_MANGROVE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_WHITE_MANGROVE_LOG = new HollowLog.Builder().build(),
                 "white_mangrove_log",
                 new Identifier(namespace, "white_mangrove_log"),
                 new Identifier(namespace, "stripped_white_mangrove_log"),
@@ -474,8 +469,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_WILLOW_LOG,
-                STRIPPED_HOLLOW_WILLOW_LOG,
+                HOLLOW_WILLOW_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_WILLOW_LOG = new HollowLog.Builder().build(),
                 "willow_log",
                 new Identifier(namespace, "willow_log"),
                 new Identifier(namespace, "stripped_willow_log"),
@@ -488,8 +483,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_WITCH_HAZEL_LOG,
-                STRIPPED_HOLLOW_WITCH_HAZEL_LOG,
+                HOLLOW_WITCH_HAZEL_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_WITCH_HAZEL_LOG = new HollowLog.Builder().build(),
                 "witch_hazel_log",
                 new Identifier(namespace, "witch_hazel_log"),
                 new Identifier(namespace, "stripped_witch_hazel_log"),
@@ -502,7 +497,7 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_WITHERING_OAK_LOG,
+                HOLLOW_WITHERING_OAK_LOG = new HollowLog.Builder().build(),
                 VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG,
                 "withering_oak_log",
                 new Identifier(namespace, "withering_oak_log"),
@@ -516,8 +511,8 @@ public class Byg extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_ZELKOVA_LOG,
-                STRIPPED_HOLLOW_ZELKOVA_LOG,
+                HOLLOW_ZELKOVA_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_ZELKOVA_LOG = new HollowLog.Builder().build(),
                 "zelkova_log",
                 new Identifier(namespace, "zelkova_log"),
                 new Identifier(namespace, "stripped_zelkova_log"),

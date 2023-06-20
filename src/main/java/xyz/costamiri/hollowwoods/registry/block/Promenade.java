@@ -5,14 +5,14 @@ import xyz.costamiri.hollowwoods.blocks.HollowLog;
 import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 public class Promenade extends HollowBlocks {
-    public static final HollowLog HOLLOW_DARK_AMARANTH_STEM = new HollowLog();
-    public static final HollowLog HOLLOW_MAPLE_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_PALM_LOG = new HollowLog();
-    public static final HollowLog HOLLOW_SAKURA_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_DARK_AMARANTH_STEM = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_MAPLE_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_PALM_LOG = new HollowLog();
-    public static final HollowLog STRIPPED_HOLLOW_SAKURA_LOG = new HollowLog();
+    public static HollowLog HOLLOW_DARK_AMARANTH_STEM;
+    public static HollowLog HOLLOW_MAPLE_LOG;
+    public static HollowLog HOLLOW_PALM_LOG;
+    public static HollowLog HOLLOW_SAKURA_LOG;
+    public static HollowLog STRIPPED_HOLLOW_DARK_AMARANTH_STEM;
+    public static HollowLog STRIPPED_HOLLOW_MAPLE_LOG;
+    public static HollowLog STRIPPED_HOLLOW_PALM_LOG;
+    public static HollowLog STRIPPED_HOLLOW_SAKURA_LOG;
 
     public Promenade() {
         this.namespace = "promenade";
@@ -21,8 +21,8 @@ public class Promenade extends HollowBlocks {
     @Override
     public void registerBlocks() {
         createLog(
-                HOLLOW_DARK_AMARANTH_STEM,
-                STRIPPED_HOLLOW_DARK_AMARANTH_STEM,
+                HOLLOW_DARK_AMARANTH_STEM = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_DARK_AMARANTH_STEM = new HollowLog.Builder().build(),
                 "dark_amaranth_stem",
                 new Identifier(namespace, "dark_amaranth_stem"),
                 new Identifier(namespace, "stripped_dark_amaranth_stem"),
@@ -35,8 +35,8 @@ public class Promenade extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_MAPLE_LOG,
-                STRIPPED_HOLLOW_MAPLE_LOG,
+                HOLLOW_MAPLE_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_MAPLE_LOG = new HollowLog.Builder().build(),
                 "maple_log",
                 new Identifier(namespace, "maple_log"),
                 new Identifier(namespace, "stripped_maple_log"),
@@ -49,8 +49,8 @@ public class Promenade extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_PALM_LOG,
-                STRIPPED_HOLLOW_PALM_LOG,
+                HOLLOW_PALM_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_PALM_LOG = new HollowLog.Builder().build(),
                 "palm_log",
                 new Identifier(namespace, "palm_log"),
                 new Identifier(namespace, "stripped_palm_log"),
@@ -63,8 +63,8 @@ public class Promenade extends HollowBlocks {
                 )
         );
         createLog(
-                HOLLOW_SAKURA_LOG,
-                STRIPPED_HOLLOW_SAKURA_LOG,
+                HOLLOW_SAKURA_LOG = new HollowLog.Builder().build(),
+                STRIPPED_HOLLOW_SAKURA_LOG = new HollowLog.Builder().build(),
                 "sakura_log",
                 new Identifier(namespace, "sakura_log"),
                 new Identifier(namespace, "stripped_sakura_log"),

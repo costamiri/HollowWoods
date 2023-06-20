@@ -18,6 +18,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import xyz.costamiri.hollowwoods.blocks.AbstractHollowPillar;
 import xyz.costamiri.hollowwoods.datagen.HWLootTables;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.mixin.AxeAccess;
@@ -81,16 +82,12 @@ public class HollowWoods implements ModInitializer {
 		items.put(path, Registry.register(Registries.ITEM, new Identifier(MODID, path), item));
 	}
 
-	public static void registerLog(Block block, String path, boolean flammable) {
+	public static void registerLog(AbstractHollowPillar block, String path) {
 		registerBlock(block, path);
 		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(block));
 		HWLootTables.blocks.add(block);
 		fuelRegistry.add(block, 300);
-		if (flammable) flammableRegistry.add(block, 5, 5);
-	}
-
-	public static void registerLog(Block block, String path) {
-		registerLog(block, path, true);
+		if (block.isBurnable()) flammableRegistry.add(block, 5, 5);
 	}
 
 	public static void registerTool(HollowerTool tool, String path) {

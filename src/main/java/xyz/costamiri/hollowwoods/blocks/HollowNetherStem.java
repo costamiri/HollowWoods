@@ -6,32 +6,32 @@ import net.minecraft.block.enums.Instrument;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 
-public class HollowLog extends AbstractHollowPillar {
-    public HollowLog(Settings settings) {
+public class HollowNetherStem extends AbstractHollowPillar {
+    public HollowNetherStem(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean isBurnable() {
-        return true;
+        return false;
     }
 
     public static class Builder extends AbstractHollowPillar.Builder<Builder> {
+
         public Builder() {
             this.topMapColor = MapColor.CLEAR;
             this.sideMapColor = MapColor.CLEAR;
-            this.blockSoundGroup = BlockSoundGroup.WOOD;
+            this.blockSoundGroup = BlockSoundGroup.NETHER_STEM;
         }
 
         @Override
-        public HollowLog build() {
-            return new HollowLog(
+        public HollowNetherStem build() {
+            return new HollowNetherStem(
                     FabricBlockSettings.create()
                             .strength(2.0f)
                             .mapColor((state) -> state.get(AbstractHollowPillar.AXIS) == Direction.Axis.Y ? this.topMapColor : this.sideMapColor)
                             .sounds(this.blockSoundGroup)
                             .instrument(Instrument.BASS)
-                            .burnable()
             );
         }
     }

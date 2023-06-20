@@ -2,7 +2,7 @@ package xyz.costamiri.hollowwoods.registry.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
-import xyz.costamiri.hollowwoods.blocks.HollowLog;
+import xyz.costamiri.hollowwoods.blocks.AbstractHollowPillar;
 import xyz.costamiri.hollowwoods.datagen.HWModelGenerator;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 import xyz.costamiri.hollowwoods.util.LogTextureMap;
@@ -25,20 +25,20 @@ public abstract class HollowBlocks {
 
     public abstract void registerBlocks();
 
-    public void _registerLog(Block block, String blockName, boolean flammable) {
-        registerLog(block, buildPath(blockName), flammable);
+    public void _registerLog(AbstractHollowPillar block, String blockName) {
+        registerLog(block, buildPath(blockName));
     }
 
-    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, boolean flammable, LogTextureMap textures) {
-        _registerLog(hollowLog, "hollow_" + logName, flammable);
+    public void createLog(AbstractHollowPillar hollowLog, AbstractHollowPillar strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, LogTextureMap textures) {
+        _registerLog(hollowLog, "hollow_" + logName);
         hollowedBlocks.put(rawLogId, hollowLog);
         if (planksId != null) planksConversion.put(hollowLog, planksId);
         HWModelGenerator.textures.put(hollowLog, textures.raw());
         HWRecipeManager.addHollowLogRecipes(rawLogId, new Identifier(MODID, buildPath("hollow_" + logName)), planksId, 2);
 
         if (strippedHollowLog != null) {
-            if (rawStrippedLogId.getNamespace().equals(this.namespace)) {
-                _registerLog(strippedHollowLog, "stripped_hollow_" + logName, flammable);
+            if (rawStrippedLogId.getNamespace().equals(namespace)) {
+                _registerLog(strippedHollowLog, "stripped_hollow_" + logName);
                 hollowedBlocks.put(rawStrippedLogId, strippedHollowLog);
                 if (planksId != null) planksConversion.put(strippedHollowLog, planksId);
                 HWModelGenerator.textures.put(strippedHollowLog, textures.stripped());
@@ -48,19 +48,11 @@ public abstract class HollowBlocks {
         }
     }
 
-    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, boolean flammable) {
-        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, flammable, new LogTextureMap(rawLogId.getNamespace(), rawLogId.getPath()));
-    }
-
-    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId, LogTextureMap textures) {
-        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, true, textures);
-    }
-
-    public void createLog(HollowLog hollowLog, HollowLog strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId) {
-        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, true);
+    public void createLog(AbstractHollowPillar hollowLog, AbstractHollowPillar strippedHollowLog, String logName, Identifier rawLogId, Identifier rawStrippedLogId, Identifier planksId) {
+        createLog(hollowLog, strippedHollowLog, logName, rawLogId, rawStrippedLogId, planksId, new LogTextureMap(rawLogId.getNamespace(), rawLogId.getPath()));
     }
 
     public String buildPath(String blockName) {
-        return this.namespace.equals("minecraft") ? blockName : "%s/%s".formatted(this.namespace, blockName);
+        return namespace.equals("minecraft") ? blockName : "%s/%s".formatted(namespace, blockName);
     }
 }
