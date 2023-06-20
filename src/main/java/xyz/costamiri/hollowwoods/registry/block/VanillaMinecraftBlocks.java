@@ -12,6 +12,7 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
     public static final HollowLog STRIPPED_HOLLOW_ACACIA_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_DARK_OAK_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_MANGROVE_LOG = new HollowLog();
+    public static final HollowLog STRIPPED_HOLLOW_CHERRY_LOG = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_CRIMSON_STEM = new HollowLog();
     public static final HollowLog STRIPPED_HOLLOW_WARPED_STEM = new HollowLog();
     public static final HollowLog HOLLOW_OAK_LOG = new HollowLog();
@@ -21,6 +22,7 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
     public static final HollowLog HOLLOW_ACACIA_LOG = new HollowLog();
     public static final HollowLog HOLLOW_DARK_OAK_LOG = new HollowLog();
     public static final HollowLog HOLLOW_MANGROVE_LOG = new HollowLog();
+    public static final HollowLog HOLLOW_CHERRY_LOG = new HollowLog();
     public static final HollowLog HOLLOW_CRIMSON_STEM = new HollowLog();
     public static final HollowLog HOLLOW_WARPED_STEM = new HollowLog();
 
@@ -79,6 +81,13 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
                 Registries.BLOCK.getId(Blocks.MANGROVE_LOG),
                 Registries.BLOCK.getId(Blocks.STRIPPED_MANGROVE_LOG),
                 Registries.BLOCK.getId(Blocks.MANGROVE_PLANKS));
+        createLog(
+                HOLLOW_CHERRY_LOG,
+                STRIPPED_HOLLOW_CHERRY_LOG,
+                "cherry_log",
+                Registries.BLOCK.getId(Blocks.CHERRY_LOG),
+                Registries.BLOCK.getId(Blocks.STRIPPED_CHERRY_LOG),
+                Registries.BLOCK.getId(Blocks.CHERRY_PLANKS));
         createLog(
                 HOLLOW_CRIMSON_STEM,
                 STRIPPED_HOLLOW_CRIMSON_STEM,
