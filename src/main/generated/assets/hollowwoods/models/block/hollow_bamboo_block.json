@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "minecraft:block/stripped_bamboo_block",
+    "particle": "minecraft:block/bamboo_block",
+    "side": "minecraft:block/bamboo_block",
+    "top": "minecraft:block/bamboo_block_top"
+  }
+}
