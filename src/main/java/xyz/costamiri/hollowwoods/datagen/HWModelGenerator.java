@@ -9,6 +9,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import xyz.costamiri.hollowwoods.HollowWoods;
+import xyz.costamiri.hollowwoods.blocks.HollowBambooBlock;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
 
 import java.util.HashMap;
@@ -17,6 +18,7 @@ import java.util.Optional;
 
 public class HWModelGenerator extends FabricModelProvider {
     public static final Model HOLLOW_LOG = new Model(Optional.of(new Identifier(HollowWoods.MODID, "block/templates/hollow_log")), Optional.empty(), TextureKey.SIDE, TextureKey.INSIDE, TextureKey.TOP, TextureKey.PARTICLE);
+    public static final Model HOLLOW_BAMBOO_BLOCK = new Model(Optional.of(new Identifier(HollowWoods.MODID, "block/templates/hollow_bamboo_block")), Optional.empty(), TextureKey.SIDE, TextureKey.TOP, TextureKey.PARTICLE);
     public static final HashMap<Block, TextureMap> textures = new HashMap<>();
 
     public HWModelGenerator(FabricDataOutput output) {
@@ -26,8 +28,11 @@ public class HWModelGenerator extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         for (Map.Entry<Block, TextureMap> entry : textures.entrySet()) {
+            Block block = entry.getKey();
             TextureMap textures = entry.getValue();
-            Identifier model = HOLLOW_LOG.upload(entry.getKey(), textures, blockStateModelGenerator.modelCollector);
+            Identifier model;
+            if (block instanceof HollowBambooBlock) model = HOLLOW_BAMBOO_BLOCK.upload(entry.getKey(), textures, blockStateModelGenerator.modelCollector);
+            else model = HOLLOW_LOG.upload(entry.getKey(), textures, blockStateModelGenerator.modelCollector);
             BlockStateSupplier supplier = createBlockStateSupplier(entry.getKey(), model);
             blockStateModelGenerator.blockStateCollector.accept(supplier);
         }

@@ -25,6 +25,19 @@ public class HollowBambooBlock extends AbstractHollowPillar {
     }
 
     @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return VoxelShapes.combineAndSimplify(
+                VoxelShapes.fullCube(),
+                switch (state.get(AXIS)) {
+                    case X -> Block.createCuboidShape(0.0f, 2.5f, 2.5f, 16.0f, 13.5f, 13.5f);
+                    case Z -> Block.createCuboidShape(2.5f, 2.5f, 0.0f, 13.5f, 13.5f, 16.0f);
+                    default -> Block.createCuboidShape(2.5f, 0.0f, 2.5f, 13.5f, 16.0f, 13.5f);
+                },
+                BooleanBiFunction.ONLY_FIRST
+        );
+    }
+
+    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return VoxelShapes.combineAndSimplify(
                 VoxelShapes.fullCube(),
