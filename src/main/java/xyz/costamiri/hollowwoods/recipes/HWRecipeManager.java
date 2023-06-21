@@ -41,13 +41,13 @@ public class HWRecipeManager {
                 createHollowingRecipe(ingredient, resultBlock));
     }
 
-    public static void addSmithingRecipe(Identifier baseItem, Identifier additionItem, Identifier resultItem) {
+    public static void addSmithingRecipe(Identifier baseItem, Identifier additionItem, Identifier templateItem, Identifier resultItem) {
         recipes.put(new Identifier(MODID, "smithing_%s_%s".formatted(baseItem.getPath(), additionItem.getPath())),
-                createSmithingRecipe(baseItem, additionItem, resultItem));
+                createSmithingRecipe(baseItem, additionItem, templateItem, resultItem));
     }
 
     public static void addHollowerToolRecipe(Identifier axeItem, String hollowerPath) {
-        addSmithingRecipe(axeItem, new Identifier("iron_ingot"), new Identifier(MODID, hollowerPath));
+        addSmithingRecipe(axeItem, new Identifier("iron_ingot"), new Identifier("iron_ingot"), new Identifier(MODID, hollowerPath));
     }
 
     public static JsonObject createShapelessRecipe(Identifier ingredient, Identifier resultItem, int resultCount) {
@@ -103,18 +103,21 @@ public class HWRecipeManager {
         return json;
     }
 
-    public static JsonObject createSmithingRecipe(Identifier baseItem, Identifier additionItem, Identifier resultItem) {
+    public static JsonObject createSmithingRecipe(Identifier baseItem, Identifier additionItem, Identifier templateItem, Identifier resultItem) {
         JsonObject jsonBase = new JsonObject();
         jsonBase.addProperty("item", baseItem.toString());
         JsonObject jsonAddition = new JsonObject();
         jsonAddition.addProperty("item", additionItem.toString());
         JsonObject jsonResult = new JsonObject();
         jsonResult.addProperty("item", resultItem.toString());
+        JsonObject jsonTemplate = new JsonObject();
+        jsonTemplate.addProperty("item", templateItem.toString());
         JsonObject json = new JsonObject();
-        json.addProperty("type", "minecraft:smithing");
+        json.addProperty("type", "minecraft:smithing_transform");
         json.add("base", jsonBase);
         json.add("addition", jsonAddition);
         json.add("result", jsonResult);
+        json.add("template", jsonTemplate);
         return json;
     }
 }
