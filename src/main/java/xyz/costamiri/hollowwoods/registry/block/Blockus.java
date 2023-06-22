@@ -13,13 +13,12 @@ public class Blockus extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        createLog(
-                HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().build(),
-                "white_oak_log",
-                new Identifier(namespace, "white_oak_log"),
-                new Identifier(namespace, "stripped_white_oak_log"),
-                new Identifier(namespace, "white_oak_planks")
-        );
+        HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_WHITE_OAK_LOG, new Identifier(this.namespace, "white_oak_log"))
+                .stripped(STRIPPED_HOLLOW_WHITE_OAK_LOG, new Identifier(this.namespace, "stripped_white_oak_log"))
+                .planks(new Identifier(this.namespace, "white_oak_planks"))
+                .create();
     }
 }

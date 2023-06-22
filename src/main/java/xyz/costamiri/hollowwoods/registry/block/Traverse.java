@@ -13,13 +13,12 @@ public class Traverse extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        createLog(
-                HOLLOW_FIR_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().build(),
-                "fir_log",
-                new Identifier(namespace, "fir_log"),
-                new Identifier(namespace, "stripped_fir_log"),
-                new Identifier(namespace, "fir_planks")
-        );
+        HOLLOW_FIR_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_FIR_LOG, new Identifier(this.namespace, "fir_log"))
+                .stripped(STRIPPED_HOLLOW_FIR_LOG, new Identifier(this.namespace, "stripped_fir_log"))
+                .planks(new Identifier(this.namespace, "fir_planks"))
+                .create();
     }
 }

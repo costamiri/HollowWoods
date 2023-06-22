@@ -13,9 +13,9 @@ import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 public class HWRecipeManager {
     public static Map<Identifier, JsonElement> recipes = new HashMap<>();
 
-    public static void addHollowLogRecipes(Identifier fullLog, Identifier hollowLog, Identifier planks, int planksCount) {
+    public static void addHollowLogRecipes(Identifier fullLog, Identifier hollowLog, Identifier planks, int planksCount, Identifier byproduct, int byproductCount) {
         if (planks != null) {
-            addHollowingRecipe(fullLog, hollowLog, planks, planksCount);
+            addHollowingRecipe(fullLog, hollowLog, byproduct, byproductCount);
             addShapelessRecipe(hollowLog, planks, planksCount);
         } else addHollowingRecipe(fullLog, hollowLog);
         addStonecuttingRecipe(fullLog, hollowLog, 1);

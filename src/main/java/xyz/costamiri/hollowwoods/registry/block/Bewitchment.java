@@ -19,37 +19,37 @@ public class Bewitchment extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        createLog(
-                HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build(),
-                "cypress_log",
-                new Identifier(namespace, "cypress_log"),
-                new Identifier(namespace, "stripped_cypress_log"),
-                new Identifier(namespace, "cypress_planks")
-        );
-        createLog(
-                HOLLOW_DRAGONS_BLOOD_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_DRAGONS_BLOOD_LOG = new HollowLog.Builder().build(),
-                "dragons_blood_log",
-                new Identifier(namespace, "dragons_blood_log"),
-                new Identifier(namespace, "stripped_dragons_blood_log"),
-                new Identifier(namespace, "dragons_blood_planks")
-        );
-        createLog(
-                HOLLOW_ELDER_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_ELDER_LOG = new HollowLog.Builder().build(),
-                "elder_log",
-                new Identifier(namespace, "elder_log"),
-                new Identifier(namespace, "stripped_elder_log"),
-                new Identifier(namespace, "elder_planks")
-        );
-        createLog(
-                HOLLOW_JUNIPER_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_JUNIPER_LOG = new HollowLog.Builder().build(),
-                "juniper_log",
-                new Identifier(namespace, "juniper_log"),
-                new Identifier(namespace, "stripped_juniper_log"),
-                new Identifier(namespace, "juniper_planks")
-        );
+        HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_CYPRESS_LOG, new Identifier(this.namespace, "cypress_log"))
+                .stripped(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(this.namespace, "stripped_cypress_log"))
+                .planks(new Identifier(this.namespace, "cypress_planks"))
+                .create();
+
+        HOLLOW_DRAGONS_BLOOD_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_DRAGONS_BLOOD_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(this.namespace, "dragons_blood_log"))
+                .stripped(STRIPPED_HOLLOW_DRAGONS_BLOOD_LOG, new Identifier(this.namespace, "stripped_dragons_blood_log"))
+                .planks(new Identifier(this.namespace, "dragons_blood_planks"))
+                .create();
+
+        HOLLOW_ELDER_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_ELDER_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_ELDER_LOG, new Identifier(this.namespace, "elder_log"))
+                .stripped(STRIPPED_HOLLOW_ELDER_LOG, new Identifier(this.namespace, "stripped_elder_log"))
+                .planks(new Identifier(this.namespace, "elder_planks"))
+                .create();
+
+        HOLLOW_JUNIPER_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_JUNIPER_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_JUNIPER_LOG, new Identifier(this.namespace, "juniper_log"))
+                .stripped(STRIPPED_HOLLOW_JUNIPER_LOG, new Identifier(this.namespace, "stripped_juniper_log"))
+                .planks(new Identifier(this.namespace, "juniper_planks"))
+                .create();
+
     }
 }

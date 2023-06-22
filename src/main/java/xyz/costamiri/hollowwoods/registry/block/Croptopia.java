@@ -13,13 +13,12 @@ public class Croptopia extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        createLog(
-                HOLLOW_CINNAMON_LOG = new HollowLog.Builder().build(),
-                STRIPPED_HOLLOW_CINNAMON_LOG = new HollowLog.Builder().build(),
-                "cinnamon_log",
-                new Identifier(namespace, "cinnamon_log"),
-                new Identifier(namespace, "stripped_cinnamon_log"),
-                null
-        );
+        HOLLOW_CINNAMON_LOG = new HollowLog.Builder().build();
+        STRIPPED_HOLLOW_CINNAMON_LOG = new HollowLog.Builder().build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_CINNAMON_LOG, new Identifier(this.namespace, "cinnamon_log"))
+                .stripped(STRIPPED_HOLLOW_CINNAMON_LOG, new Identifier(this.namespace, "stripped_cinnamon_log"))
+                .create();
+
     }
 }
