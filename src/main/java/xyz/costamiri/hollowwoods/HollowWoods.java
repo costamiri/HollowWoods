@@ -64,6 +64,7 @@ public class HollowWoods implements ModInitializer {
 		if (datagen || fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
 		if (datagen || fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (datagen || fabricLoader.isModLoaded("byg")) new Byg().init();
+		if (datagen || fabricLoader.isModLoaded("cinderscapes")) new Cinderscapes().init();
 		if (datagen || fabricLoader.isModLoaded("croptopia")) new Croptopia().init();
 		if (datagen || fabricLoader.isModLoaded("promenade")) new Promenade().init();
 		if (datagen || fabricLoader.isModLoaded("terrestria")) new Terrestria().init();

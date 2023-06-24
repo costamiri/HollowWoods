@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "cinderscapes:block/stripped_scorched_stem",
+    "particle": "cinderscapes:block/scorched_stem",
+    "side": "cinderscapes:block/scorched_stem",
+    "top": "cinderscapes:block/scorched_stem_top"
+  }
+}

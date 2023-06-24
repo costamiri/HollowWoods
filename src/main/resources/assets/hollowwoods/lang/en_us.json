@@ -118,13 +118,24 @@
   "block.hollowwoods.byg.stripped_hollow_witch_hazel_log": "Stripped Hollow Witch Hazel Log",
   "block.hollowwoods.byg.stripped_hollow_zelkova_log": "Stripped Hollow Zelkova Log",
 
+  "block.hollowwoods.cinderscapes.hollow_scorched_stem": "Hollow Scorched Stem",
+  "block.hollowwoods.cinderscapes.hollow_umbral_stem": "Hollow Umbral Stem",
+  "block.hollowwoods.cinderscapes.stripped_hollow_scorched_stem": "Stripped Hollow Scorched Stem",
+  "block.hollowwoods.cinderscapes.stripped_hollow_umbral_stem": "Stripped Hollow Umbral Stem",
+
   "block.hollowwoods.croptopia.hollow_cinnamon_log": "Hollow Cinnamon Log",
   "block.hollowwoods.croptopia.stripped_hollow_cinnamon_log": "Stripped Hollow Cinnamon Log",
 
   "block.hollowwoods.promenade.hollow_cherry_oak_log": "Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.hollow_dark_amaranth_stem": "Hollow Dark Amaranth Stem",
+  "block.hollowwoods.promenade.hollow_maple_log": "Hollow Maple Log",
   "block.hollowwoods.promenade.hollow_palm_log": "Hollow Palm Log",
+  "block.hollowwoods.promenade.hollow_sakura_log": "Hollow Sakura Log",
   "block.hollowwoods.promenade.stripped_hollow_cherry_oak_log": "Stripped Hollow Cherry Oak Log",
+  "block.hollowwoods.promenade.stripped_hollow_dark_amaranth_stem": "Stripped Hollow Dark Amaranth Stem",
+  "block.hollowwoods.promenade.stripped_hollow_maple_log": "Stripped Hollow Maple Log",
   "block.hollowwoods.promenade.stripped_hollow_palm_log": "Stripped Hollow Palm Log",
+  "block.hollowwoods.promenade.stripped_hollow_sakura_log": "Stripped Hollow Sakura Log",
 
   "block.hollowwoods.traverse.hollow_fir_log": "Hollow Fir Log",
   "block.hollowwoods.traverse.stripped_hollow_fir_log": "Stripped Hollow Fir Log",

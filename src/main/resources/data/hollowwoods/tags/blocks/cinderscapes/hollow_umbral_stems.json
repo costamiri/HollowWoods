@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "hollowwoods:cinderscapes/hollow_umbral_stem", "required": false },
+    { "id": "hollowwoods:cinderscapes/stripped_hollow_umbral_stem", "required": false }
+  ]
+}
