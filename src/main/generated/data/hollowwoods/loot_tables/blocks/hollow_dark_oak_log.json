@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "hollowwoods:hollow_dark_oak_log"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0

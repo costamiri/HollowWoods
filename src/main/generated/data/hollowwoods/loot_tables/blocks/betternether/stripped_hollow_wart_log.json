@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "hollowwoods:betternether/stripped_hollow_wart_log"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0

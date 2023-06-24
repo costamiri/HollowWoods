@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "hollowwoods:terrestria/stripped_hollow_redwood_log"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0

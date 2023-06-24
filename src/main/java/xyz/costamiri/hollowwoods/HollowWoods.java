@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
@@ -12,6 +13,8 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.*;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -70,6 +73,7 @@ public class HollowWoods implements ModInitializer {
 		hollowerBlockBreak();
 		HWRecipeTypes.init();
 		insertBuildingBlockGroup();
+		blockLootTables();
 	}
 
 	public static void registerBlock(Block block, String path) {
@@ -119,5 +123,16 @@ public class HollowWoods implements ModInitializer {
 	public static void insertBuildingBlockGroup() {
 		HollowBlocks.hollowedBlocks.forEach((fullLogId, hollowedLog) ->
 				ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.addAfter(Registries.BLOCK.get(fullLogId), hollowedLog)));
+	}
+
+	public static void blockLootTables() {
+		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+			Block blockx = blocks.get(id.getPath().replace("blocks/", ""));
+			if (blockx != null && source.isBuiltin() && id.getNamespace().equals(MODID)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(blockx));
+				tableBuilder.pool(poolBuilder);
+			}
+		});
 	}
 }
