@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.block.MapColor;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
@@ -13,8 +14,8 @@ public class ArchitectsPalette extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        HOLLOW_TWISTED_LOG = new HollowLog.Builder().build();
-        STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog.Builder().build();
+        HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
+        STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_TWISTED_LOG, new Identifier(this.namespace, "twisted_log"))
                 .stripped(STRIPPED_HOLLOW_TWISTED_LOG, new Identifier(this.namespace, "stripped_twisted_log"))
