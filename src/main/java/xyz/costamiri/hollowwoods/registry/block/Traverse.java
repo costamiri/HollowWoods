@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.block.MapColor;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowLog;
 
@@ -13,8 +14,8 @@ public class Traverse extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        HOLLOW_FIR_LOG = new HollowLog.Builder().build();
-        STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().build();
+        HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.OAK_TAN, MapColor.BROWN).build();
+        STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.OAK_TAN).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_FIR_LOG, new Identifier(this.namespace, "fir_log"))
                 .stripped(STRIPPED_HOLLOW_FIR_LOG, new Identifier(this.namespace, "stripped_fir_log"))
