@@ -1,5 +1,6 @@
 package xyz.costamiri.hollowwoods.registry.block;
 
+import net.minecraft.block.MapColor;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.HollowNetherStem;
 import xyz.costamiri.hollowwoods.util.LogTextureMap;
@@ -26,8 +27,8 @@ public class BetterNether extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        HOLLOW_ANCHOR_TREE_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_ANCHOR_TREE_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_ANCHOR_TREE_LOG = new HollowNetherStem.Builder().mapColor(MapColor.BLUE, MapColor.GREEN).build();
+        STRIPPED_HOLLOW_ANCHOR_TREE_LOG = new HollowNetherStem.Builder().mapColor(MapColor.BLUE).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_ANCHOR_TREE_LOG, new Identifier(this.namespace, "anchor_tree_log"))
                 .stripped(STRIPPED_HOLLOW_ANCHOR_TREE_LOG, new Identifier(this.namespace, "anchor_tree_stripped_log"))
@@ -39,8 +40,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/anchor_tree_stripped_log_top")
                 ))
                 .create();
-        HOLLOW_MUSHROOM_FIR_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_MUSHROOM_FIR_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_MUSHROOM_FIR_LOG = new HollowNetherStem.Builder().mapColor(MapColor.BLUE).build();
+        STRIPPED_HOLLOW_MUSHROOM_FIR_LOG = new HollowNetherStem.Builder().mapColor(MapColor.BLUE).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_MUSHROOM_FIR_LOG, new Identifier(this.namespace, "mushroom_fir_log"))
                 .stripped(STRIPPED_HOLLOW_MUSHROOM_FIR_LOG, new Identifier(this.namespace, "mushroom_fir_stripped_log"))
@@ -52,8 +53,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/mushroom_fir_stripped_log_top")
                 ))
                 .create();
-        HOLLOW_NETHER_SAKURA_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_NETHER_SAKURA_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_NETHER_SAKURA_LOG = new HollowNetherStem.Builder().mapColor(MapColor.PINK, MapColor.BROWN).build();
+        STRIPPED_HOLLOW_NETHER_SAKURA_LOG = new HollowNetherStem.Builder().mapColor(MapColor.PINK).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_NETHER_SAKURA_LOG, new Identifier(this.namespace, "nether_sakura_log"))
                 .stripped(STRIPPED_HOLLOW_NETHER_SAKURA_LOG, new Identifier(this.namespace, "nether_sakura_stripped_log"))
@@ -65,8 +66,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/nether_sakura_stripped_log_top")
                 ))
                 .create();
-        HOLLOW_RUBEUS_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_RUBEUS_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_RUBEUS_LOG = new HollowNetherStem.Builder().mapColor(MapColor.MAGENTA).build();
+        STRIPPED_HOLLOW_RUBEUS_LOG = new HollowNetherStem.Builder().mapColor(MapColor.MAGENTA).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_RUBEUS_LOG, new Identifier(this.namespace, "rubeus_log"))
                 .stripped(STRIPPED_HOLLOW_RUBEUS_LOG, new Identifier(this.namespace, "rubeus_stripped_log"))
@@ -78,8 +79,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/striped_rubeus_log_top")
                 ))
                 .create();
-        HOLLOW_STALAGNATE_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_STALAGNATE_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_STALAGNATE_LOG = new HollowNetherStem.Builder().mapColor(MapColor.TERRACOTTA_LIME).build();
+        STRIPPED_HOLLOW_STALAGNATE_LOG = new HollowNetherStem.Builder().mapColor(MapColor.TERRACOTTA_LIME).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_STALAGNATE_LOG, new Identifier(this.namespace, "stalagnate_log"))
                 .stripped(STRIPPED_HOLLOW_STALAGNATE_LOG, new Identifier(this.namespace, "stalagnate_stripped_log"))
@@ -91,8 +92,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/stalagnate_stripped_log_top")
                 ))
                 .create();
-        HOLLOW_WART_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_WART_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_WART_LOG = new HollowNetherStem.Builder().mapColor(MapColor.RED).build();
+        STRIPPED_HOLLOW_WART_LOG = new HollowNetherStem.Builder().mapColor(MapColor.RED).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_WART_LOG, new Identifier(this.namespace, "wart_log"))
                 .stripped(STRIPPED_HOLLOW_WART_LOG, new Identifier(this.namespace, "wart_stripped_log"))
@@ -104,8 +105,8 @@ public class BetterNether extends HollowBlocks {
                         new Identifier(this.namespace, "block/wart_stripped_log_top")
                 ))
                 .create();
-        HOLLOW_WILLOW_LOG = new HollowNetherStem.Builder().build();
-        STRIPPED_HOLLOW_WILLOW_LOG = new HollowNetherStem.Builder().build();
+        HOLLOW_WILLOW_LOG = new HollowNetherStem.Builder().mapColor(MapColor.TERRACOTTA_RED).build();
+        STRIPPED_HOLLOW_WILLOW_LOG = new HollowNetherStem.Builder().mapColor(MapColor.TERRACOTTA_RED).build();
         new HollowBlocks.LogCreator()
                 .raw(HOLLOW_WILLOW_LOG, new Identifier(this.namespace, "willow_log"))
                 .stripped(STRIPPED_HOLLOW_WILLOW_LOG, new Identifier(this.namespace, "willow_stripped_log"))
