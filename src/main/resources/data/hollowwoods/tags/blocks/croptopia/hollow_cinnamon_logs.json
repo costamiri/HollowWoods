@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:croptopia/hollow_cinnamon_log", "required": false },
-    { "id": "hollowwoods:croptopia/stripped_hollow_cinnamon_log", "required": false }
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:promenade/hollow_dark_amaranth_stem", "required": false },
-    { "id": "hollowwoods:promenade/stripped_hollow_dark_amaranth_stem", "required": false }
-  ]
-}

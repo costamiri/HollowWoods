@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_bamboo_block",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_bamboo_block",
+      "required": false
+    }
+  ]
+}

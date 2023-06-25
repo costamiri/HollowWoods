@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_birch_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_birch_log",
+      "required": false
+    }
+  ]
+}

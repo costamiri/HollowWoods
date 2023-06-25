@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:byg/hollow_withering_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_oak_log",
+      "required": false
+    }
+  ]
+}

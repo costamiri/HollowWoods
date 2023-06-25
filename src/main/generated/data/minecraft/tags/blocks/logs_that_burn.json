@@ -1,0 +1,449 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_bamboo_block",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/hollow_palm_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/stripped_hollow_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_baobab_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:blockus/hollow_white_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_holly_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_spruce_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_aspen_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:traverse/stripped_hollow_fir_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_mahogany_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_palm_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_skyris_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/stripped_hollow_sakura_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_dark_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_birch_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_pine_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/hollow_sakura_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_spruce_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/stripped_hollow_palm_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_aspen_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:architects_palette/stripped_hollow_twisted_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_willow_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/hollow_dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_elder_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_hemlock_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_lament_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_willow_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:croptopia/stripped_hollow_cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_ether_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_acacia_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_hemlock_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_mahogany_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_palm_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_cika_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_birch_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/hollow_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_fir_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_nightshade_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_zelkova_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:croptopia/hollow_cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_ebony_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_bamboo_block",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_rubber_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_nightshade_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_palo_verde_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_jungle_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/stripped_hollow_juniper_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:architects_palette/hollow_twisted_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_baobab_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_willow_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_green_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_blue_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_lament_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/hollow_juniper_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_palo_verde_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_withering_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_jungle_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_witch_hazel_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_dark_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_blue_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_ebony_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_fir_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_fungal_imparius_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_pine_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_cika_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:traverse/hollow_fir_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_white_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:hollow_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_skyris_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_imparius_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_witch_hazel_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_holly_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_rubber_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_acacia_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/hollow_dark_amaranth_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/stripped_hollow_willow_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_ether_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/stripped_hollow_dark_amaranth_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_white_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:bewitchment/hollow_elder_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:blockus/stripped_hollow_white_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/stripped_hollow_zelkova_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:terrestria/hollow_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:byg/hollow_green_enchanted_log",
+      "required": false
+    }
+  ]
+}

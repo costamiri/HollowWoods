@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:cinderscapes/hollow_scorched_stem", "required": false },
-    { "id": "hollowwoods:cinderscapes/stripped_hollow_scorched_stem", "required": false }
-  ]
-}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_crimson_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_crimson_stem",
+      "required": false
+    }
+  ]
+}

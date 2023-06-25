@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_acacia_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_acacia_log",
+      "required": false
+    }
+  ]
+}

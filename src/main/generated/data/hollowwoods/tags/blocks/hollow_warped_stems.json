@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_warped_stem",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_warped_stem",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:betternether/hollow_nether_sakura_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:betternether/stripped_hollow_nether_sakura_log",
+      "required": false
+    }
+  ]
+}

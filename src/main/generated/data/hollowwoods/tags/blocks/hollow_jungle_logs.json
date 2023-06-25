@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_jungle_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_jungle_log",
+      "required": false
+    }
+  ]
+}

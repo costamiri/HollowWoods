@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:hollow_dark_oak_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_dark_oak_log",
+      "required": false
+    }
+  ]
+}

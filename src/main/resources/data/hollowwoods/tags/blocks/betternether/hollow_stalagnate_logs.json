@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:betternether/hollow_stalagnate_log", "required": false },
-    { "id": "hollowwoods:betternether/stripped_hollow_stalagnate_log", "required": false }
-  ]
-}

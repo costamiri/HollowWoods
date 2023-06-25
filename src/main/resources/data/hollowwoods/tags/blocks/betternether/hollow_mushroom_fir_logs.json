@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:betternether/hollow_mushroom_fir_log", "required": false },
-    { "id": "hollowwoods:betternether/stripped_hollow_mushroom_fir_log", "required": false }
-  ]
-}

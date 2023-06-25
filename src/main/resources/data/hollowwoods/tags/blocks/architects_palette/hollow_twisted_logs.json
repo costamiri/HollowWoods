@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:architects_palette/hollow_twisted_log", "required": false },
-    { "id": "hollowwoods:architects_palette/stripped_hollow_twisted_log", "required": false }
-  ]
-}

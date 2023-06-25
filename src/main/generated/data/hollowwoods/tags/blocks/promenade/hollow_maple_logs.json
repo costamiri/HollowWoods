@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hollowwoods:promenade/hollow_maple_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:promenade/stripped_hollow_maple_log",
+      "required": false
+    }
+  ]
+}

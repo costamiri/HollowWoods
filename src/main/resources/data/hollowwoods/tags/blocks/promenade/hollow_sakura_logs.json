@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    { "id": "hollowwoods:promenade/hollow_sakura_log", "required": false },
-    { "id": "hollowwoods:promenade/stripped_hollow_sakura_log", "required": false }
-  ]
-}
