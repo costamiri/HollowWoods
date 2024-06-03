@@ -50,7 +50,7 @@ public class HollowBambooBlock extends AbstractHollowPillar {
         );
     }
 
-    public static class Builder extends AbstractHollowPillar.Builder<Builder> {
+    public static class Builder extends AbstractHollowPillar.Builder<xyz.costamiri.hollowwoods.blocks.HollowBambooBlock.Builder> {
         public Builder() {
             this.topMapColor = MapColor.CLEAR;
             this.sideMapColor = MapColor.CLEAR;

@@ -1,6 +1,7 @@
 package xyz.costamiri.hollowwoods.recipes;
 
-import com.google.gson.JsonObject;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
@@ -8,11 +9,9 @@ import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.JsonHelper;
 import net.minecraft.world.World;
 
 public class HollowerRecipe implements Recipe<Inventory> {
@@ -43,11 +42,10 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack getOutput(DynamicRegistryManager registryManager) {
-        return byproduct;
+    public ItemStack getResult(DynamicRegistryManager registryManager) {
+        return null;
     }
 
-    @Override
     public Identifier getId() {
         return identifier;
     }
@@ -63,24 +61,28 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     public static class Serializer implements RecipeSerializer<HollowerRecipe> {
+        public static final Codec<HollowerRecipe> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+                Identifier.CODEC.fieldOf("identifier").forGetter(recipe -> recipe.identifier),
+                Registries.BLOCK.getCodec().fieldOf("log").forGetter(recipe -> recipe.log),
+                Registries.BLOCK.getCodec().fieldOf("hollowed_log").forGetter(recipe -> recipe.hollowedLog),
+                ItemStack.CODEC.fieldOf("result").forGetter(recipe -> recipe.byproduct)
+                ).apply(instance, HollowerRecipe::new));
 
         @Override
-        public HollowerRecipe read(Identifier id, JsonObject json) {
-            JsonObject result = JsonHelper.getObject(json, "result", null);
-            return new HollowerRecipe(id, Registries.BLOCK.get(new Identifier(JsonHelper.getString(json, "log"))),
-                    Registries.BLOCK.get(new Identifier(JsonHelper.getString(json, "hollowed_log"))), result != null ? ShapedRecipe.outputFromJson(result) : ItemStack.EMPTY);
+        public Codec<HollowerRecipe> codec() {
+            return CODEC;
         }
 
         @Override
-        public HollowerRecipe read(Identifier id, PacketByteBuf buf) {
-            return new HollowerRecipe(id, Registries.BLOCK.get(new Identifier(buf.readString())), Registries.BLOCK.get(new Identifier(buf.readString())), buf.readItemStack());
+        public HollowerRecipe read(PacketByteBuf buf) {
+            return null;
         }
 
         @Override
         public void write(PacketByteBuf buf, HollowerRecipe recipe) {
             buf.writeString(Registries.BLOCK.getId(recipe.log).toString());
             buf.writeString(Registries.BLOCK.getId(recipe.hollowedLog).toString());
-            buf.writeItemStack(recipe.getOutput(null));
+            buf.writeItemStack(recipe.getResult(null));
         }
     }
 }

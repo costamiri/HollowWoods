@@ -87,8 +87,8 @@ public class HWRecipeManager {
 
     public static JsonObject createHollowingRecipe(Identifier ingredient, Identifier resultBlock, Identifier resultItem, int resultCount) {
         JsonObject jsonResult = new JsonObject();
-        jsonResult.addProperty("item", resultItem.toString());
-        jsonResult.addProperty("count", resultCount);
+        jsonResult.addProperty("id", resultItem.toString());
+        jsonResult.addProperty("Count", resultCount);
 
         JsonObject json = createHollowingRecipe(ingredient, resultBlock);
         json.add("result", jsonResult);
@@ -97,6 +97,7 @@ public class HWRecipeManager {
 
     public static JsonObject createHollowingRecipe(Identifier ingredient, Identifier resultBlock) {
         JsonObject json = new JsonObject();
+        json.addProperty("identifier", "hollowwoods:hollowing_" + ingredient.getPath());
         json.addProperty("type", "hollowwoods:hollowing");
         json.addProperty("log", ingredient.toString());
         json.addProperty("hollowed_log", resultBlock.toString());

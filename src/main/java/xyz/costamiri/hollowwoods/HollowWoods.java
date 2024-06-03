@@ -15,6 +15,7 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.*;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -112,7 +113,8 @@ public class HollowWoods implements ModInitializer {
 		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, entity) -> {
 			ItemStack stack = player.getMainHandStack();
 			if (stack.getItem().getClass() != HollowerTool.class) return true;
-			HollowerRecipe hollowingRecipe = world.getRecipeManager().listAllOfType(HWRecipeTypes.HOLLOWER_RECIPE_TYPE).stream().filter(recipe -> recipe.log == state.getBlock()).findFirst().orElse(null);
+			RecipeEntry<HollowerRecipe> hollowingRecipeEntry = world.getRecipeManager().listAllOfType(HWRecipeTypes.HOLLOWER_RECIPE_TYPE).stream().filter(recipe -> recipe.value().log == state.getBlock()).findFirst().orElse(null);
+			HollowerRecipe hollowingRecipe = hollowingRecipeEntry != null ? hollowingRecipeEntry.value() : null;
 			if (hollowingRecipe == null) return true;
 			world.setBlockState(pos, hollowingRecipe.hollowedLog.getDefaultState().with(AXIS, state.get(AXIS)));
 			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, hollowingRecipe.byproduct));

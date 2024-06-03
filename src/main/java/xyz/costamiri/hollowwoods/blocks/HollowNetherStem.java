@@ -16,7 +16,7 @@ public class HollowNetherStem extends AbstractHollowPillar {
         return false;
     }
 
-    public static class Builder extends AbstractHollowPillar.Builder<Builder> {
+    public static class Builder extends AbstractHollowPillar.Builder<xyz.costamiri.hollowwoods.blocks.HollowNetherStem.Builder> {
 
         public Builder() {
             this.topMapColor = MapColor.CLEAR;

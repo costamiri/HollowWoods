@@ -16,7 +16,7 @@ public class HollowLog extends AbstractHollowPillar {
         return true;
     }
 
-    public static class Builder extends AbstractHollowPillar.Builder<Builder> {
+    public static class Builder extends AbstractHollowPillar.Builder<xyz.costamiri.hollowwoods.blocks.HollowLog.Builder> {
         public Builder() {
             this.topMapColor = MapColor.CLEAR;
             this.sideMapColor = MapColor.CLEAR;
