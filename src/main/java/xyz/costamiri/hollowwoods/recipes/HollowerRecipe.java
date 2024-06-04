@@ -43,7 +43,7 @@ public class HollowerRecipe implements Recipe<Inventory> {
 
     @Override
     public ItemStack getResult(DynamicRegistryManager registryManager) {
-        return null;
+        return this.byproduct;
     }
 
     public Identifier getId() {

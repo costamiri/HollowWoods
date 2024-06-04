@@ -30,7 +30,7 @@ public class HollowerDisplay implements Display {
     }
 
     @Override
-    public CategoryIdentifier<?> getCategoryIdentifier() {
+    public CategoryIdentifier<HollowerDisplay> getCategoryIdentifier() {
         return HollowerClientPlugin.HOLLOWING;
     }
 }
