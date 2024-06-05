@@ -1,16 +1,19 @@
 package xyz.costamiri.hollowwoods.recipes;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
@@ -32,8 +35,8 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack craft(Inventory inventory, DynamicRegistryManager registryManager) {
-        return byproduct;
+    public ItemStack craft(Inventory inventory, RegistryWrapper.WrapperLookup lookup) {
+        return this.byproduct;
     }
 
     @Override
@@ -42,7 +45,7 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public ItemStack getResult(DynamicRegistryManager registryManager) {
+    public ItemStack getResult(RegistryWrapper.WrapperLookup registriesLookup) {
         return this.byproduct;
     }
 
@@ -61,28 +64,28 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     public static class Serializer implements RecipeSerializer<HollowerRecipe> {
-        public static final Codec<HollowerRecipe> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+        public static final MapCodec<HollowerRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 Identifier.CODEC.fieldOf("identifier").forGetter(recipe -> recipe.identifier),
                 Registries.BLOCK.getCodec().fieldOf("log").forGetter(recipe -> recipe.log),
                 Registries.BLOCK.getCodec().fieldOf("hollowed_log").forGetter(recipe -> recipe.hollowedLog),
                 ItemStack.CODEC.fieldOf("result").forGetter(recipe -> recipe.byproduct)
                 ).apply(instance, HollowerRecipe::new));
+        public static final PacketCodec<RegistryByteBuf, HollowerRecipe> PACKET_CODEC = PacketCodec.tuple(
+                Identifier.PACKET_CODEC, recipe -> recipe.identifier,
+                PacketCodecs.registryValue(RegistryKeys.BLOCK), recipe -> recipe.log,
+                PacketCodecs.registryValue(RegistryKeys.BLOCK), recipe -> recipe.hollowedLog,
+                ItemStack.PACKET_CODEC, recipe -> recipe.byproduct,
+                HollowerRecipe::new
+        );
 
         @Override
-        public Codec<HollowerRecipe> codec() {
+        public MapCodec<HollowerRecipe> codec() {
             return CODEC;
         }
 
         @Override
-        public HollowerRecipe read(PacketByteBuf buf) {
-            return null;
-        }
-
-        @Override
-        public void write(PacketByteBuf buf, HollowerRecipe recipe) {
-            buf.writeString(Registries.BLOCK.getId(recipe.log).toString());
-            buf.writeString(Registries.BLOCK.getId(recipe.hollowedLog).toString());
-            buf.writeItemStack(recipe.getResult(null));
+        public PacketCodec<RegistryByteBuf, HollowerRecipe> packetCodec() {
+            return PACKET_CODEC;
         }
     }
 }

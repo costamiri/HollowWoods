@@ -118,7 +118,7 @@ public class HollowWoods implements ModInitializer {
 			if (hollowingRecipe == null) return true;
 			world.setBlockState(pos, hollowingRecipe.hollowedLog.getDefaultState().with(AXIS, state.get(AXIS)));
 			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, hollowingRecipe.byproduct));
-			stack.damage(1, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+			stack.damage(1, player, EquipmentSlot.MAINHAND);
 			return false;
 		});
 	}
@@ -129,9 +129,9 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void blockLootTables() {
-		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-			Block blockx = blocks.get(id.getPath().replace("blocks/", ""));
-			if (blockx != null && source.isBuiltin() && id.getNamespace().equals(MODID)) {
+		LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
+			Block blockx = blocks.get(key.getValue().getPath().replace("blocks/", ""));
+			if (blockx != null && source.isBuiltin() && key.getValue().getNamespace().equals(MODID)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.with(ItemEntry.builder(blockx));
 				tableBuilder.pool(poolBuilder);
