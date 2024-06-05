@@ -12,7 +12,7 @@ import xyz.costamiri.hollowwoods.registry.item.VanillaMinecraftItems;
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 
 public class HollowerClientPlugin implements REIClientPlugin {
-    public static final CategoryIdentifier<HollowerDisplay> HOLLOWING = CategoryIdentifier.of(new Identifier(MODID, "hollowing"));
+    public static final CategoryIdentifier<HollowerDisplay> HOLLOWING = CategoryIdentifier.of(Identifier.of(MODID, "hollowing"));
 
     @Override
     public void registerCategories(CategoryRegistry registry) {

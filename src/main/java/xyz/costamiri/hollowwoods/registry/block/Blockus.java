@@ -17,9 +17,9 @@ public class Blockus extends HollowBlocks {
         HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
         STRIPPED_HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WHITE_OAK_LOG, new Identifier(this.namespace, "white_oak_log"))
-                .stripped(STRIPPED_HOLLOW_WHITE_OAK_LOG, new Identifier(this.namespace, "stripped_white_oak_log"))
-                .planks(new Identifier(this.namespace, "white_oak_planks"))
+                .raw(HOLLOW_WHITE_OAK_LOG, Identifier.of(this.namespace, "white_oak_log"))
+                .stripped(STRIPPED_HOLLOW_WHITE_OAK_LOG, Identifier.of(this.namespace, "stripped_white_oak_log"))
+                .planks(Identifier.of(this.namespace, "white_oak_planks"))
                 .create();
     }
 }

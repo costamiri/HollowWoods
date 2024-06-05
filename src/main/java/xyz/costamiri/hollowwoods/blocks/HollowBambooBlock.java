@@ -1,11 +1,8 @@
 package xyz.costamiri.hollowwoods.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.ShapeContext;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
@@ -17,11 +14,6 @@ import net.minecraft.world.BlockView;
 public class HollowBambooBlock extends AbstractHollowPillar {
     public HollowBambooBlock(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public boolean isBurnable() {
-        return true;
     }
 
     @Override
@@ -60,11 +52,11 @@ public class HollowBambooBlock extends AbstractHollowPillar {
         @Override
         public HollowBambooBlock build() {
             return new HollowBambooBlock(
-                    FabricBlockSettings.create()
+                    AbstractBlock.Settings.create()
                             .strength(2.0f)
                             .mapColor((state) -> state.get(AbstractHollowPillar.AXIS) == Direction.Axis.Y ? this.topMapColor : this.sideMapColor)
                             .sounds(this.blockSoundGroup)
-                            .instrument(Instrument.BASS)
+                            .instrument(NoteBlockInstrument.BASS)
                             .burnable()
             );
         }

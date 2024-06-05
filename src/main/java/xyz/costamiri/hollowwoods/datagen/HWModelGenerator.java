@@ -17,8 +17,8 @@ import java.util.Map;
 import java.util.Optional;
 
 public class HWModelGenerator extends FabricModelProvider {
-    public static final Model HOLLOW_LOG = new Model(Optional.of(new Identifier(HollowWoods.MODID, "block/templates/hollow_log")), Optional.empty(), TextureKey.SIDE, TextureKey.INSIDE, TextureKey.TOP, TextureKey.PARTICLE);
-    public static final Model HOLLOW_BAMBOO_BLOCK = new Model(Optional.of(new Identifier(HollowWoods.MODID, "block/templates/hollow_bamboo_block")), Optional.empty(), TextureKey.SIDE, TextureKey.TOP, TextureKey.PARTICLE);
+    public static final Model HOLLOW_LOG = new Model(Optional.of(Identifier.of(HollowWoods.MODID, "block/templates/hollow_log")), Optional.empty(), TextureKey.SIDE, TextureKey.INSIDE, TextureKey.TOP, TextureKey.PARTICLE);
+    public static final Model HOLLOW_BAMBOO_BLOCK = new Model(Optional.of(Identifier.of(HollowWoods.MODID, "block/templates/hollow_bamboo_block")), Optional.empty(), TextureKey.SIDE, TextureKey.TOP, TextureKey.PARTICLE);
     public static final HashMap<Block, TextureMap> textures = new HashMap<>();
 
     public HWModelGenerator(FabricDataOutput output) {

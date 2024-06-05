@@ -11,13 +11,14 @@ import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.input.RecipeInput;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
-public class HollowerRecipe implements Recipe<Inventory> {
+public class HollowerRecipe implements Recipe<RecipeInput> {
     private final Identifier identifier;
     public final ItemStack byproduct;
     public final Block log, hollowedLog;
@@ -30,12 +31,12 @@ public class HollowerRecipe implements Recipe<Inventory> {
     }
 
     @Override
-    public boolean matches(Inventory inventory, World world) {
+    public boolean matches(RecipeInput recipeInput, World world) {
         return false;
     }
 
     @Override
-    public ItemStack craft(Inventory inventory, RegistryWrapper.WrapperLookup lookup) {
+    public ItemStack craft(RecipeInput recipeInput, RegistryWrapper.WrapperLookup lookup) {
         return this.byproduct;
     }
 

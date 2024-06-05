@@ -17,9 +17,9 @@ public class Traverse extends HollowBlocks {
         HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.OAK_TAN, MapColor.BROWN).build();
         STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.OAK_TAN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_FIR_LOG, new Identifier(this.namespace, "fir_log"))
-                .stripped(STRIPPED_HOLLOW_FIR_LOG, new Identifier(this.namespace, "stripped_fir_log"))
-                .planks(new Identifier(this.namespace, "fir_planks"))
+                .raw(HOLLOW_FIR_LOG, Identifier.of(this.namespace, "fir_log"))
+                .stripped(STRIPPED_HOLLOW_FIR_LOG, Identifier.of(this.namespace, "stripped_fir_log"))
+                .planks(Identifier.of(this.namespace, "fir_planks"))
                 .create();
     }
 }

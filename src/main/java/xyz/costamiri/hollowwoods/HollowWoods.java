@@ -47,7 +47,7 @@ public class HollowWoods implements ModInitializer {
 	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
 	private static final FabricLoader fabricLoader = FabricLoader.getInstance();
 
-	public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MODID, "main"));
+	public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(MODID, "main"));
 
 	private static final boolean datagen = false;
 
@@ -79,13 +79,13 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void registerBlock(Block block, String path) {
-		blocks.put(path, Registry.register(Registries.BLOCK, new Identifier(MODID, path), block));
-		items.put(path, Registry.register(Registries.ITEM, new Identifier(MODID, path),
+		blocks.put(path, Registry.register(Registries.BLOCK, Identifier.of(MODID, path), block));
+		items.put(path, Registry.register(Registries.ITEM, Identifier.of(MODID, path),
 				new BlockItem(block, new Item.Settings())));
 	}
 
 	public static void registerItem(Item item, String path) {
-		items.put(path, Registry.register(Registries.ITEM, new Identifier(MODID, path), item));
+		items.put(path, Registry.register(Registries.ITEM, Identifier.of(MODID, path), item));
 	}
 
 	public static void registerLog(AbstractHollowPillar block, String path) {

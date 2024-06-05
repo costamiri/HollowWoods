@@ -1,8 +1,8 @@
 package xyz.costamiri.hollowwoods.blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.MapColor;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 
@@ -16,7 +16,7 @@ public class HollowNetherStem extends AbstractHollowPillar {
         return false;
     }
 
-    public static class Builder extends AbstractHollowPillar.Builder<xyz.costamiri.hollowwoods.blocks.HollowNetherStem.Builder> {
+    public static class Builder extends AbstractHollowPillar.Builder<HollowNetherStem.Builder> {
 
         public Builder() {
             this.topMapColor = MapColor.CLEAR;
@@ -27,11 +27,11 @@ public class HollowNetherStem extends AbstractHollowPillar {
         @Override
         public HollowNetherStem build() {
             return new HollowNetherStem(
-                    FabricBlockSettings.create()
+                    AbstractBlock.Settings.create()
                             .strength(2.0f)
                             .mapColor((state) -> state.get(AbstractHollowPillar.AXIS) == Direction.Axis.Y ? this.topMapColor : this.sideMapColor)
                             .sounds(this.blockSoundGroup)
-                            .instrument(Instrument.BASS)
+                            .instrument(NoteBlockInstrument.BASS)
             );
         }
     }

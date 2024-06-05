@@ -17,8 +17,8 @@ public class Croptopia extends HollowBlocks {
         HOLLOW_CINNAMON_LOG = new HollowLog.Builder().mapColor(MapColor.BROWN).build();
         STRIPPED_HOLLOW_CINNAMON_LOG = new HollowLog.Builder().mapColor(MapColor.BROWN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_CINNAMON_LOG, new Identifier(this.namespace, "cinnamon_log"))
-                .stripped(STRIPPED_HOLLOW_CINNAMON_LOG, new Identifier(this.namespace, "stripped_cinnamon_log"))
+                .raw(HOLLOW_CINNAMON_LOG, Identifier.of(this.namespace, "cinnamon_log"))
+                .stripped(STRIPPED_HOLLOW_CINNAMON_LOG, Identifier.of(this.namespace, "stripped_cinnamon_log"))
                 .create();
 
     }

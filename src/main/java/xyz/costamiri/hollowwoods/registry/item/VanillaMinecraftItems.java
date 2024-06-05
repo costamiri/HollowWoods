@@ -30,11 +30,11 @@ public class VanillaMinecraftItems extends HollowItems {
     }
 
     public void addRecipes() {
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("wooden_axe"), "wooden_hollower");
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("stone_axe"), "stone_hollower");
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("golden_axe"), "golden_hollower");
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("iron_axe"), "iron_hollower");
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("diamond_axe"), "diamond_hollower");
-        HWRecipeManager.addHollowerToolRecipe(new Identifier("netherite_axe"), "netherite_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("wooden_axe"), "wooden_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("stone_axe"), "stone_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("golden_axe"), "golden_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("iron_axe"), "iron_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("diamond_axe"), "diamond_hollower");
+        HWRecipeManager.addHollowerToolRecipe(Identifier.of("netherite_axe"), "netherite_hollower");
     }
 }

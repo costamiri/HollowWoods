@@ -13,7 +13,7 @@ import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 
 public class HollowerEmiPlugin implements EmiPlugin {
     public static final EmiRecipeCategory HOLLOWING_CATEGORY =
-            new EmiRecipeCategory(new Identifier(MODID, "hollowing"), EmiStack.of(VanillaMinecraftItems.IRON_HOLLOWER)) {
+            new EmiRecipeCategory(Identifier.of(MODID, "hollowing"), EmiStack.of(VanillaMinecraftItems.IRON_HOLLOWER)) {
                 @Override
                 public Text getName() {
                     return Text.translatable("rei.hollowwoods.hollowing");

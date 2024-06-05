@@ -1,8 +1,7 @@
 package xyz.costamiri.hollowwoods.blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -46,7 +45,6 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public FluidState getFluidState(BlockState state) {
         if (state.get(WATERLOGGED)) {
             return Fluids.WATER.getStill(false);
@@ -55,7 +53,6 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         if (state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
@@ -64,7 +61,6 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return VoxelShapes.combineAndSimplify(
                 VoxelShapes.fullCube(),
@@ -78,7 +74,6 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return VoxelShapes.combineAndSimplify(
                 VoxelShapes.fullCube(),
@@ -92,7 +87,6 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
         return VoxelShapes.fullCube();
     }
@@ -110,11 +104,11 @@ public class AbstractHollowPillar extends PillarBlock implements Waterloggable {
 
         public AbstractHollowPillar build() {
             return new AbstractHollowPillar(
-                    FabricBlockSettings.create()
+                    AbstractBlock.Settings.create()
                         .strength(2.0f)
                         .mapColor((state) -> state.get(AbstractHollowPillar.AXIS) == Direction.Axis.Y ? this.topMapColor : this.sideMapColor)
                         .sounds(this.blockSoundGroup)
-                        .instrument(Instrument.BASS)
+                        .instrument(NoteBlockInstrument.BASS)
                         .burnable()
             );
         }

@@ -18,7 +18,7 @@ public class HWRecipeTypes {
     };
 
     public static void init() {
-        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_SERIALIZER);
-        Registry.register(Registries.RECIPE_TYPE, new Identifier(MODID, "hollowing"), HOLLOWER_RECIPE_TYPE);
+        Registry.register(Registries.RECIPE_SERIALIZER, Identifier.of(MODID, "hollowing"), HOLLOWER_RECIPE_SERIALIZER);
+        Registry.register(Registries.RECIPE_TYPE, Identifier.of(MODID, "hollowing"), HOLLOWER_RECIPE_TYPE);
     }
 }

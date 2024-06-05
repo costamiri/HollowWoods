@@ -18,9 +18,9 @@ import java.util.concurrent.CompletableFuture;
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 
 public class HWTagGenerator extends FabricTagProvider.BlockTagProvider {
-    private static final TagKey<Block> HOLLOW_LOGS = TagKey.of(RegistryKeys.BLOCK, new Identifier(MODID, "hollow_logs"));
-    private static final TagKey<Block> LOGS_THAT_BURN = TagKey.of(RegistryKeys.BLOCK, new Identifier("logs_that_burn"));
-    private static final TagKey<Block> LOGS = TagKey.of(RegistryKeys.BLOCK, new Identifier("logs"));
+    private static final TagKey<Block> HOLLOW_LOGS = TagKey.of(RegistryKeys.BLOCK, Identifier.of(MODID, "hollow_logs"));
+    private static final TagKey<Block> LOGS_THAT_BURN = TagKey.of(RegistryKeys.BLOCK, Identifier.of("logs_that_burn"));
+    private static final TagKey<Block> LOGS = TagKey.of(RegistryKeys.BLOCK, Identifier.of("logs"));
 
     public HWTagGenerator(FabricDataOutput output, CompletableFuture<WrapperLookup> registriesFuture) {
         super(output, registriesFuture);

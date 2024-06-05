@@ -17,9 +17,9 @@ public class ArchitectsPalette extends HollowBlocks {
         HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
         STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_TWISTED_LOG, new Identifier(this.namespace, "twisted_log"))
-                .stripped(STRIPPED_HOLLOW_TWISTED_LOG, new Identifier(this.namespace, "stripped_twisted_log"))
-                .planks(new Identifier(this.namespace, "twisted_planks"))
+                .raw(HOLLOW_TWISTED_LOG, Identifier.of(this.namespace, "twisted_log"))
+                .stripped(STRIPPED_HOLLOW_TWISTED_LOG, Identifier.of(this.namespace, "stripped_twisted_log"))
+                .planks(Identifier.of(this.namespace, "twisted_planks"))
                 .create();
     }
 }

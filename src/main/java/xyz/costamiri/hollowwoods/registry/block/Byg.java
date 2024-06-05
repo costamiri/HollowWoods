@@ -80,412 +80,412 @@ public class Byg extends HollowBlocks {
         HOLLOW_ASPEN_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_YELLOW).build();
         STRIPPED_HOLLOW_ASPEN_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_YELLOW).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_ASPEN_LOG, new Identifier(this.namespace, "aspen_log"))
-                .stripped(STRIPPED_HOLLOW_ASPEN_LOG, new Identifier(this.namespace, "stripped_aspen_log"))
-                .planks(new Identifier(this.namespace, "aspen_planks"))
+                .raw(HOLLOW_ASPEN_LOG, Identifier.of(this.namespace, "aspen_log"))
+                .stripped(STRIPPED_HOLLOW_ASPEN_LOG, Identifier.of(this.namespace, "stripped_aspen_log"))
+                .planks(Identifier.of(this.namespace, "aspen_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/aspen/log"),
-                        new Identifier(this.namespace, "block/aspen/stripped_log"),
-                        new Identifier(this.namespace, "block/aspen/log_top"),
-                        new Identifier(this.namespace, "block/aspen/stripped_log_top")
+                        Identifier.of(this.namespace, "block/aspen/log"),
+                        Identifier.of(this.namespace, "block/aspen/stripped_log"),
+                        Identifier.of(this.namespace, "block/aspen/log_top"),
+                        Identifier.of(this.namespace, "block/aspen/stripped_log_top")
                 ))
                 .create();
         HOLLOW_BAOBAB_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         STRIPPED_HOLLOW_BAOBAB_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_BAOBAB_LOG, new Identifier(this.namespace, "baobab_log"))
-                .stripped(STRIPPED_HOLLOW_BAOBAB_LOG, new Identifier(this.namespace, "stripped_baobab_log"))
-                .planks(new Identifier(this.namespace, "baobab_planks"))
+                .raw(HOLLOW_BAOBAB_LOG, Identifier.of(this.namespace, "baobab_log"))
+                .stripped(STRIPPED_HOLLOW_BAOBAB_LOG, Identifier.of(this.namespace, "stripped_baobab_log"))
+                .planks(Identifier.of(this.namespace, "baobab_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/baobab/log"),
-                        new Identifier(this.namespace, "block/baobab/stripped_log"),
-                        new Identifier(this.namespace, "block/baobab/log_top"),
-                        new Identifier(this.namespace, "block/baobab/stripped_log_top")
+                        Identifier.of(this.namespace, "block/baobab/log"),
+                        Identifier.of(this.namespace, "block/baobab/stripped_log"),
+                        Identifier.of(this.namespace, "block/baobab/log_top"),
+                        Identifier.of(this.namespace, "block/baobab/stripped_log_top")
                 ))
                 .create();
         HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog.Builder().mapColor(MapColor.BLUE).build();
         STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG = new HollowLog.Builder().mapColor(MapColor.BLUE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_BLUE_ENCHANTED_LOG, new Identifier(this.namespace, "blue_enchanted_log"))
-                .stripped(STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG, new Identifier(this.namespace, "stripped_blue_enchanted_log"))
-                .planks(new Identifier(this.namespace, "blue_enchanted_planks"))
+                .raw(HOLLOW_BLUE_ENCHANTED_LOG, Identifier.of(this.namespace, "blue_enchanted_log"))
+                .stripped(STRIPPED_HOLLOW_BLUE_ENCHANTED_LOG, Identifier.of(this.namespace, "stripped_blue_enchanted_log"))
+                .planks(Identifier.of(this.namespace, "blue_enchanted_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/blue_enchanted/log"),
-                        new Identifier(this.namespace, "block/blue_enchanted/stripped_log"),
-                        new Identifier(this.namespace, "block/blue_enchanted/log_top"),
-                        new Identifier(this.namespace, "block/blue_enchanted/stripped_log_top")
+                        Identifier.of(this.namespace, "block/blue_enchanted/log"),
+                        Identifier.of(this.namespace, "block/blue_enchanted/stripped_log"),
+                        Identifier.of(this.namespace, "block/blue_enchanted/log_top"),
+                        Identifier.of(this.namespace, "block/blue_enchanted/stripped_log_top")
                 ))
                 .create();
         HOLLOW_BULBIS_STEM = new HollowNetherStem.Builder().mapColor(MapColor.BLUE).build();
         STRIPPED_HOLLOW_BULBIS_STEM = new HollowNetherStem.Builder().mapColor(MapColor.BLUE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_BULBIS_STEM, new Identifier(this.namespace, "bulbis_stem"))
-                .stripped(STRIPPED_HOLLOW_BULBIS_STEM, new Identifier(this.namespace, "stripped_bulbis_stem"))
-                .planks(new Identifier(this.namespace, "bulbis_planks"))
+                .raw(HOLLOW_BULBIS_STEM, Identifier.of(this.namespace, "bulbis_stem"))
+                .stripped(STRIPPED_HOLLOW_BULBIS_STEM, Identifier.of(this.namespace, "stripped_bulbis_stem"))
+                .planks(Identifier.of(this.namespace, "bulbis_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/bulbis/log"),
-                        new Identifier(this.namespace, "block/bulbis/stripped_log"),
-                        new Identifier(this.namespace, "block/bulbis/log_top"),
-                        new Identifier(this.namespace, "block/bulbis/stripped_log_top")
+                        Identifier.of(this.namespace, "block/bulbis/log"),
+                        Identifier.of(this.namespace, "block/bulbis/stripped_log"),
+                        Identifier.of(this.namespace, "block/bulbis/log_top"),
+                        Identifier.of(this.namespace, "block/bulbis/stripped_log_top")
                 ))
                 .create();
         HOLLOW_CHERRY_LOG = new HollowLog.Builder().mapColor(MapColor.PINK).build();
         STRIPPED_HOLLOW_CHERRY_LOG = new HollowLog.Builder().mapColor(MapColor.PINK).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_CHERRY_LOG, new Identifier(this.namespace, "cherry_log"))
-                .stripped(STRIPPED_HOLLOW_CHERRY_LOG, new Identifier(this.namespace, "stripped_cherry_log"))
-                .planks(new Identifier(this.namespace, "cherry_planks"))
+                .raw(HOLLOW_CHERRY_LOG, Identifier.of(this.namespace, "cherry_log"))
+                .stripped(STRIPPED_HOLLOW_CHERRY_LOG, Identifier.of(this.namespace, "stripped_cherry_log"))
+                .planks(Identifier.of(this.namespace, "cherry_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/cherry/log"),
-                        new Identifier(this.namespace, "block/cherry/stripped_log"),
-                        new Identifier(this.namespace, "block/cherry/log_top"),
-                        new Identifier(this.namespace, "block/cherry/stripped_log_top")
+                        Identifier.of(this.namespace, "block/cherry/log"),
+                        Identifier.of(this.namespace, "block/cherry/stripped_log"),
+                        Identifier.of(this.namespace, "block/cherry/log_top"),
+                        Identifier.of(this.namespace, "block/cherry/stripped_log_top")
                 ))
                 .create();
         HOLLOW_CIKA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_ORANGE).build();
         STRIPPED_HOLLOW_CIKA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_ORANGE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_CIKA_LOG, new Identifier(this.namespace, "cika_log"))
-                .stripped(STRIPPED_HOLLOW_CIKA_LOG, new Identifier(this.namespace, "stripped_cika_log"))
-                .planks(new Identifier(this.namespace, "cika_planks"))
+                .raw(HOLLOW_CIKA_LOG, Identifier.of(this.namespace, "cika_log"))
+                .stripped(STRIPPED_HOLLOW_CIKA_LOG, Identifier.of(this.namespace, "stripped_cika_log"))
+                .planks(Identifier.of(this.namespace, "cika_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/cika/log"),
-                        new Identifier(this.namespace, "block/cika/stripped_log"),
-                        new Identifier(this.namespace, "block/cika/log_top"),
-                        new Identifier(this.namespace, "block/cika/stripped_log_top")
+                        Identifier.of(this.namespace, "block/cika/log"),
+                        Identifier.of(this.namespace, "block/cika/stripped_log"),
+                        Identifier.of(this.namespace, "block/cika/log_top"),
+                        Identifier.of(this.namespace, "block/cika/stripped_log_top")
                 ))
                 .create();
         HOLLOW_CYPRESS_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIME).build();
         STRIPPED_HOLLOW_CYPRESS_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIME).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_CYPRESS_LOG, new Identifier(this.namespace, "cypress_log"))
-                .stripped(STRIPPED_HOLLOW_CYPRESS_LOG, new Identifier(this.namespace, "stripped_cypress_log"))
-                .planks(new Identifier(this.namespace, "cypress_planks"))
+                .raw(HOLLOW_CYPRESS_LOG, Identifier.of(this.namespace, "cypress_log"))
+                .stripped(STRIPPED_HOLLOW_CYPRESS_LOG, Identifier.of(this.namespace, "stripped_cypress_log"))
+                .planks(Identifier.of(this.namespace, "cypress_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/cypress/log"),
-                        new Identifier(this.namespace, "block/cypress/stripped_log"),
-                        new Identifier(this.namespace, "block/cypress/log_top"),
-                        new Identifier(this.namespace, "block/cypress/stripped_log_top")
+                        Identifier.of(this.namespace, "block/cypress/log"),
+                        Identifier.of(this.namespace, "block/cypress/stripped_log"),
+                        Identifier.of(this.namespace, "block/cypress/log_top"),
+                        Identifier.of(this.namespace, "block/cypress/stripped_log_top")
                 ))
                 .create();
         HOLLOW_EBONY_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_EBONY_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_EBONY_LOG, new Identifier(this.namespace, "ebony_log"))
-                .stripped(STRIPPED_HOLLOW_EBONY_LOG, new Identifier(this.namespace, "stripped_ebony_log"))
-                .planks(new Identifier(this.namespace, "ebony_planks"))
+                .raw(HOLLOW_EBONY_LOG, Identifier.of(this.namespace, "ebony_log"))
+                .stripped(STRIPPED_HOLLOW_EBONY_LOG, Identifier.of(this.namespace, "stripped_ebony_log"))
+                .planks(Identifier.of(this.namespace, "ebony_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/ebony/log"),
-                        new Identifier(this.namespace, "block/ebony/stripped_log"),
-                        new Identifier(this.namespace, "block/ebony/log_top"),
-                        new Identifier(this.namespace, "block/ebony/stripped_log_top")
+                        Identifier.of(this.namespace, "block/ebony/log"),
+                        Identifier.of(this.namespace, "block/ebony/stripped_log"),
+                        Identifier.of(this.namespace, "block/ebony/log_top"),
+                        Identifier.of(this.namespace, "block/ebony/stripped_log_top")
                 ))
                 .create();
         HOLLOW_EMBUR_PEDU = new HollowNetherStem.Builder().mapColor(MapColor.CLEAR).build();
         STRIPPED_HOLLOW_EMBUR_PEDU = new HollowNetherStem.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_EMBUR_PEDU, new Identifier(this.namespace, "embur_pedu"))
-                .stripped(STRIPPED_HOLLOW_EMBUR_PEDU, new Identifier(this.namespace, "stripped_embur_pedu"))
-                .planks(new Identifier(this.namespace, "embur_planks"))
+                .raw(HOLLOW_EMBUR_PEDU, Identifier.of(this.namespace, "embur_pedu"))
+                .stripped(STRIPPED_HOLLOW_EMBUR_PEDU, Identifier.of(this.namespace, "stripped_embur_pedu"))
+                .planks(Identifier.of(this.namespace, "embur_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/embur/log"),
-                        new Identifier(this.namespace, "block/embur/stripped_log"),
-                        new Identifier(this.namespace, "block/embur/log_top"),
-                        new Identifier(this.namespace, "block/embur/stripped_log_top")
+                        Identifier.of(this.namespace, "block/embur/log"),
+                        Identifier.of(this.namespace, "block/embur/stripped_log"),
+                        Identifier.of(this.namespace, "block/embur/log_top"),
+                        Identifier.of(this.namespace, "block/embur/stripped_log_top")
                 ))
                 .create();
         HOLLOW_ETHER_LOG = new HollowLog.Builder().mapColor(MapColor.CYAN).build();
         STRIPPED_HOLLOW_ETHER_LOG = new HollowLog.Builder().mapColor(MapColor.CYAN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_ETHER_LOG, new Identifier(this.namespace, "ether_log"))
-                .stripped(STRIPPED_HOLLOW_ETHER_LOG, new Identifier(this.namespace, "stripped_ether_log"))
-                .planks(new Identifier(this.namespace, "ether_planks"))
+                .raw(HOLLOW_ETHER_LOG, Identifier.of(this.namespace, "ether_log"))
+                .stripped(STRIPPED_HOLLOW_ETHER_LOG, Identifier.of(this.namespace, "stripped_ether_log"))
+                .planks(Identifier.of(this.namespace, "ether_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/ether/log"),
-                        new Identifier(this.namespace, "block/ether/stripped_log"),
-                        new Identifier(this.namespace, "block/ether/log_top"),
-                        new Identifier(this.namespace, "block/ether/stripped_log_top")
+                        Identifier.of(this.namespace, "block/ether/log"),
+                        Identifier.of(this.namespace, "block/ether/stripped_log"),
+                        Identifier.of(this.namespace, "block/ether/log_top"),
+                        Identifier.of(this.namespace, "block/ether/stripped_log_top")
                 ))
                 .create();
         HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_FIR_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_FIR_LOG, new Identifier(this.namespace, "fir_log"))
-                .stripped(STRIPPED_HOLLOW_FIR_LOG, new Identifier(this.namespace, "stripped_fir_log"))
-                .planks(new Identifier(this.namespace, "fir_planks"))
+                .raw(HOLLOW_FIR_LOG, Identifier.of(this.namespace, "fir_log"))
+                .stripped(STRIPPED_HOLLOW_FIR_LOG, Identifier.of(this.namespace, "stripped_fir_log"))
+                .planks(Identifier.of(this.namespace, "fir_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/fir/log"),
-                        new Identifier(this.namespace, "block/fir/stripped_log"),
-                        new Identifier(this.namespace, "block/fir/log_top"),
-                        new Identifier(this.namespace, "block/fir/stripped_log_top")
+                        Identifier.of(this.namespace, "block/fir/log"),
+                        Identifier.of(this.namespace, "block/fir/stripped_log"),
+                        Identifier.of(this.namespace, "block/fir/log_top"),
+                        Identifier.of(this.namespace, "block/fir/stripped_log_top")
                 ))
                 .create();
         HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(this.namespace, "green_enchanted_log"))
-                .stripped(STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG, new Identifier(this.namespace, "stripped_green_enchanted_log"))
-                .planks(new Identifier(this.namespace, "green_enchanted_planks"))
+                .raw(HOLLOW_GREEN_ENCHANTED_LOG, Identifier.of(this.namespace, "green_enchanted_log"))
+                .stripped(STRIPPED_HOLLOW_GREEN_ENCHANTED_LOG, Identifier.of(this.namespace, "stripped_green_enchanted_log"))
+                .planks(Identifier.of(this.namespace, "green_enchanted_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/green_enchanted/log"),
-                        new Identifier(this.namespace, "block/green_enchanted/stripped_log"),
-                        new Identifier(this.namespace, "block/green_enchanted/log_top"),
-                        new Identifier(this.namespace, "block/green_enchanted/stripped_log_top")
+                        Identifier.of(this.namespace, "block/green_enchanted/log"),
+                        Identifier.of(this.namespace, "block/green_enchanted/stripped_log"),
+                        Identifier.of(this.namespace, "block/green_enchanted/log_top"),
+                        Identifier.of(this.namespace, "block/green_enchanted/stripped_log_top")
                 ))
                 .create();
         HOLLOW_HOLLY_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         STRIPPED_HOLLOW_HOLLY_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_HOLLY_LOG, new Identifier(this.namespace, "holly_log"))
-                .stripped(STRIPPED_HOLLOW_HOLLY_LOG, new Identifier(this.namespace, "stripped_holly_log"))
-                .planks(new Identifier(this.namespace, "holly_planks"))
+                .raw(HOLLOW_HOLLY_LOG, Identifier.of(this.namespace, "holly_log"))
+                .stripped(STRIPPED_HOLLOW_HOLLY_LOG, Identifier.of(this.namespace, "stripped_holly_log"))
+                .planks(Identifier.of(this.namespace, "holly_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/holly/log"),
-                        new Identifier(this.namespace, "block/holly/stripped_log"),
-                        new Identifier(this.namespace, "block/holly/log_top"),
-                        new Identifier(this.namespace, "block/holly/stripped_log_top")
+                        Identifier.of(this.namespace, "block/holly/log"),
+                        Identifier.of(this.namespace, "block/holly/stripped_log"),
+                        Identifier.of(this.namespace, "block/holly/log_top"),
+                        Identifier.of(this.namespace, "block/holly/stripped_log_top")
                 ))
                 .create();
         HOLLOW_IMPARIUS_STEM = new HollowLog.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_IMPARIUS_STEM, new Identifier(this.namespace, "imparius_stem"))
-                .planks(new Identifier(this.namespace, "imparius_planks"))
+                .raw(HOLLOW_IMPARIUS_STEM, Identifier.of(this.namespace, "imparius_stem"))
+                .planks(Identifier.of(this.namespace, "imparius_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/imparius/log"),
-                        new Identifier(this.namespace, "block/imparius/planks"),
-                        new Identifier(this.namespace, "block/imparius/log_top"),
-                        new Identifier(this.namespace, "block/imparius/log_top")
+                        Identifier.of(this.namespace, "block/imparius/log"),
+                        Identifier.of(this.namespace, "block/imparius/planks"),
+                        Identifier.of(this.namespace, "block/imparius/log_top"),
+                        Identifier.of(this.namespace, "block/imparius/log_top")
                 ))
                 .create();
         HOLLOW_FUNGAL_IMPARIUS_STEM = new HollowLog.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_FUNGAL_IMPARIUS_STEM, new Identifier(this.namespace, "fungal_imparius_stem"))
-                .planks(new Identifier(this.namespace, "imparius_planks"))
+                .raw(HOLLOW_FUNGAL_IMPARIUS_STEM, Identifier.of(this.namespace, "fungal_imparius_stem"))
+                .planks(Identifier.of(this.namespace, "imparius_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/fungal_imparius_stem"),
-                        new Identifier(this.namespace, "block/imparius/planks"),
-                        new Identifier(this.namespace, "block/fungal_imparius_stem_top"),
-                        new Identifier(this.namespace, "block/fungal_imparius_stem_top")
+                        Identifier.of(this.namespace, "block/fungal_imparius_stem"),
+                        Identifier.of(this.namespace, "block/imparius/planks"),
+                        Identifier.of(this.namespace, "block/fungal_imparius_stem_top"),
+                        Identifier.of(this.namespace, "block/fungal_imparius_stem_top")
                 ))
                 .create();
         HOLLOW_JACARANDA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_PURPLE).build();
         STRIPPED_HOLLOW_JACARANDA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_PURPLE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_JACARANDA_LOG, new Identifier(this.namespace, "jacaranda_log"))
-                .stripped(STRIPPED_HOLLOW_JACARANDA_LOG, new Identifier(this.namespace, "stripped_jacaranda_log"))
-                .planks(new Identifier(this.namespace, "jacaranda_planks"))
+                .raw(HOLLOW_JACARANDA_LOG, Identifier.of(this.namespace, "jacaranda_log"))
+                .stripped(STRIPPED_HOLLOW_JACARANDA_LOG, Identifier.of(this.namespace, "stripped_jacaranda_log"))
+                .planks(Identifier.of(this.namespace, "jacaranda_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/jacaranda/log"),
-                        new Identifier(this.namespace, "block/jacaranda/stripped_log"),
-                        new Identifier(this.namespace, "block/jacaranda/log_top"),
-                        new Identifier(this.namespace, "block/jacaranda/stripped_log_top")
+                        Identifier.of(this.namespace, "block/jacaranda/log"),
+                        Identifier.of(this.namespace, "block/jacaranda/stripped_log"),
+                        Identifier.of(this.namespace, "block/jacaranda/log_top"),
+                        Identifier.of(this.namespace, "block/jacaranda/stripped_log_top")
                 ))
                 .create();
         HOLLOW_LAMENT_LOG = new HollowLog.Builder().mapColor(MapColor.MAGENTA).build();
         STRIPPED_HOLLOW_LAMENT_LOG = new HollowLog.Builder().mapColor(MapColor.MAGENTA).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_LAMENT_LOG, new Identifier(this.namespace, "lament_log"))
-                .stripped(STRIPPED_HOLLOW_LAMENT_LOG, new Identifier(this.namespace, "stripped_lament_log"))
-                .planks(new Identifier(this.namespace, "lament_planks"))
+                .raw(HOLLOW_LAMENT_LOG, Identifier.of(this.namespace, "lament_log"))
+                .stripped(STRIPPED_HOLLOW_LAMENT_LOG, Identifier.of(this.namespace, "stripped_lament_log"))
+                .planks(Identifier.of(this.namespace, "lament_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/lament/log"),
-                        new Identifier(this.namespace, "block/lament/stripped_log"),
-                        new Identifier(this.namespace, "block/lament/log_top"),
-                        new Identifier(this.namespace, "block/lament/stripped_log_top")
+                        Identifier.of(this.namespace, "block/lament/log"),
+                        Identifier.of(this.namespace, "block/lament/stripped_log"),
+                        Identifier.of(this.namespace, "block/lament/log_top"),
+                        Identifier.of(this.namespace, "block/lament/stripped_log_top")
                 ))
                 .create();
         HOLLOW_MAHOGANY_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_MAHOGANY_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_MAHOGANY_LOG, new Identifier(this.namespace, "mahogany_log"))
-                .stripped(STRIPPED_HOLLOW_MAHOGANY_LOG, new Identifier(this.namespace, "stripped_mahogany_log"))
-                .planks(new Identifier(this.namespace, "mahogany_planks"))
+                .raw(HOLLOW_MAHOGANY_LOG, Identifier.of(this.namespace, "mahogany_log"))
+                .stripped(STRIPPED_HOLLOW_MAHOGANY_LOG, Identifier.of(this.namespace, "stripped_mahogany_log"))
+                .planks(Identifier.of(this.namespace, "mahogany_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/mahogany/log"),
-                        new Identifier(this.namespace, "block/mahogany/stripped_log"),
-                        new Identifier(this.namespace, "block/mahogany/log_top"),
-                        new Identifier(this.namespace, "block/mahogany/stripped_log_top")
+                        Identifier.of(this.namespace, "block/mahogany/log"),
+                        Identifier.of(this.namespace, "block/mahogany/stripped_log"),
+                        Identifier.of(this.namespace, "block/mahogany/log_top"),
+                        Identifier.of(this.namespace, "block/mahogany/stripped_log_top")
                 ))
                 .create();
         HOLLOW_MAPLE_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_MAPLE_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_MAPLE_LOG, new Identifier(this.namespace, "maple_log"))
-                .stripped(STRIPPED_HOLLOW_MAPLE_LOG, new Identifier(this.namespace, "stripped_maple_log"))
-                .planks(new Identifier(this.namespace, "maple_planks"))
+                .raw(HOLLOW_MAPLE_LOG, Identifier.of(this.namespace, "maple_log"))
+                .stripped(STRIPPED_HOLLOW_MAPLE_LOG, Identifier.of(this.namespace, "stripped_maple_log"))
+                .planks(Identifier.of(this.namespace, "maple_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/maple/log"),
-                        new Identifier(this.namespace, "block/maple/stripped_log"),
-                        new Identifier(this.namespace, "block/maple/log_top"),
-                        new Identifier(this.namespace, "block/maple/stripped_log_top")
+                        Identifier.of(this.namespace, "block/maple/log"),
+                        Identifier.of(this.namespace, "block/maple/stripped_log"),
+                        Identifier.of(this.namespace, "block/maple/log_top"),
+                        Identifier.of(this.namespace, "block/maple/stripped_log_top")
                 ))
                 .create();
         HOLLOW_NIGHTSHADE_LOG = new HollowLog.Builder().mapColor(MapColor.ORANGE).build();
         STRIPPED_HOLLOW_NIGHTSHADE_LOG = new HollowLog.Builder().mapColor(MapColor.ORANGE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_NIGHTSHADE_LOG, new Identifier(this.namespace, "nightshade_log"))
-                .stripped(STRIPPED_HOLLOW_NIGHTSHADE_LOG, new Identifier(this.namespace, "stripped_nightshade_log"))
-                .planks(new Identifier(this.namespace, "nightshade_planks"))
+                .raw(HOLLOW_NIGHTSHADE_LOG, Identifier.of(this.namespace, "nightshade_log"))
+                .stripped(STRIPPED_HOLLOW_NIGHTSHADE_LOG, Identifier.of(this.namespace, "stripped_nightshade_log"))
+                .planks(Identifier.of(this.namespace, "nightshade_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/nightshade/log"),
-                        new Identifier(this.namespace, "block/nightshade/stripped_log"),
-                        new Identifier(this.namespace, "block/nightshade/log_top"),
-                        new Identifier(this.namespace, "block/nightshade/stripped_log_top")
+                        Identifier.of(this.namespace, "block/nightshade/log"),
+                        Identifier.of(this.namespace, "block/nightshade/stripped_log"),
+                        Identifier.of(this.namespace, "block/nightshade/log_top"),
+                        Identifier.of(this.namespace, "block/nightshade/stripped_log_top")
                 ))
                 .create();
         HOLLOW_PALM_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_PALM_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_PALM_LOG, new Identifier(this.namespace, "palm_log"))
-                .stripped(STRIPPED_HOLLOW_PALM_LOG, new Identifier(this.namespace, "stripped_palm_log"))
-                .planks(new Identifier(this.namespace, "palm_planks"))
+                .raw(HOLLOW_PALM_LOG, Identifier.of(this.namespace, "palm_log"))
+                .stripped(STRIPPED_HOLLOW_PALM_LOG, Identifier.of(this.namespace, "stripped_palm_log"))
+                .planks(Identifier.of(this.namespace, "palm_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/palm/log"),
-                        new Identifier(this.namespace, "block/palm/stripped_log"),
-                        new Identifier(this.namespace, "block/palm/log_top"),
-                        new Identifier(this.namespace, "block/palm/stripped_log_top")
+                        Identifier.of(this.namespace, "block/palm/log"),
+                        Identifier.of(this.namespace, "block/palm/stripped_log"),
+                        Identifier.of(this.namespace, "block/palm/log_top"),
+                        Identifier.of(this.namespace, "block/palm/stripped_log_top")
                 ))
                 .create();
         HOLLOW_PALO_VERDE_LOG = new HollowLog.Builder().mapColor(MapColor.CLEAR).build();
         STRIPPED_HOLLOW_PALO_VERDE_LOG = new HollowLog.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_PALO_VERDE_LOG, new Identifier(this.namespace, "palo_verde_log"))
-                .stripped(STRIPPED_HOLLOW_PALO_VERDE_LOG, new Identifier(this.namespace, "stripped_palo_verde_log"))
+                .raw(HOLLOW_PALO_VERDE_LOG, Identifier.of(this.namespace, "palo_verde_log"))
+                .stripped(STRIPPED_HOLLOW_PALO_VERDE_LOG, Identifier.of(this.namespace, "stripped_palo_verde_log"))
                 .planks(Registries.BLOCK.getId(Blocks.BIRCH_PLANKS))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/palo_verde_log"),
-                        new Identifier(this.namespace, "block/stripped_palo_verde_log"),
-                        new Identifier(this.namespace, "block/palo_verde_log_top"),
-                        new Identifier(this.namespace, "block/stripped_palo_verde_top")
+                        Identifier.of(this.namespace, "block/palo_verde_log"),
+                        Identifier.of(this.namespace, "block/stripped_palo_verde_log"),
+                        Identifier.of(this.namespace, "block/palo_verde_log_top"),
+                        Identifier.of(this.namespace, "block/stripped_palo_verde_top")
                 ))
                 .create();
         HOLLOW_PINE_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         STRIPPED_HOLLOW_PINE_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_PINE_LOG, new Identifier(this.namespace, "pine_log"))
-                .stripped(STRIPPED_HOLLOW_PINE_LOG, new Identifier(this.namespace, "stripped_pine_log"))
-                .planks(new Identifier(this.namespace, "pine_planks"))
+                .raw(HOLLOW_PINE_LOG, Identifier.of(this.namespace, "pine_log"))
+                .stripped(STRIPPED_HOLLOW_PINE_LOG, Identifier.of(this.namespace, "stripped_pine_log"))
+                .planks(Identifier.of(this.namespace, "pine_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/pine/log"),
-                        new Identifier(this.namespace, "block/pine/stripped_log"),
-                        new Identifier(this.namespace, "block/pine/log_top"),
-                        new Identifier(this.namespace, "block/pine/stripped_log_top")
+                        Identifier.of(this.namespace, "block/pine/log"),
+                        Identifier.of(this.namespace, "block/pine/stripped_log"),
+                        Identifier.of(this.namespace, "block/pine/log_top"),
+                        Identifier.of(this.namespace, "block/pine/stripped_log_top")
                 ))
                 .create();
         HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(this.namespace, "rainbow_eucalyptus_log"))
-                .stripped(STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG, new Identifier(this.namespace, "stripped_rainbow_eucalyptus_log"))
-                .planks(new Identifier(this.namespace, "rainbow_eucalyptus_planks"))
+                .raw(HOLLOW_RAINBOW_EUCALYPTUS_LOG, Identifier.of(this.namespace, "rainbow_eucalyptus_log"))
+                .stripped(STRIPPED_HOLLOW_RAINBOW_EUCALYPTUS_LOG, Identifier.of(this.namespace, "stripped_rainbow_eucalyptus_log"))
+                .planks(Identifier.of(this.namespace, "rainbow_eucalyptus_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/rainbow_eucalyptus/log"),
-                        new Identifier(this.namespace, "block/rainbow_eucalyptus/stripped_log"),
-                        new Identifier(this.namespace, "block/rainbow_eucalyptus/log_top"),
-                        new Identifier(this.namespace, "block/rainbow_eucalyptus/stripped_log_top")
+                        Identifier.of(this.namespace, "block/rainbow_eucalyptus/log"),
+                        Identifier.of(this.namespace, "block/rainbow_eucalyptus/stripped_log"),
+                        Identifier.of(this.namespace, "block/rainbow_eucalyptus/log_top"),
+                        Identifier.of(this.namespace, "block/rainbow_eucalyptus/stripped_log_top")
                 ))
                 .create();
         HOLLOW_REDWOOD_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_REDWOOD_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_REDWOOD_LOG, new Identifier(this.namespace, "redwood_log"))
-                .stripped(STRIPPED_HOLLOW_REDWOOD_LOG, new Identifier(this.namespace, "stripped_redwood_log"))
-                .planks(new Identifier(this.namespace, "redwood_planks"))
+                .raw(HOLLOW_REDWOOD_LOG, Identifier.of(this.namespace, "redwood_log"))
+                .stripped(STRIPPED_HOLLOW_REDWOOD_LOG, Identifier.of(this.namespace, "stripped_redwood_log"))
+                .planks(Identifier.of(this.namespace, "redwood_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/redwood/log"),
-                        new Identifier(this.namespace, "block/redwood/stripped_log"),
-                        new Identifier(this.namespace, "block/redwood/log_top"),
-                        new Identifier(this.namespace, "block/redwood/stripped_log_top")
+                        Identifier.of(this.namespace, "block/redwood/log"),
+                        Identifier.of(this.namespace, "block/redwood/stripped_log"),
+                        Identifier.of(this.namespace, "block/redwood/log_top"),
+                        Identifier.of(this.namespace, "block/redwood/stripped_log_top")
                 ))
                 .create();
         HOLLOW_SKYRIS_LOG = new HollowLog.Builder().mapColor(MapColor.PINK).build();
         STRIPPED_HOLLOW_SKYRIS_LOG = new HollowLog.Builder().mapColor(MapColor.PINK).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_SKYRIS_LOG, new Identifier(this.namespace, "skyris_log"))
-                .stripped(STRIPPED_HOLLOW_SKYRIS_LOG, new Identifier(this.namespace, "stripped_skyris_log"))
-                .planks(new Identifier(this.namespace, "skyris_planks"))
+                .raw(HOLLOW_SKYRIS_LOG, Identifier.of(this.namespace, "skyris_log"))
+                .stripped(STRIPPED_HOLLOW_SKYRIS_LOG, Identifier.of(this.namespace, "stripped_skyris_log"))
+                .planks(Identifier.of(this.namespace, "skyris_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/skyris/log"),
-                        new Identifier(this.namespace, "block/skyris/stripped_log"),
-                        new Identifier(this.namespace, "block/skyris/log_top"),
-                        new Identifier(this.namespace, "block/skyris/stripped_log_top")
+                        Identifier.of(this.namespace, "block/skyris/log"),
+                        Identifier.of(this.namespace, "block/skyris/stripped_log"),
+                        Identifier.of(this.namespace, "block/skyris/log_top"),
+                        Identifier.of(this.namespace, "block/skyris/stripped_log_top")
                 ))
                 .create();
         HOLLOW_SYTHIAN_STEM = new HollowNetherStem.Builder().mapColor(MapColor.CLEAR).build();
         STRIPPED_HOLLOW_SYTHIAN_STEM = new HollowNetherStem.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_SYTHIAN_STEM, new Identifier(this.namespace, "sythian_stem"))
-                .stripped(STRIPPED_HOLLOW_SYTHIAN_STEM, new Identifier(this.namespace, "stripped_sythian_stem"))
-                .planks(new Identifier(this.namespace, "sythian_planks"))
+                .raw(HOLLOW_SYTHIAN_STEM, Identifier.of(this.namespace, "sythian_stem"))
+                .stripped(STRIPPED_HOLLOW_SYTHIAN_STEM, Identifier.of(this.namespace, "stripped_sythian_stem"))
+                .planks(Identifier.of(this.namespace, "sythian_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/sythian/log"),
-                        new Identifier(this.namespace, "block/sythian/stripped_log"),
-                        new Identifier(this.namespace, "block/sythian/log_top"),
-                        new Identifier(this.namespace, "block/sythian/stripped_log_top")
+                        Identifier.of(this.namespace, "block/sythian/log"),
+                        Identifier.of(this.namespace, "block/sythian/stripped_log"),
+                        Identifier.of(this.namespace, "block/sythian/log_top"),
+                        Identifier.of(this.namespace, "block/sythian/stripped_log_top")
                 ))
                 .create();
         HOLLOW_WHITE_MANGROVE_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         STRIPPED_HOLLOW_WHITE_MANGROVE_LOG = new HollowLog.Builder().mapColor(MapColor.GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WHITE_MANGROVE_LOG, new Identifier(this.namespace, "white_mangrove_log"))
-                .stripped(STRIPPED_HOLLOW_WHITE_MANGROVE_LOG, new Identifier(this.namespace, "stripped_white_mangrove_log"))
-                .planks(new Identifier(this.namespace, "white_mangrove_planks"))
+                .raw(HOLLOW_WHITE_MANGROVE_LOG, Identifier.of(this.namespace, "white_mangrove_log"))
+                .stripped(STRIPPED_HOLLOW_WHITE_MANGROVE_LOG, Identifier.of(this.namespace, "stripped_white_mangrove_log"))
+                .planks(Identifier.of(this.namespace, "white_mangrove_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/white_mangrove/log"),
-                        new Identifier(this.namespace, "block/white_mangrove/stripped_log"),
-                        new Identifier(this.namespace, "block/white_mangrove/log_top"),
-                        new Identifier(this.namespace, "block/white_mangrove/stripped_log_top")
+                        Identifier.of(this.namespace, "block/white_mangrove/log"),
+                        Identifier.of(this.namespace, "block/white_mangrove/stripped_log"),
+                        Identifier.of(this.namespace, "block/white_mangrove/log_top"),
+                        Identifier.of(this.namespace, "block/white_mangrove/stripped_log_top")
                 ))
                 .create();
         HOLLOW_WILLOW_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         STRIPPED_HOLLOW_WILLOW_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_GREEN).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WILLOW_LOG, new Identifier(this.namespace, "willow_log"))
-                .stripped(STRIPPED_HOLLOW_WILLOW_LOG, new Identifier(this.namespace, "stripped_willow_log"))
-                .planks(new Identifier(this.namespace, "willow_planks"))
+                .raw(HOLLOW_WILLOW_LOG, Identifier.of(this.namespace, "willow_log"))
+                .stripped(STRIPPED_HOLLOW_WILLOW_LOG, Identifier.of(this.namespace, "stripped_willow_log"))
+                .planks(Identifier.of(this.namespace, "willow_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/willow/log"),
-                        new Identifier(this.namespace, "block/willow/stripped_log"),
-                        new Identifier(this.namespace, "block/willow/log_top"),
-                        new Identifier(this.namespace, "block/willow/stripped_log_top")
+                        Identifier.of(this.namespace, "block/willow/log"),
+                        Identifier.of(this.namespace, "block/willow/stripped_log"),
+                        Identifier.of(this.namespace, "block/willow/log_top"),
+                        Identifier.of(this.namespace, "block/willow/stripped_log_top")
                 ))
                 .create();
         HOLLOW_WITCH_HAZEL_LOG = new HollowLog.Builder().mapColor(MapColor.ORANGE).build();
         STRIPPED_HOLLOW_WITCH_HAZEL_LOG = new HollowLog.Builder().mapColor(MapColor.ORANGE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WITCH_HAZEL_LOG, new Identifier(this.namespace, "witch_hazel_log"))
-                .stripped(STRIPPED_HOLLOW_WITCH_HAZEL_LOG, new Identifier(this.namespace, "stripped_witch_hazel_log"))
-                .planks(new Identifier(this.namespace, "witch_hazel_planks"))
+                .raw(HOLLOW_WITCH_HAZEL_LOG, Identifier.of(this.namespace, "witch_hazel_log"))
+                .stripped(STRIPPED_HOLLOW_WITCH_HAZEL_LOG, Identifier.of(this.namespace, "stripped_witch_hazel_log"))
+                .planks(Identifier.of(this.namespace, "witch_hazel_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/witch_hazel/log"),
-                        new Identifier(this.namespace, "block/witch_hazel/stripped_log"),
-                        new Identifier(this.namespace, "block/witch_hazel/log_top"),
-                        new Identifier(this.namespace, "block/witch_hazel/stripped_log_top")
+                        Identifier.of(this.namespace, "block/witch_hazel/log"),
+                        Identifier.of(this.namespace, "block/witch_hazel/stripped_log"),
+                        Identifier.of(this.namespace, "block/witch_hazel/log_top"),
+                        Identifier.of(this.namespace, "block/witch_hazel/stripped_log_top")
                 ))
                 .create();
         HOLLOW_WITHERING_OAK_LOG = new HollowLog.Builder().mapColor(MapColor.CLEAR).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WITHERING_OAK_LOG, new Identifier(this.namespace, "withering_oak_log"))
+                .raw(HOLLOW_WITHERING_OAK_LOG, Identifier.of(this.namespace, "withering_oak_log"))
                 .stripped(VanillaMinecraftBlocks.STRIPPED_HOLLOW_OAK_LOG, Registries.BLOCK.getId(Blocks.STRIPPED_OAK_LOG))
                 .planks(Registries.BLOCK.getId(Blocks.OAK_PLANKS))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/withering_oak_log"),
-                        new Identifier(this.namespace, "block/withering_oak_log"),
-                        new Identifier(this.namespace, "block/withering_oak_log_top"),
-                        new Identifier(this.namespace, "block/withering_oak_log_top")
+                        Identifier.of(this.namespace, "block/withering_oak_log"),
+                        Identifier.of(this.namespace, "block/withering_oak_log"),
+                        Identifier.of(this.namespace, "block/withering_oak_log_top"),
+                        Identifier.of(this.namespace, "block/withering_oak_log_top")
                 ))
                 .create();
         HOLLOW_ZELKOVA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_RED).build();
         STRIPPED_HOLLOW_ZELKOVA_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_RED).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_ZELKOVA_LOG, new Identifier(this.namespace, "zelkova_log"))
-                .stripped(STRIPPED_HOLLOW_ZELKOVA_LOG, new Identifier(this.namespace, "stripped_zelkova_log"))
-                .planks(new Identifier(this.namespace, "zelkova_planks"))
+                .raw(HOLLOW_ZELKOVA_LOG, Identifier.of(this.namespace, "zelkova_log"))
+                .stripped(STRIPPED_HOLLOW_ZELKOVA_LOG, Identifier.of(this.namespace, "stripped_zelkova_log"))
+                .planks(Identifier.of(this.namespace, "zelkova_planks"))
                 .textures(new LogTextureMap(
-                        new Identifier(this.namespace, "block/zelkova/log"),
-                        new Identifier(this.namespace, "block/zelkova/stripped_log"),
-                        new Identifier(this.namespace, "block/zelkova/log_top"),
-                        new Identifier(this.namespace, "block/zelkova/stripped_log_top")
+                        Identifier.of(this.namespace, "block/zelkova/log"),
+                        Identifier.of(this.namespace, "block/zelkova/stripped_log"),
+                        Identifier.of(this.namespace, "block/zelkova/log_top"),
+                        Identifier.of(this.namespace, "block/zelkova/stripped_log_top")
                 ))
                 .create();
     }

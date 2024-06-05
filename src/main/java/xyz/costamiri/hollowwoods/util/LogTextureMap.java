@@ -18,10 +18,10 @@ public class LogTextureMap {
     }
 
     public LogTextureMap(String namespace, String log) {
-        this.textureSide = new Identifier(namespace,"block/" + log);
-        this.textureSideStripped = new Identifier(namespace,"block/stripped_" + log);
-        this.textureTop = new Identifier(namespace,"block/" + log + "_top");
-        this.textureTopStripped = new Identifier(namespace,"block/stripped_" + log + "_top");
+        this.textureSide = Identifier.of(namespace,"block/" + log);
+        this.textureSideStripped = Identifier.of(namespace,"block/stripped_" + log);
+        this.textureTop = Identifier.of(namespace,"block/" + log + "_top");
+        this.textureTopStripped = Identifier.of(namespace,"block/stripped_" + log + "_top");
     }
 
     public TextureMap raw() {

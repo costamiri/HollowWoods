@@ -22,32 +22,32 @@ public class HWRecipeManager {
     }
 
     public static void addShapelessRecipe(Identifier ingredient, Identifier resultItem, int resultCount) {
-        recipes.put(new Identifier(MODID, "shapeless_%s_to_%s".formatted(ingredient.getPath(), resultItem.getPath())),
+        recipes.put(Identifier.of(MODID, "shapeless_%s_to_%s".formatted(ingredient.getPath(), resultItem.getPath())),
                 createShapelessRecipe(ingredient, resultItem, resultCount));
     }
 
     public static void addStonecuttingRecipe(Identifier ingredient, Identifier resultItem, int resultCount) {
-        recipes.put(new Identifier(MODID,"stonecutter_%s_to_%s".formatted(ingredient.getPath(), resultItem.getPath())),
+        recipes.put(Identifier.of(MODID,"stonecutter_%s_to_%s".formatted(ingredient.getPath(), resultItem.getPath())),
                 createStonecuttingRecipe(ingredient, resultItem, resultCount));
     }
 
     public static void addHollowingRecipe(Identifier ingredient, Identifier resultBlock, Identifier resultItem, int resultCount) {
-        recipes.put(new Identifier(MODID, "hollowing_%s".formatted(ingredient.getPath())),
+        recipes.put(Identifier.of(MODID, "hollowing_%s".formatted(ingredient.getPath())),
                 createHollowingRecipe(ingredient, resultBlock, resultItem, resultCount));
     }
 
     public static void addHollowingRecipe(Identifier ingredient, Identifier resultBlock) {
-        recipes.put(new Identifier(MODID, "hollowing_%s".formatted(ingredient.getPath())),
+        recipes.put(Identifier.of(MODID, "hollowing_%s".formatted(ingredient.getPath())),
                 createHollowingRecipe(ingredient, resultBlock));
     }
 
     public static void addSmithingRecipe(Identifier baseItem, Identifier additionItem, Identifier templateItem, Identifier resultItem) {
-        recipes.put(new Identifier(MODID, "smithing_%s_%s".formatted(baseItem.getPath(), additionItem.getPath())),
+        recipes.put(Identifier.of(MODID, "smithing_%s_%s".formatted(baseItem.getPath(), additionItem.getPath())),
                 createSmithingRecipe(baseItem, additionItem, templateItem, resultItem));
     }
 
     public static void addHollowerToolRecipe(Identifier axeItem, String hollowerPath) {
-        addSmithingRecipe(axeItem, new Identifier("iron_ingot"), new Identifier("iron_ingot"), new Identifier(MODID, hollowerPath));
+        addSmithingRecipe(axeItem, Identifier.of("iron_ingot"), Identifier.of("iron_ingot"), Identifier.of(MODID, hollowerPath));
     }
 
     public static JsonObject createShapelessRecipe(Identifier ingredient, Identifier resultItem, int resultCount) {

@@ -19,17 +19,17 @@ public class Cinderscapes extends HollowBlocks {
         HOLLOW_SCORCHED_STEM = new HollowNetherStem.Builder().mapColor(MapColor.GRAY, MapColor.TERRACOTTA_GRAY).build();
         STRIPPED_HOLLOW_SCORCHED_STEM = new HollowNetherStem.Builder().mapColor(MapColor.GRAY).build();
         new LogCreator()
-                .raw(HOLLOW_SCORCHED_STEM, new Identifier(this.namespace, "scorched_stem"))
-                .stripped(STRIPPED_HOLLOW_SCORCHED_STEM, new Identifier(this.namespace, "stripped_scorched_stem"))
-                .planks(new Identifier(this.namespace, "scorched_planks"))
+                .raw(HOLLOW_SCORCHED_STEM, Identifier.of(this.namespace, "scorched_stem"))
+                .stripped(STRIPPED_HOLLOW_SCORCHED_STEM, Identifier.of(this.namespace, "stripped_scorched_stem"))
+                .planks(Identifier.of(this.namespace, "scorched_planks"))
                 .create();
 
         HOLLOW_UMBRAL_STEM = new HollowNetherStem.Builder().mapColor(MapColor.LIGHT_BLUE_GRAY, MapColor.BLUE).build();
         STRIPPED_HOLLOW_UMBRAL_STEM = new HollowNetherStem.Builder().mapColor(MapColor.LIGHT_BLUE_GRAY).build();
         new LogCreator()
-                .raw(HOLLOW_UMBRAL_STEM, new Identifier(this.namespace, "umbral_stem"))
-                .stripped(STRIPPED_HOLLOW_UMBRAL_STEM, new Identifier(this.namespace, "stripped_umbral_stem"))
-                .planks(new Identifier(this.namespace, "umbral_planks"))
+                .raw(HOLLOW_UMBRAL_STEM, Identifier.of(this.namespace, "umbral_stem"))
+                .stripped(STRIPPED_HOLLOW_UMBRAL_STEM, Identifier.of(this.namespace, "stripped_umbral_stem"))
+                .planks(Identifier.of(this.namespace, "umbral_planks"))
                 .create();
     }
 }
