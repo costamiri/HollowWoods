@@ -63,7 +63,7 @@ public class HWRecipeManager {
         }
 
         JsonObject jsonResult = new JsonObject();
-        jsonResult.addProperty("item", resultItem.toString());
+        jsonResult.addProperty("id", resultItem.toString());
         jsonResult.addProperty("count", resultCount);
 
         JsonObject json = new JsonObject();
@@ -76,12 +76,14 @@ public class HWRecipeManager {
     public static JsonObject createStonecuttingRecipe(Identifier ingredient, Identifier resultItem, int resultCount) {
         JsonObject jsonIngredient = new JsonObject();
         jsonIngredient.addProperty("item", ingredient.toString());
+        JsonObject jsonResult = new JsonObject();
+        jsonResult.addProperty("id", resultItem.toString());
+        jsonResult.addProperty("count", resultCount);
 
         JsonObject json = new JsonObject();
         json.addProperty("type", "minecraft:stonecutting");
         json.add("ingredient", jsonIngredient);
-        json.addProperty("result", resultItem.toString());
-        json.addProperty("count", resultCount);
+        json.add("result",jsonResult);
         return json;
     }
 
@@ -110,7 +112,7 @@ public class HWRecipeManager {
         JsonObject jsonAddition = new JsonObject();
         jsonAddition.addProperty("item", additionItem.toString());
         JsonObject jsonResult = new JsonObject();
-        jsonResult.addProperty("item", resultItem.toString());
+        jsonResult.addProperty("id", resultItem.toString());
         JsonObject jsonTemplate = new JsonObject();
         jsonTemplate.addProperty("item", templateItem.toString());
         JsonObject json = new JsonObject();
