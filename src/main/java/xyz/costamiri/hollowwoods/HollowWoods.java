@@ -130,7 +130,7 @@ public class HollowWoods implements ModInitializer {
 
 	public static void blockLootTables() {
 		LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
-			Block blockx = blocks.get(key.getValue().getPath().replace("blocks/", ""));
+			Block blockx = blocks.get(key.getValue().getPath().replace("block/", ""));
 			if (blockx != null && source.isBuiltin() && key.getValue().getNamespace().equals(MODID)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.with(ItemEntry.builder(blockx));
