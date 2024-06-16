@@ -90,7 +90,7 @@ public class HWRecipeManager {
     public static JsonObject createHollowingRecipe(Identifier ingredient, Identifier resultBlock, Identifier resultItem, int resultCount) {
         JsonObject jsonResult = new JsonObject();
         jsonResult.addProperty("id", resultItem.toString());
-        jsonResult.addProperty("Count", resultCount);
+        jsonResult.addProperty("count", resultCount);
 
         JsonObject json = createHollowingRecipe(ingredient, resultBlock);
         json.add("result", jsonResult);
