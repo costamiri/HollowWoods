@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "hollowwoods:hollow_jungle_log"
         }
       ],
       "rolls": 1.0

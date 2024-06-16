@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "hollowwoods:hollow_crimson_stem"
         }
       ],
       "rolls": 1.0
