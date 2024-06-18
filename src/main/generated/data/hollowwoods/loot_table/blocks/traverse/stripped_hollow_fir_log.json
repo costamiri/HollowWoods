@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "hollowwoods:traverse/stripped_hollow_fir_log"
         }
       ],
       "rolls": 1.0

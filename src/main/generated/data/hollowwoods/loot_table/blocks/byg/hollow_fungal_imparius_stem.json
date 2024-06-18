@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "hollowwoods:byg/hollow_fungal_imparius_stem"
         }
       ],
       "rolls": 1.0

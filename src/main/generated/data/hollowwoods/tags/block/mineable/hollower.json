@@ -1,0 +1,561 @@
+{
+  "values": [
+    {
+      "id": "minecraft:stripped_spruce_log",
+      "required": false
+    },
+    {
+      "id": "byg:redwood_log",
+      "required": false
+    },
+    {
+      "id": "betternether:stalagnate_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:cypress_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_dark_oak_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_mahogany_log",
+      "required": false
+    },
+    {
+      "id": "byg:ether_log",
+      "required": false
+    },
+    {
+      "id": "byg:white_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "byg:zelkova_log",
+      "required": false
+    },
+    {
+      "id": "byg:embur_pedu",
+      "required": false
+    },
+    {
+      "id": "promenade:maple_log",
+      "required": false
+    },
+    {
+      "id": "byg:ebony_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:birch_log",
+      "required": false
+    },
+    {
+      "id": "byg:skyris_log",
+      "required": false
+    },
+    {
+      "id": "byg:cika_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "traverse:stripped_fir_log",
+      "required": false
+    },
+    {
+      "id": "byg:baobab_log",
+      "required": false
+    },
+    {
+      "id": "byg:green_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_acacia_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:crimson_stem",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_cika_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "cinderscapes:stripped_umbral_stem",
+      "required": false
+    },
+    {
+      "id": "bewitchment:juniper_log",
+      "required": false
+    },
+    {
+      "id": "byg:aspen_log",
+      "required": false
+    },
+    {
+      "id": "byg:palo_verde_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_bulbis_stem",
+      "required": false
+    },
+    {
+      "id": "promenade:stripped_maple_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_redwood_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_skyris_log",
+      "required": false
+    },
+    {
+      "id": "betternether:nether_sakura_log",
+      "required": false
+    },
+    {
+      "id": "betternether:willow_stripped_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:rubber_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_maple_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:redwood_log",
+      "required": false
+    },
+    {
+      "id": "betternether:rubeus_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betternether:wart_stripped_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:cypress_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_redwood_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_pine_log",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_cypress_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_log",
+      "required": false
+    },
+    {
+      "id": "betternether:anchor_tree_log",
+      "required": false
+    },
+    {
+      "id": "betternether:rubeus_log",
+      "required": false
+    },
+    {
+      "id": "architects_palette:stripped_twisted_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_ether_log",
+      "required": false
+    },
+    {
+      "id": "promenade:stripped_dark_amaranth_stem",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_witch_hazel_log",
+      "required": false
+    },
+    {
+      "id": "betternether:mushroom_fir_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_birch_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_sythian_stem",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_palo_verde_log",
+      "required": false
+    },
+    {
+      "id": "byg:imparius_stem",
+      "required": false
+    },
+    {
+      "id": "byg:willow_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:oak_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:stripped_dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_aspen_log",
+      "required": false
+    },
+    {
+      "id": "byg:lament_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "blockus:stripped_white_oak_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_jungle_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_baobab_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_cherry_log",
+      "required": false
+    },
+    {
+      "id": "byg:cypress_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_holly_log",
+      "required": false
+    },
+    {
+      "id": "byg:mahogany_log",
+      "required": false
+    },
+    {
+      "id": "byg:witch_hazel_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "betternether:wart_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:warped_stem",
+      "required": false
+    },
+    {
+      "id": "byg:maple_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_crimson_stem",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_green_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_rubber_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_log",
+      "required": false
+    },
+    {
+      "id": "byg:pine_log",
+      "required": false
+    },
+    {
+      "id": "byg:withering_oak_log",
+      "required": false
+    },
+    {
+      "id": "betternether:stalagnate_stripped_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:willow_log",
+      "required": false
+    },
+    {
+      "id": "betternether:mushroom_fir_stripped_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_cypress_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_lament_log",
+      "required": false
+    },
+    {
+      "id": "byg:sythian_stem",
+      "required": false
+    },
+    {
+      "id": "promenade:stripped_sakura_log",
+      "required": false
+    },
+    {
+      "id": "byg:nightshade_log",
+      "required": false
+    },
+    {
+      "id": "byg:palm_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:stripped_elder_log",
+      "required": false
+    },
+    {
+      "id": "promenade:stripped_palm_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_willow_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_willow_log",
+      "required": false
+    },
+    {
+      "id": "cinderscapes:scorched_stem",
+      "required": false
+    },
+    {
+      "id": "croptopia:stripped_cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_nightshade_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:dark_oak_log",
+      "required": false
+    },
+    {
+      "id": "byg:fir_log",
+      "required": false
+    },
+    {
+      "id": "byg:fungal_imparius_stem",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_oak_log",
+      "required": false
+    },
+    {
+      "id": "byg:cherry_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_ebony_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:hemlock_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_zelkova_log",
+      "required": false
+    },
+    {
+      "id": "blockus:white_oak_log",
+      "required": false
+    },
+    {
+      "id": "byg:blue_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "promenade:sakura_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_cherry_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_embur_pedu",
+      "required": false
+    },
+    {
+      "id": "byg:holly_log",
+      "required": false
+    },
+    {
+      "id": "betternether:willow_log",
+      "required": false
+    },
+    {
+      "id": "promenade:palm_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_white_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_fir_log",
+      "required": false
+    },
+    {
+      "id": "byg:jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:stripped_cypress_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_palm_log",
+      "required": false
+    },
+    {
+      "id": "cinderscapes:umbral_stem",
+      "required": false
+    },
+    {
+      "id": "byg:bulbis_stem",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_warped_stem",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_log",
+      "required": false
+    },
+    {
+      "id": "traverse:fir_log",
+      "required": false
+    },
+    {
+      "id": "betternether:anchor_tree_stripped_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:bamboo_block",
+      "required": false
+    },
+    {
+      "id": "bewitchment:elder_log",
+      "required": false
+    },
+    {
+      "id": "byg:rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "byg:stripped_blue_enchanted_log",
+      "required": false
+    },
+    {
+      "id": "cinderscapes:stripped_scorched_stem",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_bamboo_block",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_hemlock_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:acacia_log",
+      "required": false
+    },
+    {
+      "id": "promenade:dark_amaranth_stem",
+      "required": false
+    },
+    {
+      "id": "architects_palette:twisted_log",
+      "required": false
+    },
+    {
+      "id": "betternether:nether_sakura_stripped_log",
+      "required": false
+    },
+    {
+      "id": "bewitchment:stripped_juniper_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:stripped_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "terrestria:rainbow_eucalyptus_log",
+      "required": false
+    },
+    "#hollowwoods:hollow_logs"
+  ]
+}

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "hollowwoods:terrestria/hollow_japanese_maple_log"
         }
       ],
       "rolls": 1.0

@@ -21,6 +21,7 @@ public class HWTagGenerator extends FabricTagProvider.BlockTagProvider {
     private static final TagKey<Block> HOLLOW_LOGS = TagKey.of(RegistryKeys.BLOCK, Identifier.of(MODID, "hollow_logs"));
     private static final TagKey<Block> LOGS_THAT_BURN = TagKey.of(RegistryKeys.BLOCK, Identifier.of("logs_that_burn"));
     private static final TagKey<Block> LOGS = TagKey.of(RegistryKeys.BLOCK, Identifier.of("logs"));
+    public static final TagKey<Block> MINEABLE_HOLLOWER = TagKey.of(RegistryKeys.BLOCK, Identifier.of(MODID, "mineable/hollower"));
 
     public HWTagGenerator(FabricDataOutput output, CompletableFuture<WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -44,6 +45,10 @@ public class HWTagGenerator extends FabricTagProvider.BlockTagProvider {
             }
             else if (!HollowBlocks.strippedBlocks.containsValue(block)) getOrCreateTagBuilder(HOLLOW_LOGS).addOptional(blockId);
         });
+
+        HollowBlocks.hollowedBlocks.forEach((fullLogId, hollowedLog) -> getOrCreateTagBuilder(MINEABLE_HOLLOWER).addOptional(fullLogId));
+        getOrCreateTagBuilder(MINEABLE_HOLLOWER).addTag(HOLLOW_LOGS);
+
         getOrCreateTagBuilder(LOGS).addTag(HOLLOW_LOGS);
     }
 }
