@@ -7,12 +7,12 @@ import xyz.costamiri.hollowwoods.items.HollowerTool;
 import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 public class VanillaMinecraftItems extends HollowItems {
-    public static final HollowerTool WOODEN_HOLLOWER = new HollowerTool(ToolMaterials.WOOD, new Item.Settings());
-    public static final HollowerTool STONE_HOLLOWER = new HollowerTool(ToolMaterials.STONE, new Item.Settings());
-    public static final HollowerTool GOLDEN_HOLLOWER = new HollowerTool(ToolMaterials.GOLD, new Item.Settings());
-    public static final HollowerTool IRON_HOLLOWER = new HollowerTool(ToolMaterials.IRON, new Item.Settings());
-    public static final HollowerTool DIAMOND_HOLLOWER = new HollowerTool(ToolMaterials.DIAMOND, new Item.Settings());
-    public static final HollowerTool NETHERITE_HOLLOWER = new HollowerTool(ToolMaterials.NETHERITE, new Item.Settings());
+    public static final HollowerTool WOODEN_HOLLOWER = new HollowerTool(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.WOOD, 1.5F, -2.8F)));
+    public static final HollowerTool STONE_HOLLOWER = new HollowerTool(ToolMaterials.STONE, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.STONE, 1.5F, -2.8F)));
+    public static final HollowerTool GOLDEN_HOLLOWER = new HollowerTool(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.GOLD, 1.5F, -2.8F)));
+    public static final HollowerTool IRON_HOLLOWER = new HollowerTool(ToolMaterials.IRON, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.IRON, 1.5F, -2.8F)));
+    public static final HollowerTool DIAMOND_HOLLOWER = new HollowerTool(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.DIAMOND, 1.5F, -2.8F)));
+    public static final HollowerTool NETHERITE_HOLLOWER = new HollowerTool(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(HollowerTool.createAttributeModifiers(ToolMaterials.NETHERITE, 1.5F, -2.8F)));
 
     public VanillaMinecraftItems() {
         this.namespace = "minecraft";
