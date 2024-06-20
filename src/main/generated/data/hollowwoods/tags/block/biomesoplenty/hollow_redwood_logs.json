@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "hollowwoods:biomesoplenty/hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:biomesoplenty/stripped_hollow_redwood_log",
+      "required": false
+    }
+  ]
+}

@@ -21,6 +21,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_palm_log",
+      "required": false
+    },
+    {
       "id": "byg:stripped_mahogany_log",
       "required": false
     },
@@ -53,6 +57,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_pine_log",
+      "required": false
+    },
+    {
       "id": "byg:skyris_log",
       "required": false
     },
@@ -78,6 +86,10 @@
     },
     {
       "id": "minecraft:stripped_mangrove_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_log",
       "required": false
     },
     {
@@ -133,6 +145,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:willow_log",
+      "required": false
+    },
+    {
       "id": "betternether:willow_stripped_log",
       "required": false
     },
@@ -157,6 +173,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_umbran_log",
+      "required": false
+    },
+    {
       "id": "terrestria:cypress_log",
       "required": false
     },
@@ -173,6 +193,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:redwood_log",
+      "required": false
+    },
+    {
       "id": "byg:stripped_cypress_log",
       "required": false
     },
@@ -182,6 +206,10 @@
     },
     {
       "id": "betternether:anchor_tree_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_jacaranda_log",
       "required": false
     },
     {
@@ -217,11 +245,27 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:pine_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_willow_log",
+      "required": false
+    },
+    {
       "id": "byg:stripped_palo_verde_log",
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_empyreal_log",
+      "required": false
+    },
+    {
       "id": "byg:imparius_stem",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_log",
       "required": false
     },
     {
@@ -234,6 +278,10 @@
     },
     {
       "id": "bewitchment:stripped_dragons_blood_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:empyreal_log",
       "required": false
     },
     {
@@ -285,6 +333,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_maple_log",
+      "required": false
+    },
+    {
       "id": "betternether:wart_log",
       "required": false
     },
@@ -298,6 +350,10 @@
     },
     {
       "id": "minecraft:stripped_crimson_stem",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_redwood_log",
       "required": false
     },
     {
@@ -325,6 +381,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_dead_log",
+      "required": false
+    },
+    {
       "id": "terrestria:willow_log",
       "required": false
     },
@@ -349,6 +409,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:magic_log",
+      "required": false
+    },
+    {
       "id": "byg:nightshade_log",
       "required": false
     },
@@ -366,6 +430,10 @@
     },
     {
       "id": "terrestria:stripped_willow_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_log",
       "required": false
     },
     {
@@ -390,6 +458,14 @@
     },
     {
       "id": "byg:fir_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_fir_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_hellbark_log",
       "required": false
     },
     {
@@ -437,6 +513,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:mahogany_log",
+      "required": false
+    },
+    {
       "id": "byg:holly_log",
       "required": false
     },
@@ -445,11 +525,19 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_magic_log",
+      "required": false
+    },
+    {
       "id": "promenade:palm_log",
       "required": false
     },
     {
       "id": "terrestria:japanese_maple_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_log",
       "required": false
     },
     {
@@ -493,6 +581,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:jacaranda_log",
+      "required": false
+    },
+    {
       "id": "traverse:fir_log",
       "required": false
     },
@@ -525,6 +617,10 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:dead_log",
+      "required": false
+    },
+    {
       "id": "terrestria:stripped_hemlock_log",
       "required": false
     },
@@ -541,7 +637,15 @@
       "required": false
     },
     {
+      "id": "biomesoplenty:stripped_mahogany_log",
+      "required": false
+    },
+    {
       "id": "betternether:nether_sakura_stripped_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_log",
       "required": false
     },
     {

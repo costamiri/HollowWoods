@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "biomesoplenty:block/stripped_jacaranda_log",
+    "particle": "biomesoplenty:block/jacaranda_log",
+    "side": "biomesoplenty:block/jacaranda_log",
+    "top": "biomesoplenty:block/jacaranda_log_top"
+  }
+}

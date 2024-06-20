@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "hollowwoods:biomesoplenty/hollow_dead_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:biomesoplenty/stripped_hollow_dead_log",
+      "required": false
+    }
+  ]
+}

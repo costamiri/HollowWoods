@@ -63,6 +63,7 @@ public class HollowWoods implements ModInitializer {
 		if (datagen || fabricLoader.isModLoaded("architects_palette")) new ArchitectsPalette().init();
 		if (datagen || fabricLoader.isModLoaded("betternether")) new BetterNether().init();
 		if (datagen || fabricLoader.isModLoaded("bewitchment")) new Bewitchment().init();
+		if (datagen || fabricLoader.isModLoaded("biomesoplenty")) new BiomesOPlenty().init();
 		if (datagen || fabricLoader.isModLoaded("blockus")) new Blockus().init();
 		if (datagen || fabricLoader.isModLoaded("byg")) new Byg().init();
 		if (datagen || fabricLoader.isModLoaded("cinderscapes")) new Cinderscapes().init();

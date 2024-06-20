@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "biomesoplenty:block/stripped_umbran_log",
+    "particle": "biomesoplenty:block/umbran_log",
+    "side": "biomesoplenty:block/umbran_log",
+    "top": "biomesoplenty:block/umbran_log_top"
+  }
+}

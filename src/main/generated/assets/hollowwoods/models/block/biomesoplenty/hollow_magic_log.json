@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "biomesoplenty:block/stripped_magic_log",
+    "particle": "biomesoplenty:block/magic_log",
+    "side": "biomesoplenty:block/magic_log",
+    "top": "biomesoplenty:block/magic_log_top"
+  }
+}
