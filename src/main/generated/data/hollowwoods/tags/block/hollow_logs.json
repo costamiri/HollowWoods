@@ -5,6 +5,10 @@
     "#hollowwoods:betternether/hollow_wart_logs",
     "#hollowwoods:byg/hollow_baobab_logs",
     "#hollowwoods:blockus/hollow_white_oak_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_acacia_log",
+      "required": false
+    },
     "#hollowwoods:hollow_crimson_stems",
     "#hollowwoods:byg/hollow_aspen_logs",
     "#hollowwoods:biomesoplenty/hollow_hellbark_logs",
@@ -13,6 +17,10 @@
     "#hollowwoods:byg/hollow_embur_pedus",
     "#hollowwoods:betternether/hollow_anchor_tree_logs",
     "#hollowwoods:byg/hollow_cypress_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_birch_log",
+      "required": false
+    },
     "#hollowwoods:cinderscapes/hollow_umbral_stems",
     "#hollowwoods:terrestria/hollow_redwood_logs",
     "#hollowwoods:biomesoplenty/hollow_fir_logs",
@@ -23,19 +31,35 @@
     "#hollowwoods:biomesoplenty/hollow_umbran_logs",
     "#hollowwoods:byg/hollow_willow_logs",
     "#hollowwoods:bewitchment/hollow_dragons_blood_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_mangrove_log",
+      "required": false
+    },
     "#hollowwoods:betternether/hollow_mushroom_fir_logs",
     "#hollowwoods:biomesoplenty/hollow_pine_logs",
     "#hollowwoods:hollow_acacia_logs",
     "#hollowwoods:terrestria/hollow_hemlock_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_dark_oak_log",
+      "required": false
+    },
     "#hollowwoods:byg/hollow_mahogany_logs",
     "#hollowwoods:byg/hollow_palm_logs",
     "#hollowwoods:biomesoplenty/hollow_magic_logs",
     "#hollowwoods:hollow_birch_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_oak_log",
+      "required": false
+    },
     "#hollowwoods:promenade/hollow_maple_logs",
     "#hollowwoods:byg/hollow_nightshade_logs",
     "#hollowwoods:byg/hollow_zelkova_logs",
     "#hollowwoods:biomesoplenty/hollow_jacaranda_logs",
     "#hollowwoods:croptopia/hollow_cinnamon_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_spruce_log",
+      "required": false
+    },
     "#hollowwoods:byg/hollow_ebony_logs",
     "#hollowwoods:hollow_oak_logs",
     "#hollowwoods:byg/hollow_cherry_logs",
@@ -61,8 +85,20 @@
     "#hollowwoods:byg/hollow_sythian_stems",
     "#hollowwoods:hollow_dark_oak_logs",
     "#hollowwoods:byg/hollow_blue_enchanted_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_crimson_stem",
+      "required": false
+    },
     "#hollowwoods:terrestria/hollow_cypress_logs",
     "#hollowwoods:biomesoplenty/hollow_redwood_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_bamboo_block",
+      "required": false
+    },
     "#hollowwoods:byg/hollow_fir_logs",
     {
       "id": "hollowwoods:byg/hollow_fungal_imparius_stem",
@@ -84,10 +120,18 @@
     "#hollowwoods:betternether/hollow_willow_logs",
     "#hollowwoods:byg/hollow_holly_logs",
     "#hollowwoods:promenade/hollow_dark_amaranth_stems",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_jungle_log",
+      "required": false
+    },
     "#hollowwoods:byg/hollow_rainbow_eucalyptus_logs",
     "#hollowwoods:byg/hollow_ether_logs",
     "#hollowwoods:byg/hollow_bulbis_stems",
     "#hollowwoods:bewitchment/hollow_elder_logs",
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_warped_stem",
+      "required": false
+    },
     "#hollowwoods:terrestria/hollow_rainbow_eucalyptus_logs",
     "#hollowwoods:byg/hollow_green_enchanted_logs"
   ]

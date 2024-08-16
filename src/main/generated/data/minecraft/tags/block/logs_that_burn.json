@@ -29,6 +29,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_acacia_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:byg/stripped_hollow_holly_log",
       "required": false
     },
@@ -78,6 +82,10 @@
     },
     {
       "id": "hollowwoods:byg/hollow_cypress_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_birch_log",
       "required": false
     },
     {
@@ -149,6 +157,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_mangrove_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:terrestria/stripped_hollow_hemlock_log",
       "required": false
     },
@@ -197,6 +209,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_dark_oak_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:byg/hollow_mahogany_log",
       "required": false
     },
@@ -225,6 +241,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_oak_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:promenade/hollow_maple_log",
       "required": false
     },
@@ -246,6 +266,10 @@
     },
     {
       "id": "hollowwoods:croptopia/hollow_cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_spruce_log",
       "required": false
     },
     {
@@ -401,6 +425,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_cherry_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:stripped_hollow_mangrove_log",
       "required": false
     },
@@ -410,6 +438,10 @@
     },
     {
       "id": "hollowwoods:byg/stripped_hollow_ebony_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_bamboo_block",
       "required": false
     },
     {
@@ -506,6 +538,10 @@
     },
     {
       "id": "hollowwoods:byg/stripped_hollow_redwood_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_jungle_log",
       "required": false
     },
     {

@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "minecraft:block/stripped_mangrove_log",
+    "particle": "nemos-mossy-blocks:block/mossy_mangrove_log",
+    "side": "nemos-mossy-blocks:block/mossy_mangrove_log",
+    "top": "nemos-mossy-blocks:block/mossy_mangrove_log_top"
+  }
+}

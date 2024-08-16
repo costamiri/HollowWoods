@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hollowwoods:block/nemos-mossy-blocks/hollow_mossy_crimson_stem",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hollowwoods:block/nemos-mossy-blocks/hollow_mossy_crimson_stem",
+      "x": 0,
+      "y": 0
+    },
+    "axis=z": {
+      "model": "hollowwoods:block/nemos-mossy-blocks/hollow_mossy_crimson_stem",
+      "x": 90,
+      "y": 0
+    }
+  }
+}

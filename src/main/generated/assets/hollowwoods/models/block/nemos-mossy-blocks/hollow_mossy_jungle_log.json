@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "minecraft:block/stripped_jungle_log",
+    "particle": "nemos-mossy-blocks:block/mossy_jungle_log",
+    "side": "nemos-mossy-blocks:block/mossy_jungle_log",
+    "top": "nemos-mossy-blocks:block/mossy_jungle_log_top"
+  }
+}

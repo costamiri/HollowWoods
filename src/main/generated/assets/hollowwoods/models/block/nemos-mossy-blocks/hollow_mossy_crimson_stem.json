@@ -1,0 +1,9 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_log",
+  "textures": {
+    "inside": "minecraft:block/stripped_crimson_stem",
+    "particle": "nemos-mossy-blocks:block/mossy_crimson_stem",
+    "side": "nemos-mossy-blocks:block/mossy_crimson_stem",
+    "top": "nemos-mossy-blocks:block/mossy_crimson_stem_top"
+  }
+}

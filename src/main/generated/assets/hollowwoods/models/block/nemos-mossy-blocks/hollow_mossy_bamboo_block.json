@@ -1,0 +1,8 @@
+{
+  "parent": "hollowwoods:block/templates/hollow_bamboo_block",
+  "textures": {
+    "particle": "nemos-mossy-blocks:block/mossy_bamboo_block",
+    "side": "nemos-mossy-blocks:block/mossy_bamboo_block",
+    "top": "nemos-mossy-blocks:block/mossy_bamboo_block_top"
+  }
+}

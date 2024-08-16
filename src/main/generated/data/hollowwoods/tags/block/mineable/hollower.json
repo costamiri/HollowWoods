@@ -41,6 +41,10 @@
       "required": false
     },
     {
+      "id": "nemos-mossy-blocks:mossy_crimson_stem",
+      "required": false
+    },
+    {
       "id": "byg:embur_pedu",
       "required": false
     },
@@ -54,6 +58,10 @@
     },
     {
       "id": "minecraft:birch_log",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_oak_log",
       "required": false
     },
     {
@@ -77,6 +85,10 @@
       "required": false
     },
     {
+      "id": "nemos-mossy-blocks:mossy_jungle_log",
+      "required": false
+    },
+    {
       "id": "byg:baobab_log",
       "required": false
     },
@@ -90,6 +102,10 @@
     },
     {
       "id": "biomesoplenty:hellbark_log",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_cherry_log",
       "required": false
     },
     {
@@ -126,6 +142,10 @@
     },
     {
       "id": "byg:stripped_bulbis_stem",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_bamboo_block",
       "required": false
     },
     {
@@ -233,6 +253,10 @@
       "required": false
     },
     {
+      "id": "nemos-mossy-blocks:mossy_warped_stem",
+      "required": false
+    },
+    {
       "id": "betternether:mushroom_fir_log",
       "required": false
     },
@@ -281,6 +305,10 @@
       "required": false
     },
     {
+      "id": "nemos-mossy-blocks:mossy_mangrove_log",
+      "required": false
+    },
+    {
       "id": "biomesoplenty:empyreal_log",
       "required": false
     },
@@ -318,6 +346,10 @@
     },
     {
       "id": "byg:stripped_holly_log",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_acacia_log",
       "required": false
     },
     {
@@ -385,6 +417,10 @@
       "required": false
     },
     {
+      "id": "nemos-mossy-blocks:mossy_dark_oak_log",
+      "required": false
+    },
+    {
       "id": "terrestria:willow_log",
       "required": false
     },
@@ -422,6 +458,10 @@
     },
     {
       "id": "bewitchment:stripped_elder_log",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_birch_log",
       "required": false
     },
     {
@@ -578,6 +618,10 @@
     },
     {
       "id": "minecraft:jungle_log",
+      "required": false
+    },
+    {
+      "id": "nemos-mossy-blocks:mossy_spruce_log",
       "required": false
     },
     {
