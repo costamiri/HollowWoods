@@ -3,14 +3,16 @@ package xyz.costamiri.hollowwoods.recipes;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.Block;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.recipe.IngredientPlacement;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.book.RecipeBookCategories;
+import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.recipe.input.RecipeInput;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
@@ -40,13 +42,7 @@ public class HollowerRecipe implements Recipe<RecipeInput> {
         return this.byproduct;
     }
 
-    @Override
-    public boolean fits(int width, int height) {
-        return false;
-    }
-
-    @Override
-    public ItemStack getResult(RegistryWrapper.WrapperLookup registriesLookup) {
+    public ItemStack getResult() {
         return this.byproduct;
     }
 
@@ -55,13 +51,23 @@ public class HollowerRecipe implements Recipe<RecipeInput> {
     }
 
     @Override
-    public RecipeSerializer<?> getSerializer() {
+    public RecipeSerializer<? extends Recipe<RecipeInput>> getSerializer() {
         return HWRecipeTypes.HOLLOWER_RECIPE_SERIALIZER;
     }
 
     @Override
-    public RecipeType<?> getType() {
+    public RecipeType<? extends Recipe<RecipeInput>> getType() {
         return HWRecipeTypes.HOLLOWER_RECIPE_TYPE;
+    }
+
+    @Override
+    public IngredientPlacement getIngredientPlacement() {
+        return IngredientPlacement.NONE;
+    }
+
+    @Override
+    public RecipeBookCategory getRecipeBookCategory() {
+        return RecipeBookCategories.CRAFTING_BUILDING_BLOCKS;
     }
 
     public static class Serializer implements RecipeSerializer<HollowerRecipe> {

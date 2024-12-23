@@ -20,15 +20,14 @@ public class HollowerEmiRecipe implements EmiRecipe {
     private final EmiStack output;
 
     public HollowerEmiRecipe(HollowerRecipe recipe) {
-        System.out.println("HAHAHAHAHA");
         this.recipe = recipe;
         this.input = EmiStack.of(recipe.log);
         this.hollowedLog = EmiStack.of(recipe.hollowedLog);
-        this.output = EmiStack.of(recipe.getResult(null));
+        this.output = EmiStack.of(recipe.getResult());
     }
 
-    public HollowerEmiRecipe(RecipeEntry<HollowerRecipe> recipe) {
-        this(recipe.value());
+    public HollowerEmiRecipe(RecipeEntry<?> recipeEntry) {
+        this((HollowerRecipe) recipeEntry.value());
     }
 
     @Override

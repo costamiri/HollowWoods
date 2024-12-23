@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 import xyz.costamiri.hollowwoods.datagen.HWTagGenerator;
 
 public class HollowerTool extends MiningToolItem {
-    public HollowerTool(ToolMaterial material, Item.Settings settings) {
-        super(material, HWTagGenerator.MINEABLE_HOLLOWER, settings);
+    public HollowerTool(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
+        super(material, HWTagGenerator.MINEABLE_HOLLOWER, attackDamage, attackSpeed, settings);
     }
 }

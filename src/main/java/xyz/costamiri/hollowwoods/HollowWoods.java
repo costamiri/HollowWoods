@@ -5,9 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EquipmentSlot;
@@ -20,6 +20,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.AbstractHollowPillar;
@@ -44,12 +45,11 @@ public class HollowWoods implements ModInitializer {
 	public static final Map<String, Item> items = new HashMap<>();
 
 	private static final FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
-	private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
 	private static final FabricLoader fabricLoader = FabricLoader.getInstance();
 
 	public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(MODID, "main"));
 
-	private static final boolean datagen = false;
+	private static final boolean datagen = true;
 
 	@Override
 	public void onInitialize() {
@@ -81,9 +81,15 @@ public class HollowWoods implements ModInitializer {
 	}
 
 	public static void registerBlock(Block block, String path) {
-		blocks.put(path, Registry.register(Registries.BLOCK, Identifier.of(MODID, path), block));
-		items.put(path, Registry.register(Registries.ITEM, Identifier.of(MODID, path),
-				new BlockItem(block, new Item.Settings())));
+		Identifier id = Identifier.of(MODID, path);
+
+		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, id);
+		Item.Settings itemSettings = new Item.Settings()
+				.useBlockPrefixedTranslationKey()
+				.registryKey(itemKey);
+
+		blocks.put(path, Registry.register(Registries.BLOCK, id, block));
+		items.put(path, Registry.register(Registries.ITEM, id, new BlockItem(block, itemSettings)));
 	}
 
 	public static void registerItem(Item item, String path) {
@@ -94,7 +100,7 @@ public class HollowWoods implements ModInitializer {
 		registerBlock(block, path);
 		ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(block));
 		HWLootTables.blocks.add(block);
-		fuelRegistry.add(block, 300);
+		FuelRegistryEvents.BUILD.register((builder, context) -> builder.add(block, (int)(context.baseSmeltTime() * 1.5)));
 		if (block.isBurnable()) flammableRegistry.add(block, 5, 5);
 	}
 
@@ -115,23 +121,27 @@ public class HollowWoods implements ModInitializer {
 		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, entity) -> {
 			ItemStack stack = player.getMainHandStack();
 			if (stack.getItem().getClass() != HollowerTool.class) return true;
-			RecipeEntry<HollowerRecipe> hollowingRecipeEntry = world.getRecipeManager().listAllOfType(HWRecipeTypes.HOLLOWER_RECIPE_TYPE).stream().filter(recipe -> recipe.value().log == state.getBlock()).findFirst().orElse(null);
-			HollowerRecipe hollowingRecipe = hollowingRecipeEntry != null ? hollowingRecipeEntry.value() : null;
-			if (hollowingRecipe == null) return true;
-			world.setBlockState(pos, hollowingRecipe.hollowedLog.getDefaultState().with(AXIS, state.get(AXIS)));
-			world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, hollowingRecipe.byproduct));
-			stack.damage(1, player, EquipmentSlot.MAINHAND);
-			return false;
+
+			if (world instanceof ServerWorld serverWorld) {
+				RecipeEntry<?> hollowingRecipeEntry = serverWorld.getRecipeManager().values().stream().filter(recipeEntry -> recipeEntry.value().getType() == HWRecipeTypes.HOLLOWER_RECIPE_TYPE && ((HollowerRecipe)recipeEntry.value()).log == state.getBlock()).findFirst().orElse(null);
+				HollowerRecipe hollowingRecipe = hollowingRecipeEntry != null ? (HollowerRecipe) hollowingRecipeEntry.value() : null;
+				if (hollowingRecipe == null) return true;
+				world.setBlockState(pos, hollowingRecipe.hollowedLog.getDefaultState().with(AXIS, state.get(AXIS)));
+				world.spawnEntity(new ItemEntity(world, pos.getX() +.5, pos.getY() + .5, pos.getZ() + .5, hollowingRecipe.byproduct));
+				stack.damage(1, player, EquipmentSlot.MAINHAND);
+				return false;
+			}
+			return true;
 		});
 	}
 
 	public static void insertBuildingBlockGroup() {
 		HollowBlocks.hollowedBlocks.forEach((fullLogId, hollowedLog) ->
-				ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.addAfter(Registries.BLOCK.get(fullLogId), hollowedLog)));
+				ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.addAfter(Registries.ITEM.get(fullLogId), hollowedLog)));
 	}
 
 	public static void blockLootTables() {
-		LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
+		LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
 			Block blockx = blocks.get(key.getValue().getPath().replace("block/", ""));
 			if (blockx != null && source.isBuiltin() && key.getValue().getNamespace().equals(MODID)) {
 				LootPool.Builder poolBuilder = LootPool.builder()

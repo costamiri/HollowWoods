@@ -31,9 +31,8 @@ public class HollowerEmiPlugin implements EmiPlugin {
         registry.addWorkstation(HOLLOWING_CATEGORY, EmiStack.of(VanillaMinecraftItems.DIAMOND_HOLLOWER));
         registry.addWorkstation(HOLLOWING_CATEGORY, EmiStack.of(VanillaMinecraftItems.NETHERITE_HOLLOWER));
 
-        registry.getRecipeManager()
-                .listAllOfType(HWRecipeTypes.HOLLOWER_RECIPE_TYPE)
-                .stream()
+        registry.getRecipeManager().values().stream()
+                .filter(recipeEntry -> recipeEntry.value().getType() == HWRecipeTypes.HOLLOWER_RECIPE_TYPE)
                 .map(HollowerEmiRecipe::new)
                 .forEach(registry::addRecipe);
     }

@@ -14,11 +14,11 @@ public class Blockus extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
-        STRIPPED_HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
+        HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder(Identifier.of(this.namespace, "white_oak_log")).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
+        STRIPPED_HOLLOW_WHITE_OAK_LOG = new HollowLog.Builder(Identifier.of(this.namespace, "stripped_white_oak_log")).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_WHITE_OAK_LOG, Identifier.of(this.namespace, "white_oak_log"))
-                .stripped(STRIPPED_HOLLOW_WHITE_OAK_LOG, Identifier.of(this.namespace, "stripped_white_oak_log"))
+                .raw(HOLLOW_WHITE_OAK_LOG)
+                .stripped(STRIPPED_HOLLOW_WHITE_OAK_LOG)
                 .planks(Identifier.of(this.namespace, "white_oak_planks"))
                 .create();
     }

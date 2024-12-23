@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_cherry_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_cherry_log",
+      "required": false
+    }
+  ]
+}

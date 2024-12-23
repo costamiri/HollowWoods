@@ -14,11 +14,11 @@ public class ArchitectsPalette extends HollowBlocks {
 
     @Override
     public void registerBlocks() {
-        HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
-        STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog.Builder().mapColor(MapColor.PURPLE).build();
+        HOLLOW_TWISTED_LOG = new HollowLog.Builder(Identifier.of(this.namespace, "twisted_log")).mapColor(MapColor.PURPLE).build();
+        STRIPPED_HOLLOW_TWISTED_LOG = new HollowLog.Builder(Identifier.of(this.namespace, "stripped_twisted_log")).mapColor(MapColor.PURPLE).build();
         new HollowBlocks.LogCreator()
-                .raw(HOLLOW_TWISTED_LOG, Identifier.of(this.namespace, "twisted_log"))
-                .stripped(STRIPPED_HOLLOW_TWISTED_LOG, Identifier.of(this.namespace, "stripped_twisted_log"))
+                .raw(HOLLOW_TWISTED_LOG)
+                .stripped(STRIPPED_HOLLOW_TWISTED_LOG)
                 .planks(Identifier.of(this.namespace, "twisted_planks"))
                 .create();
     }

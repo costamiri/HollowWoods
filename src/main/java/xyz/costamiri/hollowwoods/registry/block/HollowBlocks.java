@@ -74,15 +74,15 @@ public abstract class HollowBlocks {
             return this.planks(planksId, 2);
         }
 
-        public LogCreator raw(AbstractHollowPillar hollowLog, Identifier rawLogId) {
+        public LogCreator raw(AbstractHollowPillar hollowLog) {
             this.hollowLog = hollowLog;
-            this.rawLogId = rawLogId;
+            this.rawLogId = hollowLog.rawBlockId;
             return this;
         }
 
-        public LogCreator stripped(AbstractHollowPillar hollowStrippedLog, Identifier rawStrippedLogId) {
+        public LogCreator stripped(AbstractHollowPillar hollowStrippedLog) {
             this.hollowStrippedLog = hollowStrippedLog;
-            this.rawStrippedLogId = rawStrippedLogId;
+            this.rawStrippedLogId = hollowStrippedLog.rawBlockId;
             return this;
         }
 

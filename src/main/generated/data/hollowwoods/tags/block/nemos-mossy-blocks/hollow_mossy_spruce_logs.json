@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_spruce_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_spruce_log",
+      "required": false
+    }
+  ]
+}

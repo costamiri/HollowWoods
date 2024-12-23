@@ -1,9 +1,9 @@
 package xyz.costamiri.hollowwoods.blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -12,8 +12,8 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 public class HollowBambooBlock extends AbstractHollowPillar {
-    public HollowBambooBlock(Settings settings) {
-        super(settings);
+    public HollowBambooBlock(Identifier rawBlockId, Settings settings) {
+        super(rawBlockId, settings);
     }
 
     @Override
@@ -43,16 +43,17 @@ public class HollowBambooBlock extends AbstractHollowPillar {
     }
 
     public static class Builder extends AbstractHollowPillar.Builder<xyz.costamiri.hollowwoods.blocks.HollowBambooBlock.Builder> {
-        public Builder() {
-            this.topMapColor = MapColor.CLEAR;
-            this.sideMapColor = MapColor.CLEAR;
+        public Builder(Identifier rawBlockId) {
+            super(rawBlockId);
             this.blockSoundGroup = BlockSoundGroup.BAMBOO_WOOD;
         }
 
         @Override
         public HollowBambooBlock build() {
             return new HollowBambooBlock(
+                    this.rawBlockId,
                     AbstractBlock.Settings.create()
+                            .registryKey(this.key)
                             .strength(2.0f)
                             .mapColor((state) -> state.get(AbstractHollowPillar.AXIS) == Direction.Axis.Y ? this.topMapColor : this.sideMapColor)
                             .sounds(this.blockSoundGroup)
