@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "promenade:stripped_sakura_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:promenade/stripped_hollow_sakura_log"
+  }
+}

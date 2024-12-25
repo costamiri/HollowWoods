@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:biomesoplenty/stripped_hollow_pine_log",
+  "identifier": "biomesoplenty:biomesoplenty/hollowing_stripped_pine_log",
+  "log": "biomesoplenty:stripped_pine_log",
+  "result": {
+    "count": 2,
+    "id": "biomesoplenty:pine_planks"
+  }
+}

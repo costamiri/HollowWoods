@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:rainbow_eucalyptus_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_rainbow_eucalyptus_log"
+  }
+}

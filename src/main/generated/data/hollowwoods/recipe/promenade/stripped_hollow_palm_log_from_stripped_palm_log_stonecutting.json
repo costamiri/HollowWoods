@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "promenade:stripped_palm_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:promenade/stripped_hollow_palm_log"
+  }
+}

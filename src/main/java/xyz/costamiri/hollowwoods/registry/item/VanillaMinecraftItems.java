@@ -5,8 +5,8 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import xyz.costamiri.hollowwoods.datagen.HWRecipeGenerator;
 import xyz.costamiri.hollowwoods.items.HollowerTool;
-import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
 
 import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 
@@ -46,11 +46,11 @@ public class VanillaMinecraftItems extends HollowItems {
     }
 
     public void addRecipes() {
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("wooden_axe"), "wooden_hollower");
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("stone_axe"), "stone_hollower");
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("golden_axe"), "golden_hollower");
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("iron_axe"), "iron_hollower");
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("diamond_axe"), "diamond_hollower");
-        HWRecipeManager.addHollowerToolRecipe(Identifier.of("netherite_axe"), "netherite_hollower");
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("wooden_axe"), WOODEN_HOLLOWER);
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("stone_axe"), STONE_HOLLOWER);
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("golden_axe"), GOLDEN_HOLLOWER);
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("iron_axe"), IRON_HOLLOWER);
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("diamond_axe"), DIAMOND_HOLLOWER);
+        HWRecipeGenerator.addSmithingRecipe(Identifier.of("netherite_axe"), NETHERITE_HOLLOWER);
     }
 }

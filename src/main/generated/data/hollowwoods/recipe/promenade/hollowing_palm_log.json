@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:promenade/hollow_palm_log",
+  "identifier": "promenade:promenade/hollowing_palm_log",
+  "log": "promenade:palm_log",
+  "result": {
+    "count": 2,
+    "id": "promenade:palm_planks"
+  }
+}

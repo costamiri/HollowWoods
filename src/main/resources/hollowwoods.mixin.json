@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "AxeAccess",
-    "AxeItemMixin",
-    "RecipeManagerMixin"
+    "AxeItemMixin"
   ],
   "client": [],
   "server": [],

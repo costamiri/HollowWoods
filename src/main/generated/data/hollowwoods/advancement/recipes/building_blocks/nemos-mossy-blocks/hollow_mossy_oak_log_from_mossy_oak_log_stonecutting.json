@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mossy_oak_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nemos-mossy-blocks:mossy_oak_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:nemos-mossy-blocks/hollow_mossy_oak_log_from_mossy_oak_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mossy_oak_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:nemos-mossy-blocks/hollow_mossy_oak_log_from_mossy_oak_log_stonecutting"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/stripped_hollow_sythian_stem",
+  "identifier": "byg:byg/hollowing_stripped_sythian_stem",
+  "log": "byg:stripped_sythian_stem",
+  "result": {
+    "count": 2,
+    "id": "byg:sythian_planks"
+  }
+}

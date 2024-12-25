@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:stripped_white_mangrove_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/stripped_hollow_white_mangrove_log"
+  }
+}

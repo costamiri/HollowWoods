@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:stripped_embur_pedu",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/stripped_hollow_embur_pedu"
+  }
+}

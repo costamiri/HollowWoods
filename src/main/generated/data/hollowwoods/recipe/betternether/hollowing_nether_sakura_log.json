@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:betternether/hollow_nether_sakura_log",
+  "identifier": "betternether:betternether/hollowing_nether_sakura_log",
+  "log": "betternether:nether_sakura_log",
+  "result": {
+    "count": 2,
+    "id": "betternether:nether_sakura_planks"
+  }
+}

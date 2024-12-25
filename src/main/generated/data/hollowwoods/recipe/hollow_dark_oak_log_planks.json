@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:hollow_dark_oak_log"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:dark_oak_planks"
+  }
+}

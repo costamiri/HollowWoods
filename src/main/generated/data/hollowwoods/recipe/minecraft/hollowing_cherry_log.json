@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:hollow_cherry_log",
+  "identifier": "minecraft:minecraft/hollowing_cherry_log",
+  "log": "minecraft:cherry_log",
+  "result": {
+    "count": 2,
+    "id": "minecraft:cherry_planks"
+  }
+}

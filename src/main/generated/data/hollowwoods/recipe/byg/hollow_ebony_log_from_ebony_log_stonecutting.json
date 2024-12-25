@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:ebony_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_ebony_log"
+  }
+}

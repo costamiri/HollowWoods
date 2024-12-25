@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "promenade:dark_amaranth_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:promenade/hollow_dark_amaranth_stem"
+  }
+}

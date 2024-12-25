@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:stripped_sythian_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/stripped_hollow_sythian_stem"
+  }
+}

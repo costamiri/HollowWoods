@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinderscapes:stripped_umbral_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:cinderscapes/stripped_hollow_umbral_stem"
+  }
+}

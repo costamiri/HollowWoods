@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:promenade/stripped_hollow_sakura_log",
+  "identifier": "promenade:promenade/hollowing_stripped_sakura_log",
+  "log": "promenade:stripped_sakura_log",
+  "result": {
+    "count": 2,
+    "id": "promenade:sakura_planks"
+  }
+}

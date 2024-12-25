@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:architects_palette/stripped_hollow_twisted_log",
+  "identifier": "architects_palette:architects_palette/hollowing_stripped_twisted_log",
+  "log": "architects_palette:stripped_twisted_log",
+  "result": {
+    "count": 2,
+    "id": "architects_palette:twisted_planks"
+  }
+}

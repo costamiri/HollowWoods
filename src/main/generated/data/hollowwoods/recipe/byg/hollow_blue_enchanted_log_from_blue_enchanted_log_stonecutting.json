@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:blue_enchanted_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_blue_enchanted_log"
+  }
+}

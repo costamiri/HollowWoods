@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_witch_hazel_log",
+  "identifier": "byg:byg/hollowing_witch_hazel_log",
+  "log": "byg:witch_hazel_log",
+  "result": {
+    "count": 2,
+    "id": "byg:witch_hazel_planks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:betternether/hollow_wart_log_from_wart_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wart_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "betternether:wart_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wart_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:betternether/hollow_wart_log_from_wart_log_stonecutting"
+    ]
+  }
+}

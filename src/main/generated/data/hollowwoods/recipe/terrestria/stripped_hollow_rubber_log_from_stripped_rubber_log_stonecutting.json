@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "terrestria:stripped_rubber_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:terrestria/stripped_hollow_rubber_log"
+  }
+}

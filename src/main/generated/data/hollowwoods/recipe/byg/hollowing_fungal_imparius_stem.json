@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_fungal_imparius_stem",
+  "identifier": "byg:byg/hollowing_fungal_imparius_stem",
+  "log": "byg:fungal_imparius_stem",
+  "result": {
+    "count": 2,
+    "id": "byg:imparius_planks"
+  }
+}

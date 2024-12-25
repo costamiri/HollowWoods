@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "bewitchment:dragons_blood_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:bewitchment/hollow_dragons_blood_log"
+  }
+}

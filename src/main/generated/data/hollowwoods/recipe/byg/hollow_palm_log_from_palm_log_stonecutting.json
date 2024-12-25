@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:palm_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_palm_log"
+  }
+}

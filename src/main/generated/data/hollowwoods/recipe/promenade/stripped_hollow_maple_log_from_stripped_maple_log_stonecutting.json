@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "promenade:stripped_maple_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:promenade/stripped_hollow_maple_log"
+  }
+}

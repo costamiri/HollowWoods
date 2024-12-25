@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:terrestria/stripped_hollow_willow_log",
+  "identifier": "terrestria:terrestria/hollowing_stripped_willow_log",
+  "log": "terrestria:stripped_willow_log",
+  "result": {
+    "count": 2,
+    "id": "terrestria:willow_planks"
+  }
+}

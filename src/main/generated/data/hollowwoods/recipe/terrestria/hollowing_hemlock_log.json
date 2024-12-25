@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:terrestria/hollow_hemlock_log",
+  "identifier": "terrestria:terrestria/hollowing_hemlock_log",
+  "log": "terrestria:hemlock_log",
+  "result": {
+    "count": 2,
+    "id": "terrestria:hemlock_planks"
+  }
+}

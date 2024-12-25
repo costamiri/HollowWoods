@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_cherry_log",
+  "identifier": "byg:byg/hollowing_cherry_log",
+  "log": "byg:cherry_log",
+  "result": {
+    "count": 2,
+    "id": "byg:cherry_planks"
+  }
+}

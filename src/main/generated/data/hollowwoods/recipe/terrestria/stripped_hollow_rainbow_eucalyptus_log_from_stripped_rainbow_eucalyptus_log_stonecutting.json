@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "terrestria:stripped_rainbow_eucalyptus_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:terrestria/stripped_hollow_rainbow_eucalyptus_log"
+  }
+}

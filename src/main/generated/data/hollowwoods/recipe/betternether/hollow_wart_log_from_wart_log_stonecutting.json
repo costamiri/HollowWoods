@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "betternether:wart_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:betternether/hollow_wart_log"
+  }
+}

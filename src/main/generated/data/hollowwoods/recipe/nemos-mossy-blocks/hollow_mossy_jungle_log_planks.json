@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:nemos-mossy-blocks/hollow_mossy_jungle_log"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nemos-mossy-blocks:mossy_jungle_planks"
+  }
+}

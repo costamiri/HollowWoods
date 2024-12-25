@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/stripped_hollow_redwood_log",
+  "identifier": "byg:byg/hollowing_stripped_redwood_log",
+  "log": "byg:stripped_redwood_log",
+  "result": {
+    "count": 2,
+    "id": "byg:redwood_planks"
+  }
+}

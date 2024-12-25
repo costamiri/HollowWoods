@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:betternether/hollow_wart_log",
+  "identifier": "betternether:betternether/hollowing_wart_log",
+  "log": "betternether:wart_log",
+  "result": {
+    "count": 2,
+    "id": "betternether:wart_planks"
+  }
+}

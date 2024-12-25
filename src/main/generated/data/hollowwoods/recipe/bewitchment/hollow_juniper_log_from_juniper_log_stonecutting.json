@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "bewitchment:juniper_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:bewitchment/hollow_juniper_log"
+  }
+}

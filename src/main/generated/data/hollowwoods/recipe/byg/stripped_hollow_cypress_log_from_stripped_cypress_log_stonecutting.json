@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:stripped_cypress_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/stripped_hollow_cypress_log"
+  }
+}

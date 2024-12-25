@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomesoplenty:stripped_hellbark_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:biomesoplenty/stripped_hollow_hellbark_log"
+  }
+}

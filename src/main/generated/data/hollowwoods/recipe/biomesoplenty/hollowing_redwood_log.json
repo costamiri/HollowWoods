@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:biomesoplenty/hollow_redwood_log",
+  "identifier": "biomesoplenty:biomesoplenty/hollowing_redwood_log",
+  "log": "biomesoplenty:redwood_log",
+  "result": {
+    "count": 2,
+    "id": "biomesoplenty:redwood_planks"
+  }
+}

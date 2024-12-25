@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:terrestria/hollow_japanese_maple_log"
+  ],
+  "result": {
+    "count": 2,
+    "id": "terrestria:japanese_maple_planks"
+  }
+}

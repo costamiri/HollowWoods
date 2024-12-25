@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_embur_pedu",
+  "identifier": "byg:byg/hollowing_embur_pedu",
+  "log": "byg:embur_pedu",
+  "result": {
+    "count": 2,
+    "id": "byg:embur_planks"
+  }
+}

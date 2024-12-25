@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:bulbis_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_bulbis_stem"
+  }
+}

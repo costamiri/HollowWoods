@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:bewitchment/stripped_hollow_elder_log",
+  "identifier": "bewitchment:bewitchment/hollowing_stripped_elder_log",
+  "log": "bewitchment:stripped_elder_log",
+  "result": {
+    "count": 2,
+    "id": "bewitchment:elder_planks"
+  }
+}

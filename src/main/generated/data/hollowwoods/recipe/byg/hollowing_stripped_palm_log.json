@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/stripped_hollow_palm_log",
+  "identifier": "byg:byg/hollowing_stripped_palm_log",
+  "log": "byg:stripped_palm_log",
+  "result": {
+    "count": 2,
+    "id": "byg:palm_planks"
+  }
+}

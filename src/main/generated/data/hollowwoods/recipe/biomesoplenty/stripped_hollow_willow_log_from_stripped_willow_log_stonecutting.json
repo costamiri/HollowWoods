@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomesoplenty:stripped_willow_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:biomesoplenty/stripped_hollow_willow_log"
+  }
+}

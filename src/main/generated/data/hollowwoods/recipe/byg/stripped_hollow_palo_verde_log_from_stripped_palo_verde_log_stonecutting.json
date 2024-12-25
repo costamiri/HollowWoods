@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:stripped_palo_verde_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/stripped_hollow_palo_verde_log"
+  }
+}

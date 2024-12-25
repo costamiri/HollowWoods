@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomesoplenty:pine_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:biomesoplenty/hollow_pine_log"
+  }
+}

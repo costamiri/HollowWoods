@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_mahogany_log",
+  "identifier": "byg:byg/hollowing_mahogany_log",
+  "log": "byg:mahogany_log",
+  "result": {
+    "count": 2,
+    "id": "byg:mahogany_planks"
+  }
+}

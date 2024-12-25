@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:terrestria/hollow_redwood_log",
+  "identifier": "terrestria:terrestria/hollowing_redwood_log",
+  "log": "terrestria:redwood_log",
+  "result": {
+    "count": 2,
+    "id": "terrestria:redwood_planks"
+  }
+}

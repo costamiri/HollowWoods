@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_byg/hollow_imparius_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hollowwoods:byg/hollow_imparius_stem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:byg/hollow_imparius_stem_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_byg/hollow_imparius_stem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:byg/hollow_imparius_stem_planks"
+    ]
+  }
+}

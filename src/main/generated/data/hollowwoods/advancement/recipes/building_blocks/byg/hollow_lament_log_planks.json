@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_byg/hollow_lament_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hollowwoods:byg/hollow_lament_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:byg/hollow_lament_log_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_byg/hollow_lament_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:byg/hollow_lament_log_planks"
+    ]
+  }
+}

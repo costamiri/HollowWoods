@@ -23,7 +23,8 @@ import net.minecraft.world.World;
 public class HollowerRecipe implements Recipe<RecipeInput> {
     private final Identifier identifier;
     public final ItemStack byproduct;
-    public final Block log, hollowedLog;
+    public final Block log;
+    public final Block hollowedLog;
 
     public HollowerRecipe(Identifier identifier, Block log, Block hollowedLog, ItemStack byproduct) {
         this.identifier = identifier;

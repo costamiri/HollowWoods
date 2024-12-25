@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "betternether:willow_stripped_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:betternether/stripped_hollow_willow_log"
+  }
+}

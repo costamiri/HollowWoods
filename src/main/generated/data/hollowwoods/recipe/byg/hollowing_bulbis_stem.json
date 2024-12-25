@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_bulbis_stem",
+  "identifier": "byg:byg/hollowing_bulbis_stem",
+  "log": "byg:bulbis_stem",
+  "result": {
+    "count": 2,
+    "id": "byg:bulbis_planks"
+  }
+}

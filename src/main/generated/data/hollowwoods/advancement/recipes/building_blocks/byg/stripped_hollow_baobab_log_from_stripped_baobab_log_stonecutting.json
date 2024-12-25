@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_baobab_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "byg:stripped_baobab_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:byg/stripped_hollow_baobab_log_from_stripped_baobab_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_baobab_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:byg/stripped_hollow_baobab_log_from_stripped_baobab_log_stonecutting"
+    ]
+  }
+}

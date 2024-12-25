@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "architects_palette:twisted_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:architects_palette/hollow_twisted_log"
+  }
+}

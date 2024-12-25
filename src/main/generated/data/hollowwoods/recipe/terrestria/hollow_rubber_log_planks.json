@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:terrestria/hollow_rubber_log"
+  ],
+  "result": {
+    "count": 2,
+    "id": "terrestria:rubber_planks"
+  }
+}

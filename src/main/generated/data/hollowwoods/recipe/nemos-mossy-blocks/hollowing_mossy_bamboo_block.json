@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:nemos-mossy-blocks/hollow_mossy_bamboo_block",
+  "identifier": "nemos-mossy-blocks:nemos-mossy-blocks/hollowing_mossy_bamboo_block",
+  "log": "nemos-mossy-blocks:mossy_bamboo_block",
+  "result": {
+    "count": 2,
+    "id": "nemos-mossy-blocks:mossy_bamboo_planks"
+  }
+}

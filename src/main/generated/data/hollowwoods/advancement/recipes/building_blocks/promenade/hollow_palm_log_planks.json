@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_promenade/hollow_palm_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hollowwoods:promenade/hollow_palm_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:promenade/hollow_palm_log_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_promenade/hollow_palm_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:promenade/hollow_palm_log_planks"
+    ]
+  }
+}

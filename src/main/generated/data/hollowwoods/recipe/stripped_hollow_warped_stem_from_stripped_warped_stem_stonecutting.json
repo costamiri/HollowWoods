@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:stripped_warped_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:stripped_hollow_warped_stem"
+  }
+}

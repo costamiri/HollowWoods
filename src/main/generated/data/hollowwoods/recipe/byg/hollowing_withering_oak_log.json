@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_withering_oak_log",
+  "identifier": "byg:byg/hollowing_withering_oak_log",
+  "log": "byg:withering_oak_log",
+  "result": {
+    "count": 2,
+    "id": "minecraft:oak_planks"
+  }
+}

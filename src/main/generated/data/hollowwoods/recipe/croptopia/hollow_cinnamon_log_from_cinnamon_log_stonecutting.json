@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "croptopia:cinnamon_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:croptopia/hollow_cinnamon_log"
+  }
+}

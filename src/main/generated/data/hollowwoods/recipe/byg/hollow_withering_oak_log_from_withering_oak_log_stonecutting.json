@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:withering_oak_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_withering_oak_log"
+  }
+}

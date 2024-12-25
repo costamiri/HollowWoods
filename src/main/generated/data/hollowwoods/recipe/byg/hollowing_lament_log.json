@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_lament_log",
+  "identifier": "byg:byg/hollowing_lament_log",
+  "log": "byg:lament_log",
+  "result": {
+    "count": 2,
+    "id": "byg:lament_planks"
+  }
+}

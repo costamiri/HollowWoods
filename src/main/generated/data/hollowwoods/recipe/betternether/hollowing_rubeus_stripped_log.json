@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:betternether/stripped_hollow_rubeus_log",
+  "identifier": "betternether:betternether/hollowing_rubeus_stripped_log",
+  "log": "betternether:rubeus_stripped_log",
+  "result": {
+    "count": 2,
+    "id": "betternether:rubeus_planks"
+  }
+}

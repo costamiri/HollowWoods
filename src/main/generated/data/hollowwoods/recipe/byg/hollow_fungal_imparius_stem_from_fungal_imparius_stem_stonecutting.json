@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:fungal_imparius_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_fungal_imparius_stem"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": "minecraft:iron_ingot",
+  "base": "minecraft:golden_axe",
+  "template": "minecraft:iron_ingot"
+}

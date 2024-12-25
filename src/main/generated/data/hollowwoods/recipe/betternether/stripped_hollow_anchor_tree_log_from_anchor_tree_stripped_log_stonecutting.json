@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "betternether:anchor_tree_stripped_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:betternether/stripped_hollow_anchor_tree_log"
+  }
+}

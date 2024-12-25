@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:architects_palette/hollow_twisted_log_from_twisted_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_twisted_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "architects_palette:twisted_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_twisted_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:architects_palette/hollow_twisted_log_from_twisted_log_stonecutting"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:byg/hollow_fungal_imparius_stem"
+  ],
+  "result": {
+    "count": 2,
+    "id": "byg:imparius_planks"
+  }
+}

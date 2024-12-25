@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_terrestria/stripped_hollow_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hollowwoods:terrestria/stripped_hollow_willow_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:terrestria/stripped_hollow_willow_log_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_terrestria/stripped_hollow_willow_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:terrestria/stripped_hollow_willow_log_planks"
+    ]
+  }
+}

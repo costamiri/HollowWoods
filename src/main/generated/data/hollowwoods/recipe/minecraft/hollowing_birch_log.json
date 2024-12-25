@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:hollow_birch_log",
+  "identifier": "minecraft:minecraft/hollowing_birch_log",
+  "log": "minecraft:birch_log",
+  "result": {
+    "count": 2,
+    "id": "minecraft:birch_planks"
+  }
+}

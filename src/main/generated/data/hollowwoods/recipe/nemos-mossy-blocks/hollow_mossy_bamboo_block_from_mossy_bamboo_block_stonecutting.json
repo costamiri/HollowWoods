@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nemos-mossy-blocks:mossy_bamboo_block",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:nemos-mossy-blocks/hollow_mossy_bamboo_block"
+  }
+}

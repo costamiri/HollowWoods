@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/stripped_hollow_skyris_log",
+  "identifier": "byg:byg/hollowing_stripped_skyris_log",
+  "log": "byg:stripped_skyris_log",
+  "result": {
+    "count": 2,
+    "id": "byg:skyris_planks"
+  }
+}

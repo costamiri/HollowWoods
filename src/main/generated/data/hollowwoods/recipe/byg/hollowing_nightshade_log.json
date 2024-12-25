@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_nightshade_log",
+  "identifier": "byg:byg/hollowing_nightshade_log",
+  "log": "byg:nightshade_log",
+  "result": {
+    "count": 2,
+    "id": "byg:nightshade_planks"
+  }
+}

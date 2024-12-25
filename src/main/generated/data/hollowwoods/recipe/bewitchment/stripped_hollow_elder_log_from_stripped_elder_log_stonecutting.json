@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "bewitchment:stripped_elder_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:bewitchment/stripped_hollow_elder_log"
+  }
+}

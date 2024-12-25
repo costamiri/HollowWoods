@@ -49,7 +49,7 @@ public class HollowWoods implements ModInitializer {
 
 	public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(MODID, "main"));
 
-	private static final boolean datagen = true;
+	private static final boolean datagen = false;
 
 	@Override
 	public void onInitialize() {

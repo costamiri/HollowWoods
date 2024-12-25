@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinderscapes:scorched_stem",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:cinderscapes/hollow_scorched_stem"
+  }
+}

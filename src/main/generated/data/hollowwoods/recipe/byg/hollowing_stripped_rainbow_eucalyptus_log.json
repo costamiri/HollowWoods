@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/stripped_hollow_rainbow_eucalyptus_log",
+  "identifier": "byg:byg/hollowing_stripped_rainbow_eucalyptus_log",
+  "log": "byg:stripped_rainbow_eucalyptus_log",
+  "result": {
+    "count": 2,
+    "id": "byg:rainbow_eucalyptus_planks"
+  }
+}

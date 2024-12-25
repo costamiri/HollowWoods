@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_enchanted_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "byg:blue_enchanted_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:byg/hollow_blue_enchanted_log_from_blue_enchanted_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_enchanted_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:byg/hollow_blue_enchanted_log_from_blue_enchanted_log_stonecutting"
+    ]
+  }
+}

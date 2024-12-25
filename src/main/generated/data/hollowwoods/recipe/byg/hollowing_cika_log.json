@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:byg/hollow_cika_log",
+  "identifier": "byg:byg/hollowing_cika_log",
+  "log": "byg:cika_log",
+  "result": {
+    "count": 2,
+    "id": "byg:cika_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "traverse:stripped_fir_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:traverse/stripped_hollow_fir_log"
+  }
+}

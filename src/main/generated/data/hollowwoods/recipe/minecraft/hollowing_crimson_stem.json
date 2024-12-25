@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:hollow_crimson_stem",
+  "identifier": "minecraft:minecraft/hollowing_crimson_stem",
+  "log": "minecraft:crimson_stem",
+  "result": {
+    "count": 2,
+    "id": "minecraft:crimson_planks"
+  }
+}

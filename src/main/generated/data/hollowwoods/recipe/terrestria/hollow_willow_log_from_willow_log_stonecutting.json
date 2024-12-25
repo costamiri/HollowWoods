@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "terrestria:willow_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:terrestria/hollow_willow_log"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "blockus:white_oak_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:blockus/hollow_white_oak_log"
+  }
+}

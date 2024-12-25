@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:promenade/hollow_dark_amaranth_stem",
+  "identifier": "promenade:promenade/hollowing_dark_amaranth_stem",
+  "log": "promenade:dark_amaranth_stem",
+  "result": {
+    "count": 2,
+    "id": "promenade:dark_amaranth_planks"
+  }
+}

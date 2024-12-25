@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "hollowwoods:byg/stripped_hollow_rainbow_eucalyptus_log"
+  ],
+  "result": {
+    "count": 2,
+    "id": "byg:rainbow_eucalyptus_planks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cinnamon_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "croptopia:cinnamon_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:croptopia/hollow_cinnamon_log_from_cinnamon_log_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cinnamon_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:croptopia/hollow_cinnamon_log_from_cinnamon_log_stonecutting"
+    ]
+  }
+}

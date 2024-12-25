@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "byg:redwood_log",
+  "result": {
+    "count": 1,
+    "id": "hollowwoods:byg/hollow_redwood_log"
+  }
+}

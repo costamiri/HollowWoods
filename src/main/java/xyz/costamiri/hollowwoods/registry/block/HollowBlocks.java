@@ -4,13 +4,12 @@ import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import xyz.costamiri.hollowwoods.blocks.AbstractHollowPillar;
 import xyz.costamiri.hollowwoods.datagen.HWModelGenerator;
-import xyz.costamiri.hollowwoods.recipes.HWRecipeManager;
+import xyz.costamiri.hollowwoods.datagen.HWRecipeGenerator;
 import xyz.costamiri.hollowwoods.util.LogTextureMap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static xyz.costamiri.hollowwoods.HollowWoods.MODID;
 import static xyz.costamiri.hollowwoods.HollowWoods.registerLog;
 
 public abstract class HollowBlocks {
@@ -58,10 +57,6 @@ public abstract class HollowBlocks {
             return this;
         }
 
-        public LogCreator byproduct(Identifier byproductId) {
-            return this.byproduct(byproductId, 2);
-        }
-
         public LogCreator planks(Identifier planksId, int amount) {
             this.planksId = planksId;
             this.planksAmount = amount;
@@ -98,7 +93,7 @@ public abstract class HollowBlocks {
             hollowedBlocks.put(this.rawLogId, this.hollowLog);
             if (this.planksId != null) planksConversion.put(this.hollowLog, this.planksId);
             HWModelGenerator.textures.put(this.hollowLog, this.textures.raw());
-            HWRecipeManager.addHollowLogRecipes(this.rawLogId, Identifier.of(MODID, buildPath("hollow_" + this.rawLogId.getPath())), this.planksId, this.planksAmount, this.byproductId, this.byproductAmount);
+            HWRecipeGenerator.addHollowingLogRecipes(this.hollowLog, this.rawLogId, this.planksId, this.planksAmount, this.byproductId, this.byproductAmount);
 
             if (this.hollowStrippedLog != null) {
                 if (this.rawStrippedLogId.getNamespace().equals(this.rawLogId.getNamespace())) {
@@ -106,7 +101,7 @@ public abstract class HollowBlocks {
                     hollowedBlocks.put(this.rawStrippedLogId, this.hollowStrippedLog);
                     if (this.planksId != null) planksConversion.put(this.hollowStrippedLog, this.planksId);
                     HWModelGenerator.textures.put(this.hollowStrippedLog, this.textures.stripped());
-                    HWRecipeManager.addHollowLogRecipes(this.rawStrippedLogId, Identifier.of(MODID, buildPath("stripped_hollow_" + this.rawLogId.getPath())), this.planksId, this.planksAmount, this.byproductId, this.byproductAmount);
+                    HWRecipeGenerator.addHollowingLogRecipes(this.hollowStrippedLog, this.rawStrippedLogId, this.planksId, this.planksAmount, this.byproductId, this.byproductAmount);
                 }
                 strippedBlocks.put(hollowLog, this.hollowStrippedLog);
             }

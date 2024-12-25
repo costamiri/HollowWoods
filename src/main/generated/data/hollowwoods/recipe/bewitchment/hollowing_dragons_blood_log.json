@@ -1,0 +1,10 @@
+{
+  "type": "hollowwoods:hollowing",
+  "hollowed_log": "hollowwoods:bewitchment/hollow_dragons_blood_log",
+  "identifier": "bewitchment:bewitchment/hollowing_dragons_blood_log",
+  "log": "bewitchment:dragons_blood_log",
+  "result": {
+    "count": 2,
+    "id": "bewitchment:dragons_blood_planks"
+  }
+}
