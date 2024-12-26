@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
+  "group": "planks",
   "ingredients": [
     "hollowwoods:betternether/stripped_hollow_anchor_tree_log"
   ],

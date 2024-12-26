@@ -50,6 +50,7 @@ public class HWRecipeGenerator extends FabricRecipeProvider {
             public void generate() {
                 planksRecipes.forEach((hollowLog, recipe) -> createShapeless(RecipeCategory.BUILDING_BLOCKS, recipe.getItem(), recipe.getCount())
                         .input(hollowLog)
+                        .group("planks")
                         .criterion(hasItem(hollowLog), conditionsFromItem(hollowLog))
                         .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(getItemPath(hollowLog) + "_planks"))));
                 stonecuttingRecipes.forEach((input, output) -> offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, output.getItem(), input, output.getCount()));

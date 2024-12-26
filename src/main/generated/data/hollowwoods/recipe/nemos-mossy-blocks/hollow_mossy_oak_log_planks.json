@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
+  "group": "planks",
   "ingredients": [
     "hollowwoods:nemos-mossy-blocks/hollow_mossy_oak_log"
   ],

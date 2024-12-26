@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
+  "group": "planks",
   "ingredients": [
     "hollowwoods:cinderscapes/stripped_hollow_scorched_stem"
   ],

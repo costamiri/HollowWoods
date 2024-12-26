@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
+  "group": "planks",
   "ingredients": [
     "hollowwoods:promenade/stripped_hollow_sakura_log"
   ],
