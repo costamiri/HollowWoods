@@ -445,6 +445,10 @@
       "required": false
     },
     {
+      "id": "hollowwoods:hollow_pale_oak_log",
+      "required": false
+    },
+    {
       "id": "hollowwoods:byg/hollow_fir_log",
       "required": false
     },
@@ -490,6 +494,10 @@
     },
     {
       "id": "hollowwoods:byg/stripped_hollow_rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "hollowwoods:stripped_hollow_pale_oak_log",
       "required": false
     },
     {

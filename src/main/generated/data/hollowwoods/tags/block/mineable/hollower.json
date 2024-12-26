@@ -73,6 +73,10 @@
       "required": false
     },
     {
+      "id": "minecraft:pale_oak_log",
+      "required": false
+    },
+    {
       "id": "byg:cika_log",
       "required": false
     },
@@ -262,6 +266,10 @@
     },
     {
       "id": "minecraft:stripped_birch_log",
+      "required": false
+    },
+    {
+      "id": "minecraft:stripped_pale_oak_log",
       "required": false
     },
     {

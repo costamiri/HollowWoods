@@ -17,6 +17,7 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
     public static HollowLog STRIPPED_HOLLOW_DARK_OAK_LOG;
     public static HollowLog STRIPPED_HOLLOW_MANGROVE_LOG;
     public static HollowLog STRIPPED_HOLLOW_CHERRY_LOG;
+    public static HollowLog STRIPPED_HOLLOW_PALE_OAK_LOG;
     public static HollowBambooBlock STRIPPED_HOLLOW_BAMBOO_BLOCK;
     public static HollowNetherStem STRIPPED_HOLLOW_CRIMSON_STEM;
     public static HollowNetherStem STRIPPED_HOLLOW_WARPED_STEM;
@@ -28,6 +29,7 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
     public static HollowLog HOLLOW_DARK_OAK_LOG;
     public static HollowLog HOLLOW_MANGROVE_LOG;
     public static HollowLog HOLLOW_CHERRY_LOG;
+    public static HollowLog HOLLOW_PALE_OAK_LOG;
     public static HollowBambooBlock HOLLOW_BAMBOO_BLOCK;
     public static HollowNetherStem HOLLOW_CRIMSON_STEM;
     public static HollowNetherStem HOLLOW_WARPED_STEM;
@@ -100,6 +102,14 @@ public class VanillaMinecraftBlocks extends HollowBlocks {
                 .raw(HOLLOW_CHERRY_LOG)
                 .stripped(STRIPPED_HOLLOW_CHERRY_LOG)
                 .planks(Registries.BLOCK.getId(Blocks.CHERRY_PLANKS))
+                .create();
+
+        HOLLOW_PALE_OAK_LOG = new HollowLog.Builder(Registries.BLOCK.getId(Blocks.PALE_OAK_LOG)).mapColor(MapColor.OFF_WHITE, MapColor.STONE_GRAY).build();
+        STRIPPED_HOLLOW_PALE_OAK_LOG = new HollowLog.Builder(Registries.BLOCK.getId(Blocks.STRIPPED_PALE_OAK_LOG)).mapColor(MapColor.OFF_WHITE).build();
+        new HollowBlocks.LogCreator()
+                .raw(HOLLOW_PALE_OAK_LOG)
+                .stripped(STRIPPED_HOLLOW_PALE_OAK_LOG)
+                .planks(Registries.BLOCK.getId(Blocks.PALE_OAK_PLANKS))
                 .create();
 
         HOLLOW_BAMBOO_BLOCK = new HollowBambooBlock.Builder(Registries.BLOCK.getId(Blocks.BAMBOO_BLOCK)).mapColor(MapColor.YELLOW, MapColor.DARK_GREEN).build();
