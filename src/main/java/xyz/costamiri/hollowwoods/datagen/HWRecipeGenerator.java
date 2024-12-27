@@ -6,7 +6,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
-import net.minecraft.data.recipe.SmithingTrimRecipeJsonBuilder;
+import net.minecraft.data.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -58,7 +58,7 @@ public class HWRecipeGenerator extends FabricRecipeProvider {
                         .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, id)));
                 toolRecipes.forEach((axeId, tool) -> {
                     Item axe = getItemFromId(axeId);
-                    SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItem(IRON_INGOT), Ingredient.ofItem(axe), Ingredient.ofItem(IRON_INGOT), RecipeCategory.TOOLS)
+                    SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItem(IRON_INGOT), Ingredient.ofItem(axe), Ingredient.ofItem(IRON_INGOT), RecipeCategory.TOOLS, tool)
                             .criterion(hasItem(axe), this.conditionsFromItem(axe))
                             .criterion(hasItem(IRON_INGOT), this.conditionsFromItem(IRON_INGOT))
                             .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(axeId.getNamespace(), "hollowertool_" + axeId.getPath())));
