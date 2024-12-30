@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "hollowwoods",
-  "version": "1.2.12",
+  "version": "1.2.13",
 
   "name": "HollowWoods",
   "description": "Carve your logs and hollow them out!",
@@ -44,7 +44,7 @@
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": ">=1.21",
+    "minecraft": ">=1.21.4",
     "java": ">=21"
   }
 }
